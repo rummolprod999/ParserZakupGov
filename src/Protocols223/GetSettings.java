@@ -16,6 +16,7 @@ public class GetSettings {
     public String UserDb;
     public String PassDb;
     public String Server;
+    public String Years;
     public int Port;
 
     public GetSettings() {
@@ -56,6 +57,9 @@ public class GetSettings {
                             break;
                         case "port":
                             Port = Integer.valueOf(set.getChildNodes().item(0).getTextContent());
+                            break;
+                        case "years":
+                            Years = String.valueOf(set.getChildNodes().item(0).getTextContent());
                             break;
 
 

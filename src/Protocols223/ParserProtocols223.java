@@ -1,11 +1,10 @@
 package Protocols223;
 
-import org.apache.commons.net.ftp.FTPFile;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import static java.lang.System.out;
+import java.util.Objects;
+import java.util.stream.Collectors;
+import java.sql.*;
 
 public class ParserProtocols223 extends Parser {
 
@@ -28,6 +27,7 @@ public class ParserProtocols223 extends Parser {
                         break;
                     case Daily223:
                         pathParse = String.format("/out/published/%s/%s/daily/", r.Path223, prot);
+                        ParsingDaily223(pathParse, prot, r);
                         break;
                 }
             }
@@ -36,19 +36,94 @@ public class ParserProtocols223 extends Parser {
         }
     }
 
-    public void ParsingLast223(String pathParse, String prot, Region region) {
-        GetListArchLast(pathParse, prot, region);
+    public void GetListFileArch(String pathParse, String prot, Region region, String file){
+        String filea = "";
+        String pathUnzip = "";
+        filea = GetArch(file, pathParse, Ftp223Login, Ftp223Pass);
+        if(!Objects.equals(filea, "")){
+            pathUnzip = Unzip(filea);
 
+        }
     }
 
-    public ArrayList<FTPFile> GetListArchLast(String pathParse, String prot, Region region) {
-        ArrayList<FTPFile> arr = new ArrayList<>();
-        for (FTPFile ftpFile : arr = GetListFtp223(pathParse)) {
-            out.println(ftpFile.getName());
+
+
+    public void ParsingLast223(String pathParse, String prot, Region region) {
+        ArrayList<String> s = GetListArch(pathParse, prot, region);
+        if(s.isEmpty()){
+            Log.Logger("Получен пустой список архивов", pathParse);
+            return;
+        }
+        for(String st: s){
+            try {
+                GetListFileArch(pathParse, prot, region, st);
+            } catch (Exception e) {
+                Log.Logger("Error on parsing list from ftp", e.getStackTrace(), e);
+            }
         }
 
+    }
 
-        return arr;
+    public void ParsingDaily223(String pathParse, String prot, Region region) {
+        ArrayList<String> s = GetListArch(pathParse, prot, region);
+        s = FilterListMysql(s);
+        if(s.isEmpty()){
+            Log.Logger("Получен пустой список архивов", pathParse);
+            return;
+        }
+        for(String st: s){
+            try {
+                GetListFileArch(pathParse, prot, region, st);
+                InsertArrMysql(st);
+            } catch (Exception e) {
+                Log.Logger("Error on parsing list from ftp", e.getStackTrace(), e);
+            }
+        }
 
     }
+
+    public ArrayList<String> GetListArch(String pathParse, String prot, Region region) {
+        ArrayList<String> arr = GetListFtp(pathParse, Ftp223Login, Ftp223Pass);
+        ArrayList<String> arrYears = Main.Years.stream().map((String y) -> String.format("%s_%s_%s", prot, region.Path223, y)).collect(Collectors.toCollection(ArrayList::new));
+
+        return arr.stream().filter(s -> arrYears.stream().anyMatch(s::contains)).collect(Collectors.toCollection(ArrayList::new));
+
+    }
+
+    public ArrayList<String> FilterListMysql(ArrayList<String> s){
+        ArrayList<String> temp = new ArrayList<>();
+        if (!s.isEmpty()){
+            try (Connection con = DriverManager.getConnection(Main.UrlConnect, Main.UserDb, Main.PassDb)) {
+                for(String st: s){
+                    PreparedStatement stmt0 = con.prepareStatement(String.format("SELECT id FROM %sarhiv_protocols223 WHERE arhiv = ?", Main.Prefix));
+                    stmt0.setString(1, String.valueOf(st));
+                    ResultSet r = stmt0.executeQuery();
+                    if (r.next()) {
+                        r.close();
+                        stmt0.close();
+                        continue;
+                    }
+                    r.close();
+                    stmt0.close();
+                    temp.add(st);
+                }
+
+            } catch (Exception e) {
+                Log.Logger("Error Search", e.getStackTrace());
+            }
+        }
+        return temp;
+    }
+
+    public void InsertArrMysql(String s){
+        try (Connection con = DriverManager.getConnection(Main.UrlConnect, Main.UserDb, Main.PassDb)) {
+            PreparedStatement stmtins = con.prepareStatement(String.format("INSERT INTO %sarhiv_protocols223 SET arhiv = ?", Main.Prefix));
+            stmtins.setString(1, s);
+            stmtins.executeUpdate();
+            stmtins.close();
+        } catch (Exception e) {
+            Log.Logger("Error Insert", e.getStackTrace());
+        }
+    }
+
 }

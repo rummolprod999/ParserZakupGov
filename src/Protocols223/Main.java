@@ -1,9 +1,12 @@
 package Protocols223;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
-
+import org.apache.commons.io.FileUtils;
 import static java.lang.System.out;
 
 public class Main {
@@ -20,6 +23,7 @@ public class Main {
     public static Date DateNow = new Date();
     public static String UrlConnect;
     public static Arguments arg;
+    public static ArrayList<String> Years;
 
     public static void main(String[] args) {
         if(args.length == 0){
@@ -52,6 +56,7 @@ public class Main {
         PassDb = set.PassDb;
         Server = set.Server;
         Port = set.Port;
+        Years = new ArrayList<>(Arrays.asList(set.Years.split(", ")));
         if (tempDirProtocols.equals("") || tempDirProtocols.isEmpty()) {
             out.println("Не задана папка для временных файлов, выходим из программы");
             System.exit(0);
@@ -62,7 +67,11 @@ public class Main {
         }
         File tmp = new File(tempDirProtocols);
         if (tmp.exists()) {
-            tmp.delete();
+            try {
+                FileUtils.deleteDirectory(tmp);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             tmp.mkdir();
         } else {
             tmp.mkdir();
