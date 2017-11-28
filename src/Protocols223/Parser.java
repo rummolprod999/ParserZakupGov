@@ -7,6 +7,9 @@ import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,6 +18,8 @@ import java.util.zip.ZipInputStream;
 
 import static java.lang.System.out;
 import static java.lang.Thread.sleep;
+import static java.nio.file.Path.*;
+import static java.nio.file.Paths.get;
 
 public class Parser implements IParser {
 
@@ -115,6 +120,7 @@ public class Parser implements IParser {
             File dr = new File(dt);
             dr.mkdir();
             try (ZipInputStream zip = new ZipInputStream(new FileInputStream(filea))) {
+                //throw new Exception("ewrwe");
                 ZipEntry entry;
                 while ((entry = zip.getNextEntry()) != null) {
                     String filePath = String.format("%s%s%s", dt, File.separator, entry.getName());
@@ -126,7 +132,7 @@ public class Parser implements IParser {
 
                 Log.Logger(ex.getStackTrace(), "Не удалось извлечь файл", ex);
                 try {
-                    Process pr = Runtime.getRuntime().exec(new String[]{"unzip", String.format("-B %s -d %s", filea, dt)});
+                    Process pr = Runtime.getRuntime().exec(new String[]{"unzip", "-B", filea, "-d", dt});
                     pr.waitFor();
                     lDir = dt;
                     Log.Logger("Извлекли файл альтернативным методом", filea);
@@ -147,5 +153,19 @@ public class Parser implements IParser {
             bos.write(bytesIn, 0, read);
         }
         bos.close();
+    }
+
+    public String ClearString(String s) {
+        String res = "";
+        try {
+            res = new String(Files.readAllBytes(get(s)), StandardCharsets.UTF_8);
+            res = res.replace("ns2:", "");
+            res = res.replace("oos:", "");
+            res = res.replace("\u001B", "");
+        } catch (Exception ignored) {
+
+        }
+
+        return res;
     }
 }

@@ -1,5 +1,9 @@
 package Protocols223;
 
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Objects;
@@ -36,25 +40,114 @@ public class ParserProtocols223 extends Parser {
         }
     }
 
-    public void GetListFileArch(String pathParse, String prot, Region region, String file){
+    public void GetListFileArch(String pathParse, String prot, Region region, String file) {
         String filea = "";
         String pathUnzip = "";
         filea = GetArch(file, pathParse, Ftp223Login, Ftp223Pass);
-        if(!Objects.equals(filea, "")){
+        if (!Objects.equals(filea, "")) {
             pathUnzip = Unzip(filea);
+            if (!Objects.equals(pathUnzip, "")) {
+                File unzp = new File(pathUnzip);
+                File[] filelist = unzp.listFiles();
+                for (File f : filelist != null ? filelist : new File[0]) {
+                    switch (prot) {
+                        case "purchaseProtocol":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocol);
+                            break;
+                        case "purchaseProtocolIP":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolIP);
+                            break;
+                        case "purchaseProtocolOSZ":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolOSZ);
+                            break;
+                        case "purchaseProtocolPA_AE":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPA_AE);
+                            break;
+                        case "purchaseProtocolPA_OA":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPA_OA);
+                            break;
+                        case "purchaseProtocolPAAE":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAAE);
+                            break;
+                        case "purchaseProtocolPAAE94":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAAE94);
+                            break;
+                        case "purchaseProtocolPAEP":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAEP);
+                            break;
+                        case "purchaseProtocolPAOA":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAOA);
+                            break;
+                        case "purchaseProtocolRKZ":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRKZ);
+                            break;
+                        case "purchaseProtocolRZ1AE":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ1AE);
+                            break;
+                        case "purchaseProtocolRZ2AE":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ2AE);
+                            break;
+                        case "purchaseProtocolRZ_AE":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_AE);
+                            break;
+                        case "purchaseProtocolRZ_OA":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_OA);
+                            break;
+                        case "purchaseProtocolRZ_OK":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_OK);
+                            break;
+                        case "purchaseProtocolRZAE":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZAE);
+                            break;
+                        case "purchaseProtocolRZOA":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZOA);
+                            break;
+                        case "purchaseProtocolRZOK":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZOK);
+                            break;
+                        case "purchaseProtocolVK":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolVK);
+                            break;
+                        case "purchaseProtocolZK":
+                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolZK);
+                            break;
+                    }
+
+                }
+                try {
+                    FileUtils.deleteDirectory(unzp);
+                } catch (Exception ignored) {
+
+                }
+            }
 
         }
     }
 
+    public void Bolter(File f, String pathParse, String prot, Region region, TypeProt223 type) {
+        if (!f.getName().toLowerCase().endsWith(".xml") || f.length() == 0) {
+            return;
+        }
+        try {
+            ParsingXml(f, pathParse, prot, region, type);
+        } catch (Exception e) {
+            Log.Logger("Ошибка при парсинге xml", e.getStackTrace(), f.getName());
+        }
 
+    }
+
+    public void ParsingXml(File f, String pathParse, String prot, Region region, TypeProt223 type) {
+        String ftext = ClearString(f.getName());
+        System.out.println(ftext);
+    }
 
     public void ParsingLast223(String pathParse, String prot, Region region) {
         ArrayList<String> s = GetListArch(pathParse, prot, region);
-        if(s.isEmpty()){
+        if (s.isEmpty()) {
             Log.Logger("Получен пустой список архивов", pathParse);
             return;
         }
-        for(String st: s){
+        for (String st : s) {
             try {
                 GetListFileArch(pathParse, prot, region, st);
             } catch (Exception e) {
@@ -67,11 +160,11 @@ public class ParserProtocols223 extends Parser {
     public void ParsingDaily223(String pathParse, String prot, Region region) {
         ArrayList<String> s = GetListArch(pathParse, prot, region);
         s = FilterListMysql(s);
-        if(s.isEmpty()){
+        if (s.isEmpty()) {
             Log.Logger("Получен пустой список архивов", pathParse);
             return;
         }
-        for(String st: s){
+        for (String st : s) {
             try {
                 GetListFileArch(pathParse, prot, region, st);
                 InsertArrMysql(st);
@@ -90,11 +183,11 @@ public class ParserProtocols223 extends Parser {
 
     }
 
-    public ArrayList<String> FilterListMysql(ArrayList<String> s){
+    public ArrayList<String> FilterListMysql(ArrayList<String> s) {
         ArrayList<String> temp = new ArrayList<>();
-        if (!s.isEmpty()){
+        if (!s.isEmpty()) {
             try (Connection con = DriverManager.getConnection(Main.UrlConnect, Main.UserDb, Main.PassDb)) {
-                for(String st: s){
+                for (String st : s) {
                     PreparedStatement stmt0 = con.prepareStatement(String.format("SELECT id FROM %sarhiv_protocols223 WHERE arhiv = ?", Main.Prefix));
                     stmt0.setString(1, String.valueOf(st));
                     ResultSet r = stmt0.executeQuery();
@@ -115,7 +208,7 @@ public class ParserProtocols223 extends Parser {
         return temp;
     }
 
-    public void InsertArrMysql(String s){
+    public void InsertArrMysql(String s) {
         try (Connection con = DriverManager.getConnection(Main.UrlConnect, Main.UserDb, Main.PassDb)) {
             PreparedStatement stmtins = con.prepareStatement(String.format("INSERT INTO %sarhiv_protocols223 SET arhiv = ?", Main.Prefix));
             stmtins.setString(1, s);
