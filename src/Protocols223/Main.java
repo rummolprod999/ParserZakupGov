@@ -89,8 +89,13 @@ public class Main {
     private static void ParserProtocols223() {
         Log.Logger("Начало парсинга");
         try {
-            ParserProtocols223 p = new ParserProtocols223();
-            p.Parsing();
+            /*ParserProtocols223 p = new ParserProtocols223();
+            p.Parsing();*/
+            Region r = new Region();
+            File f = new File(Main.executePath + File.separator + "purchaseProtocol_Moskva_20171128_000000_20171128_235959_daily_007.xml");
+            String ftext = Parser.ClearString(f);
+            ProtocolType223 p = new ProtocolType223(f, "ggg", "purchaseProtocol", r, TypeProt223.purchaseProtocol, ftext);
+            p.ParserType223();
         } catch (Exception e) {
             Log.Logger("Error Main function", e.getStackTrace(), e);
         } finally {

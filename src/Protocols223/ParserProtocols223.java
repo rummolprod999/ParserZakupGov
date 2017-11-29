@@ -137,8 +137,9 @@ public class ParserProtocols223 extends Parser {
     }
 
     public void ParsingXml(File f, String pathParse, String prot, Region region, TypeProt223 type) {
-        String ftext = ClearString(f.getName());
-        System.out.println(ftext);
+        String ftext = ClearString(f);
+        ProtocolType223 p = new ProtocolType223(f, pathParse, prot, region, type, ftext);
+        p.ParserType223();
     }
 
     public void ParsingLast223(String pathParse, String prot, Region region) {

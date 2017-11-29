@@ -155,10 +155,10 @@ public class Parser implements IParser {
         bos.close();
     }
 
-    public String ClearString(String s) {
+    public static String ClearString(File s) {
         String res = "";
         try {
-            res = new String(Files.readAllBytes(get(s)), StandardCharsets.UTF_8);
+            res = new String(Files.readAllBytes(s.toPath()), StandardCharsets.UTF_8);
             res = res.replace("ns2:", "");
             res = res.replace("oos:", "");
             res = res.replace("\u001B", "");
