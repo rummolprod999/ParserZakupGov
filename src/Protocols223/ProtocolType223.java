@@ -7,6 +7,7 @@ import com.google.gson.internal.LinkedTreeMap;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.XML;
+
 import java.io.File;
 import java.util.ArrayList;
 
@@ -28,7 +29,7 @@ public class ProtocolType223 {
 
     }
 
-    public void ParserType223(){
+    public void ParserType223() {
         JSONObject jsonObj = null;
         String JsonString = null;
         try {
@@ -39,16 +40,15 @@ public class ProtocolType223 {
             return;
         }
         Gson gson = new Gson();
-        switch (type){
+        switch (type) {
             case purchaseProtocol:
                 Protocol p = gson.fromJson(JsonString, Protocol.class);
                 Prot prot = null;
                 prot = p.purchaseProtocol.body.item.purchaseProtocolData;
-                if (prot != null){
+                if (prot != null) {
                     prot.Parsing(new Settings());
 
-                }
-                else{
+                } else {
                     Log.Logger("Не смогли создать объект", f);
                 }
                 break;
@@ -111,13 +111,14 @@ public class ProtocolType223 {
 
     }
 
-    public class Settings{
+    public class Settings {
         public Region Region;
         public File F;
         public String PathParse;
         public String Prot;
         public TypeProt223 Type;
         public String Ftext;
+
         public Settings() {
             Region = region;
             F = f;

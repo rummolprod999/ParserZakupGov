@@ -10,12 +10,11 @@ public class Log {
         StringBuilder s = new StringBuilder();
         s.append(new Date());
         for (T p : parametrs) {
-            if(p instanceof StackTraceElement[]){
-                for(StackTraceElement n: (StackTraceElement[])p){
+            if (p instanceof StackTraceElement[]) {
+                for (StackTraceElement n : (StackTraceElement[]) p) {
                     s.append(String.format(" %s\n", n.toString()));
                 }
-            }
-            else{
+            } else {
                 s.append(String.format(" %s\n", p.toString()));
             }
 

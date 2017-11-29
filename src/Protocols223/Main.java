@@ -6,7 +6,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+
 import org.apache.commons.io.FileUtils;
+
 import static java.lang.System.out;
 
 public class Main {
@@ -26,7 +28,7 @@ public class Main {
     public static ArrayList<String> Years;
 
     public static void main(String[] args) {
-        if(args.length == 0){
+        if (args.length == 0) {
             out.println("Недостаточно аргументов для запуска, используйте last223, daily223");
             System.exit(0);
         }

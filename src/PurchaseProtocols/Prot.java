@@ -14,18 +14,18 @@ public class Prot {
     }
 
     public String guid;
-    public  String createDateTime;
+    public String createDateTime;
     public String urlOOS;
     public LotApplicationsList lotApplicationsList;
     public PurchaseInfo purchaseInfo;
 
-    public void Parsing(ProtocolType223.Settings set){
+    public void Parsing(ProtocolType223.Settings set) {
 
         String purchase_number = "";
-        if(purchaseInfo != null && purchaseInfo.purchaseNoticeNumber != null){
+        if (purchaseInfo != null && purchaseInfo.purchaseNoticeNumber != null) {
             purchase_number = purchaseInfo.purchaseNoticeNumber;
         }
-        if(Objects.equals(purchase_number, "")){
+        if (Objects.equals(purchase_number, "")) {
             Log.Logger("У протокола нет purchase_number", set.F);
             return;
         }
