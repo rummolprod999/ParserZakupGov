@@ -11,8 +11,11 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -26,6 +29,7 @@ public class Parser implements IParser {
     private static final int BUFFER_SIZE = 4096;
     static final String Ftp223Login = "fz223free";
     static final String Ftp223Pass = "fz223free";
+    public static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
 
     @Override
     public void Parsing() {
@@ -167,5 +171,15 @@ public class Parser implements IParser {
         }
 
         return res;
+    }
+
+    public static Date GetDate(String dt) {
+        Date d = new Date(0L);
+        try {
+            d = (Date) formatter.parseObject(dt);
+        } catch (ParseException ignored) {
+
+        }
+        return d;
     }
 }

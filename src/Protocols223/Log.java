@@ -6,7 +6,7 @@ import java.util.Date;
 
 public class Log {
     @SafeVarargs
-    static <T extends Object> void Logger(T... parametrs) {
+    public static <T extends Object> void Logger(T... parametrs) {
         StringBuilder s = new StringBuilder();
         s.append(new Date());
         for (T p : parametrs) {
