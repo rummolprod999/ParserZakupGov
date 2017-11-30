@@ -1,15 +1,12 @@
 package Protocols223;
 
-import PurchaseProtocols.*;
+import PurchaseProtocols.Prot;
+import PurchaseProtocols.Protocol;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.internal.LinkedTreeMap;
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.XML;
 
 import java.io.File;
-import java.util.ArrayList;
 
 public class ProtocolType223 {
     Region region;
@@ -35,6 +32,7 @@ public class ProtocolType223 {
         try {
             jsonObj = XML.toJSONObject(ftext);
             JsonString = jsonObj.toString();
+            //out.println(JsonString);
         } catch (Exception e) {
             Log.Logger("JSON exception", e.getMessage());
             return;

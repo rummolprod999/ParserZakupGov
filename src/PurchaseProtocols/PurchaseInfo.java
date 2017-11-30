@@ -5,4 +5,5 @@ public class PurchaseInfo {
     }
 
     String purchaseNoticeNumber;
+    String purchaseCodeName;
 }
