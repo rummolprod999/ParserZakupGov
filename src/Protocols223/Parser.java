@@ -3,7 +3,6 @@ package Protocols223;
 import PurchaseProtocols.Document;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonSyntaxException;
 import com.google.gson.internal.LinkedTreeMap;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
@@ -179,20 +178,20 @@ public class Parser implements IParser {
         }
         return d;
     }
+
     @SuppressWarnings("unchecked")
-    public static ArrayList<Document> GetDocuments(Object o){
+    public static ArrayList<Document> GetDocuments(Object o) {
         ArrayList<Document> a = new ArrayList<>();
         try {
-            if(o instanceof ArrayList<?>){
+            if (o instanceof ArrayList<?>) {
                 ArrayList<LinkedTreeMap> alist = (ArrayList<LinkedTreeMap>) o;
-                for(LinkedTreeMap l: alist){
+                for (LinkedTreeMap l : alist) {
                     JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
                     Document d = new Gson().fromJson(jsonObject.toString(), Document.class);
                     a.add(d);
                 }
 
-            }
-            else if(o instanceof LinkedTreeMap){
+            } else if (o instanceof LinkedTreeMap) {
                 LinkedTreeMap l = (LinkedTreeMap) o;
                 JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
                 Document d = new Gson().fromJson(jsonObject.toString(), Document.class);
