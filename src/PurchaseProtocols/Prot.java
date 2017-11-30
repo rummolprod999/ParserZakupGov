@@ -6,6 +6,7 @@ import Protocols223.Parser;
 import Protocols223.ProtocolType223;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
 
@@ -18,8 +19,12 @@ public class Prot {
     public String guid;
     public String createDateTime;
     public String urlOOS;
+    public String typeName;
+    public boolean missedContest;
+    public String missedReason;
     public LotApplicationsList lotApplicationsList;
     public PurchaseInfo purchaseInfo;
+    public Attachments attachments;
 
     public void Parsing(ProtocolType223.Settings set) {
 
@@ -68,8 +73,30 @@ public class Prot {
             }
             r1.close();
             ps2.close();
-            String typeProtocol = (purchaseInfo != null && purchaseInfo.purchaseCodeName != null) ? purchaseInfo.purchaseCodeName : "";
-
+            int idProt = 0;
+            String typeProtocol =  (typeName != null) ? typeName : "";
+            String missedR = (missedReason != null) ? missedReason: "";
+            PreparedStatement ps4 = con.prepareStatement(String.format("INSERT INTO %sprotocols223 SET guid = ?, protocol_date = ?, url = ?, purchase_number = ?, type_protocol = ?, cancel = ?, missed_contest = ?, missed_reason = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
+            ps4.setString(1, idProtocol);
+            ps4.setTimestamp(2, new Timestamp(protocolDate.getTime()));
+            ps4.setString(3, url);
+            ps4.setString(4, purchaseNumber);
+            ps4.setString(5, typeProtocol);
+            ps4.setInt(6, cancel);
+            ps4.setBoolean(7, missedContest);
+            ps4.setString(8, missedR);
+            ps4.executeUpdate();
+            ResultSet rt = ps4.getGeneratedKeys();
+            if (rt.next()) {
+                idProt = rt.getInt(1);
+            }
+            rt.close();
+            ps4.close();
+            Main.CountPurchaseProtocol++;
+            if(attachments != null && attachments.document != null){
+                ArrayList<Document> att = Parser.GetDocuments(attachments.document);
+                out.println(att);
+            }
 
 
         } catch (Exception e) {

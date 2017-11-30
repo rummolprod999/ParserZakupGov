@@ -1,16 +1,16 @@
 package Protocols223;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import org.apache.commons.io.FileUtils;
+import PurchaseProtocols.Document;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonSyntaxException;
+import com.google.gson.internal.LinkedTreeMap;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
-import org.apache.commons.net.ftp.FTPFile;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -19,10 +19,7 @@ import java.util.Date;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import static java.lang.System.out;
 import static java.lang.Thread.sleep;
-import static java.nio.file.Path.*;
-import static java.nio.file.Paths.get;
 
 public class Parser implements IParser {
 
@@ -181,5 +178,29 @@ public class Parser implements IParser {
 
         }
         return d;
+    }
+    @SuppressWarnings("unchecked")
+    public static ArrayList<Document> GetDocuments(Object o){
+        ArrayList<Document> a = new ArrayList<>();
+        try {
+            if(o instanceof ArrayList<?>){
+                ArrayList<LinkedTreeMap> alist = (ArrayList<LinkedTreeMap>) o;
+                for(LinkedTreeMap l: alist){
+                    JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                    Document d = new Gson().fromJson(jsonObject.toString(), Document.class);
+                    a.add(d);
+                }
+
+            }
+            else if(o instanceof LinkedTreeMap){
+                LinkedTreeMap l = (LinkedTreeMap) o;
+                JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                Document d = new Gson().fromJson(jsonObject.toString(), Document.class);
+                a.add(d);
+            }
+        } catch (Exception e) {
+            Log.Logger("Ошибка получения attachments", e.getStackTrace(), e);
+        }
+        return a;
     }
 }
