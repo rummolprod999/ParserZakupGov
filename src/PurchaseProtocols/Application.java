@@ -1,6 +1,12 @@
 package PurchaseProtocols;
 
 public class Application {
+    public Application() {
+    }
+
     public String applicationDate;
-    public Object currency;
+    public Currency currency;
+    public SupplierInfo supplierInfo;
+    public String applicationNumber;
+
 }

@@ -95,8 +95,26 @@ public class Prot {
             Main.CountPurchaseProtocol++;
             if (attachments != null && attachments.document != null) {
                 ArrayList<Document> att = Parser.GetDocuments(attachments.document);
-                out.println(att);
+                for(Document doc: att){
+                    String fileName = (doc.fileName != null)?doc.fileName:"";
+                    String description = (doc.description != null)?doc.description:"";
+                    String urlAtt = (doc.url != null)?doc.url:"";
+                    PreparedStatement ps5 = con.prepareStatement(String.format("INSERT INTO %sprotocols223_attach SET id_protocol = ?, filename = ?, description = ?, url = ?", Main.Prefix));
+                    ps5.setInt(1, idProt);
+                    ps5.setString(2, fileName);
+                    ps5.setString(3, description);
+                    ps5.setString(4, urlAtt);
+                    ps5.executeUpdate();
+                    ps5.close();
+                }
             }
+            if(lotApplicationsList != null && lotApplicationsList.protocolLotApplications != null && lotApplicationsList.protocolLotApplications.application != null){
+                ArrayList<Application> app = Parser.GetApplications(lotApplicationsList.protocolLotApplications.application);
+                for(Application appl: app){
+                    out.println(appl.applicationNumber);
+                }
+            }
+
 
 
         } catch (Exception e) {

@@ -1,5 +1,6 @@
 package Protocols223;
 
+import PurchaseProtocols.Application;
 import PurchaseProtocols.Document;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
@@ -199,6 +200,30 @@ public class Parser implements IParser {
             }
         } catch (Exception e) {
             Log.Logger("Ошибка получения attachments", e.getStackTrace(), e);
+        }
+        return a;
+    }
+
+    @SuppressWarnings("unchecked")
+    public static ArrayList<Application> GetApplications(Object o) {
+        ArrayList<Application> a = new ArrayList<>();
+        try {
+            if (o instanceof ArrayList<?>) {
+                ArrayList<LinkedTreeMap> alist = (ArrayList<LinkedTreeMap>) o;
+                for (LinkedTreeMap l : alist) {
+                    JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                    Application d = new Gson().fromJson(jsonObject.toString(), Application.class);
+                    a.add(d);
+                }
+
+            } else if (o instanceof LinkedTreeMap) {
+                LinkedTreeMap l = (LinkedTreeMap) o;
+                JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                Application d = new Gson().fromJson(jsonObject.toString(), Application.class);
+                a.add(d);
+            }
+        } catch (Exception e) {
+            Log.Logger("Ошибка получения applications", e.getStackTrace(), e);
         }
         return a;
     }
