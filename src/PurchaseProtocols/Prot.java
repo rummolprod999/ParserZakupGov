@@ -74,8 +74,8 @@ public class Prot {
             r1.close();
             ps2.close();
             int idProt = 0;
-            String typeProtocol =  (typeName != null) ? typeName : "";
-            String missedR = (missedReason != null) ? missedReason: "";
+            String typeProtocol = (typeName != null) ? typeName : "";
+            String missedR = (missedReason != null) ? missedReason : "";
             PreparedStatement ps4 = con.prepareStatement(String.format("INSERT INTO %sprotocols223 SET guid = ?, protocol_date = ?, url = ?, purchase_number = ?, type_protocol = ?, cancel = ?, missed_contest = ?, missed_reason = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
             ps4.setString(1, idProtocol);
             ps4.setTimestamp(2, new Timestamp(protocolDate.getTime()));
@@ -93,7 +93,7 @@ public class Prot {
             rt.close();
             ps4.close();
             Main.CountPurchaseProtocol++;
-            if(attachments != null && attachments.document != null){
+            if (attachments != null && attachments.document != null) {
                 ArrayList<Document> att = Parser.GetDocuments(attachments.document);
                 out.println(att);
             }
