@@ -4,5 +4,5 @@ public class LotApplicationsList {
     public LotApplicationsList() {
     }
 
-    public ProtocolLotApplications protocolLotApplications;
+    public Object protocolLotApplications;
 }

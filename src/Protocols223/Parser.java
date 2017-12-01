@@ -2,6 +2,7 @@ package Protocols223;
 
 import PurchaseProtocols.Application;
 import PurchaseProtocols.Document;
+import PurchaseProtocols.ProtocolLotApplications;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.internal.LinkedTreeMap;
@@ -98,6 +99,30 @@ public class Parser implements IParser {
             }
         } catch (Exception e) {
             Log.Logger("Ошибка получения applications", e.getStackTrace(), e);
+        }
+        return a;
+    }
+
+    @SuppressWarnings("unchecked")
+    public static ArrayList<ProtocolLotApplications> GetProtocolLotApplications(Object o) {
+        ArrayList<ProtocolLotApplications> a = new ArrayList<>();
+        try {
+            if (o instanceof ArrayList<?>) {
+                ArrayList<LinkedTreeMap> alist = (ArrayList<LinkedTreeMap>) o;
+                for (LinkedTreeMap l : alist) {
+                    JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                    ProtocolLotApplications d = new Gson().fromJson(jsonObject.toString(), ProtocolLotApplications.class);
+                    a.add(d);
+                }
+
+            } else if (o instanceof LinkedTreeMap) {
+                LinkedTreeMap l = (LinkedTreeMap) o;
+                JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                ProtocolLotApplications d = new Gson().fromJson(jsonObject.toString(), ProtocolLotApplications.class);
+                a.add(d);
+            }
+        } catch (Exception e) {
+            Log.Logger("Ошибка получения ProtocolLotApplications", e.getStackTrace(), e);
         }
         return a;
     }

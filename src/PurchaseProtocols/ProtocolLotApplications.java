@@ -5,5 +5,5 @@ public class ProtocolLotApplications {
     }
 
     public Object application;
-    public Object lot;
+    public Lot lot;
 }

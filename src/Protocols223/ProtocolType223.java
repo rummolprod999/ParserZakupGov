@@ -6,7 +6,6 @@ import com.google.gson.Gson;
 import org.json.JSONObject;
 import org.json.XML;
 
-
 import java.io.File;
 
 public class ProtocolType223 {
@@ -41,14 +40,18 @@ public class ProtocolType223 {
         Gson gson = new Gson();
         switch (type) {
             case purchaseProtocol:
-                Protocol p = gson.fromJson(JsonString, Protocol.class);
-                Prot prot = null;
-                prot = p.purchaseProtocol.body.item.purchaseProtocolData;
-                if (prot != null) {
-                    prot.Parsing(new Settings());
+                try {
+                    Protocol p = gson.fromJson(JsonString, Protocol.class);
+                    Prot prot = null;
+                    prot = p.purchaseProtocol.body.item.purchaseProtocolData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings());
 
-                } else {
-                    Log.Logger("Не смогли создать объект", pathParse);
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(),"Error get gson object");
                 }
                 break;
 
