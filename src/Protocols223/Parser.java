@@ -23,17 +23,89 @@ import static java.lang.Thread.sleep;
 
 public class Parser implements IParser {
 
-    private static final int BUFFER_SIZE = 4096;
     static final String Ftp223Login = "fz223free";
     static final String Ftp223Pass = "fz223free";
+    private static final int BUFFER_SIZE = 4096;
     public static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+    public String[] protocols223Dir = {"purchaseProtocol", "purchaseProtocolIP", "purchaseProtocolOSZ", "purchaseProtocolPA_AE", "purchaseProtocolPA_OA", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRKZ", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZ_AE", "purchaseProtocolRZ_OA", "purchaseProtocolRZ_OK", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolVK", "purchaseProtocolZK"};
+
+    public static String ClearString(File s) {
+        String res = "";
+        try {
+            res = new String(Files.readAllBytes(s.toPath()), StandardCharsets.UTF_8);
+            res = res.replace("ns2:", "");
+            res = res.replace("oos:", "");
+            res = res.replace("\u001B", "");
+        } catch (Exception ignored) {
+
+        }
+
+        return res;
+    }
+
+    public static Date GetDate(String dt) {
+        Date d = new Date(0L);
+        try {
+            d = (Date) formatter.parseObject(dt);
+        } catch (ParseException ignored) {
+
+        }
+        return d;
+    }
+
+    @SuppressWarnings("unchecked")
+    public static ArrayList<Document> GetDocuments(Object o) {
+        ArrayList<Document> a = new ArrayList<>();
+        try {
+            if (o instanceof ArrayList<?>) {
+                ArrayList<LinkedTreeMap> alist = (ArrayList<LinkedTreeMap>) o;
+                for (LinkedTreeMap l : alist) {
+                    JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                    Document d = new Gson().fromJson(jsonObject.toString(), Document.class);
+                    a.add(d);
+                }
+
+            } else if (o instanceof LinkedTreeMap) {
+                LinkedTreeMap l = (LinkedTreeMap) o;
+                JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                Document d = new Gson().fromJson(jsonObject.toString(), Document.class);
+                a.add(d);
+            }
+        } catch (Exception e) {
+            Log.Logger("Ошибка получения attachments", e.getStackTrace(), e);
+        }
+        return a;
+    }
+
+    @SuppressWarnings("unchecked")
+    public static ArrayList<Application> GetApplications(Object o) {
+        ArrayList<Application> a = new ArrayList<>();
+        try {
+            if (o instanceof ArrayList<?>) {
+                ArrayList<LinkedTreeMap> alist = (ArrayList<LinkedTreeMap>) o;
+                for (LinkedTreeMap l : alist) {
+                    JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                    //Object inn = jsonObject.getAsJsonObject("supplierInfo.inn");
+                    Application d = new Gson().fromJson(jsonObject.toString(), Application.class);
+                    a.add(d);
+                }
+
+            } else if (o instanceof LinkedTreeMap) {
+                LinkedTreeMap l = (LinkedTreeMap) o;
+                JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                Application d = new Gson().fromJson(jsonObject.toString(), Application.class);
+                a.add(d);
+            }
+        } catch (Exception e) {
+            Log.Logger("Ошибка получения applications", e.getStackTrace(), e);
+        }
+        return a;
+    }
 
     @Override
     public void Parsing() {
 
     }
-
-    public String[] protocols223Dir = {"purchaseProtocol", "purchaseProtocolIP", "purchaseProtocolOSZ", "purchaseProtocolPA_AE", "purchaseProtocolPA_OA", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRKZ", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZ_AE", "purchaseProtocolRZ_OA", "purchaseProtocolRZ_OK", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolVK", "purchaseProtocolZK"};
 
     ArrayList<String> GetListFtp(String pathParse, String login, String pass) {
         ArrayList<String> arr = new ArrayList<>();
@@ -154,77 +226,5 @@ public class Parser implements IParser {
             bos.write(bytesIn, 0, read);
         }
         bos.close();
-    }
-
-    public static String ClearString(File s) {
-        String res = "";
-        try {
-            res = new String(Files.readAllBytes(s.toPath()), StandardCharsets.UTF_8);
-            res = res.replace("ns2:", "");
-            res = res.replace("oos:", "");
-            res = res.replace("\u001B", "");
-        } catch (Exception ignored) {
-
-        }
-
-        return res;
-    }
-
-    public static Date GetDate(String dt) {
-        Date d = new Date(0L);
-        try {
-            d = (Date) formatter.parseObject(dt);
-        } catch (ParseException ignored) {
-
-        }
-        return d;
-    }
-
-    @SuppressWarnings("unchecked")
-    public static ArrayList<Document> GetDocuments(Object o) {
-        ArrayList<Document> a = new ArrayList<>();
-        try {
-            if (o instanceof ArrayList<?>) {
-                ArrayList<LinkedTreeMap> alist = (ArrayList<LinkedTreeMap>) o;
-                for (LinkedTreeMap l : alist) {
-                    JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
-                    Document d = new Gson().fromJson(jsonObject.toString(), Document.class);
-                    a.add(d);
-                }
-
-            } else if (o instanceof LinkedTreeMap) {
-                LinkedTreeMap l = (LinkedTreeMap) o;
-                JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
-                Document d = new Gson().fromJson(jsonObject.toString(), Document.class);
-                a.add(d);
-            }
-        } catch (Exception e) {
-            Log.Logger("Ошибка получения attachments", e.getStackTrace(), e);
-        }
-        return a;
-    }
-
-    @SuppressWarnings("unchecked")
-    public static ArrayList<Application> GetApplications(Object o) {
-        ArrayList<Application> a = new ArrayList<>();
-        try {
-            if (o instanceof ArrayList<?>) {
-                ArrayList<LinkedTreeMap> alist = (ArrayList<LinkedTreeMap>) o;
-                for (LinkedTreeMap l : alist) {
-                    JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
-                    Application d = new Gson().fromJson(jsonObject.toString(), Application.class);
-                    a.add(d);
-                }
-
-            } else if (o instanceof LinkedTreeMap) {
-                LinkedTreeMap l = (LinkedTreeMap) o;
-                JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
-                Application d = new Gson().fromJson(jsonObject.toString(), Application.class);
-                a.add(d);
-            }
-        } catch (Exception e) {
-            Log.Logger("Ошибка получения applications", e.getStackTrace(), e);
-        }
-        return a;
     }
 }

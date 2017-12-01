@@ -3,12 +3,10 @@ package Protocols223;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
-import java.io.IOException;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.stream.Collectors;
-import java.sql.*;
 
 public class ParserProtocols223 extends Parser {
 

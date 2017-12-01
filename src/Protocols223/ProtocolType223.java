@@ -6,6 +6,7 @@ import com.google.gson.Gson;
 import org.json.JSONObject;
 import org.json.XML;
 
+
 import java.io.File;
 
 public class ProtocolType223 {
@@ -30,9 +31,9 @@ public class ProtocolType223 {
         JSONObject jsonObj = null;
         String JsonString = null;
         try {
-            jsonObj = XML.toJSONObject(ftext);
+            jsonObj = XML.toJSONObject(ftext, true);
             JsonString = jsonObj.toString();
-            //out.println(JsonString);
+            //System.out.println(JsonString);
         } catch (Exception e) {
             Log.Logger("JSON exception", e.getMessage());
             return;

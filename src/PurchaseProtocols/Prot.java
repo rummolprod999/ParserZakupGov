@@ -13,18 +13,25 @@ import java.util.Objects;
 import static java.lang.System.out;
 
 public class Prot {
-    public Prot() {
-    }
-
     public String guid;
     public String createDateTime;
     public String urlOOS;
     public String typeName;
-    public boolean missedContest;
+    public String missedContest;
     public String missedReason;
     public LotApplicationsList lotApplicationsList;
     public PurchaseInfo purchaseInfo;
     public Attachments attachments;
+    public Prot() {
+    }
+
+    public String getMissedContest() {
+        return (missedContest != null) ? missedContest : "";
+    }
+
+    public void setMissedContest(String missedContest) {
+        this.missedContest = missedContest;
+    }
 
     public void Parsing(ProtocolType223.Settings set) {
 
@@ -83,7 +90,7 @@ public class Prot {
             ps4.setString(4, purchaseNumber);
             ps4.setString(5, typeProtocol);
             ps4.setInt(6, cancel);
-            ps4.setBoolean(7, missedContest);
+            ps4.setString(7, getMissedContest());
             ps4.setString(8, missedR);
             ps4.executeUpdate();
             ResultSet rt = ps4.getGeneratedKeys();
@@ -111,7 +118,51 @@ public class Prot {
             if(lotApplicationsList != null && lotApplicationsList.protocolLotApplications != null && lotApplicationsList.protocolLotApplications.application != null){
                 ArrayList<Application> app = Parser.GetApplications(lotApplicationsList.protocolLotApplications.application);
                 for(Application appl: app){
-                    out.println(appl.applicationNumber);
+                    int idSup = 0;
+                    if(appl.supplierInfo != null && !appl.supplierInfo.getInn().equals("")){
+                        PreparedStatement ps6 = con.prepareStatement(String.format("SELECT id FROM %sprotocols223_supp WHERE inn = ? AND kpp = ?", Main.Prefix));
+                        ps6.setString(1, appl.supplierInfo.getInn());
+                        ps6.setString(2, appl.supplierInfo.getKpp());
+                        ResultSet rs = ps6.executeQuery();
+                        if(rs.next()){
+                            idSup = rs.getInt(1);
+                            rs.close();
+                            ps6.close();
+                        } else{
+                            rs.close();
+                            ps6.close();
+                            PreparedStatement ps7 = con.prepareStatement(String.format("INSERT INTO %sprotocols223_supp SET inn = ?, kpp = ?, address = ?, ogrn = ?, name = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
+                            ps7.setString(1, appl.supplierInfo.getInn());
+                            ps7.setString(2, appl.supplierInfo.getKpp());
+                            ps7.setString(3, appl.supplierInfo.getAddress());
+                            ps7.setString(4, appl.supplierInfo.getOgrn());
+                            ps7.setString(5, appl.supplierInfo.getName());
+                            ps7.executeUpdate();
+                            ResultSet rsoi = ps7.getGeneratedKeys();
+                            if (rsoi.next()) {
+                                idSup = rsoi.getInt(1);
+                            }
+                            rsoi.close();
+                            ps7.close();
+
+                        }
+
+                    }
+                    String curCode = (appl.currency != null && !appl.currency.getCode().equals(""))?appl.currency.getCode():"";
+                    PreparedStatement ps8 = con.prepareStatement(String.format("INSERT INTO %sptotocols223_appl SET id_protocol = ?, app_number = ?, id_supplier = ?, price = ?, price_info = ?, accepted = ?, winner_indication = ?, currency_code = ?", Main.Prefix));
+                    ps8.setInt(1, idProt);
+                    ps8.setString(2, appl.getApplicationNumber());
+                    ps8.setInt(3, idSup);
+                    ps8.setString(4, appl.getPrice());
+                    ps8.setString(5, appl.getPriceInfo());
+                    ps8.setString(6, appl.getAccepted());
+                    ps8.setString(7, appl.getWinnerIndication());
+                    ps8.executeUpdate();
+                    ps8.close();
+
+
+
+
                 }
             }
 
