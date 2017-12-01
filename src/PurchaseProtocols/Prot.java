@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
 
-import static java.lang.System.out;
-
 public class Prot {
     public String guid;
     public String createDateTime;
@@ -69,7 +67,7 @@ public class Prot {
             while (r1.next()) {
                 int idP = r1.getInt(1);
                 Date dateB = r1.getTimestamp(2);
-                out.println((dateB.equals(new Timestamp(protocolDate.getTime()))));
+                //out.println((dateB.equals(new Timestamp(protocolDate.getTime()))));
                 if (protocolDate.after(dateB) || (dateB.equals(new Timestamp(protocolDate.getTime())))) {
                     PreparedStatement ps3 = con.prepareStatement(String.format("UPDATE %sprotocols223 SET cancel=1 WHERE id = ?", Main.Prefix));
                     ps3.setInt(1, idP);
