@@ -48,7 +48,7 @@ public class ProtocolType223 {
                     prot.Parsing(new Settings());
 
                 } else {
-                    Log.Logger("Не смогли создать объект", f);
+                    Log.Logger("Не смогли создать объект", pathParse);
                 }
                 break;
 

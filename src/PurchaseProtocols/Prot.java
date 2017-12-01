@@ -22,6 +22,7 @@ public class Prot {
     public LotApplicationsList lotApplicationsList;
     public PurchaseInfo purchaseInfo;
     public Attachments attachments;
+
     public Prot() {
     }
 
@@ -83,7 +84,7 @@ public class Prot {
             int idProt = 0;
             String typeProtocol = (typeName != null) ? typeName : "";
             String missedR = (missedReason != null) ? missedReason : "";
-            PreparedStatement ps4 = con.prepareStatement(String.format("INSERT INTO %sprotocols223 SET guid = ?, protocol_date = ?, url = ?, purchase_number = ?, type_protocol = ?, cancel = ?, missed_contest = ?, missed_reason = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement ps4 = con.prepareStatement(String.format("INSERT INTO %sprotocols223 SET guid = ?, protocol_date = ?, url = ?, purchase_number = ?, type_protocol = ?, cancel = ?, missed_contest = ?, missed_reason = ?, xml = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
             ps4.setString(1, idProtocol);
             ps4.setTimestamp(2, new Timestamp(protocolDate.getTime()));
             ps4.setString(3, url);
@@ -92,6 +93,7 @@ public class Prot {
             ps4.setInt(6, cancel);
             ps4.setString(7, getMissedContest());
             ps4.setString(8, missedR);
+            ps4.setString(9, set.PathParse);
             ps4.executeUpdate();
             ResultSet rt = ps4.getGeneratedKeys();
             if (rt.next()) {
@@ -102,10 +104,10 @@ public class Prot {
             Main.CountPurchaseProtocol++;
             if (attachments != null && attachments.document != null) {
                 ArrayList<Document> att = Parser.GetDocuments(attachments.document);
-                for(Document doc: att){
-                    String fileName = (doc.fileName != null)?doc.fileName:"";
-                    String description = (doc.description != null)?doc.description:"";
-                    String urlAtt = (doc.url != null)?doc.url:"";
+                for (Document doc : att) {
+                    String fileName = (doc.fileName != null) ? doc.fileName : "";
+                    String description = (doc.description != null) ? doc.description : "";
+                    String urlAtt = (doc.url != null) ? doc.url : "";
                     PreparedStatement ps5 = con.prepareStatement(String.format("INSERT INTO %sprotocols223_attach SET id_protocol = ?, filename = ?, description = ?, url = ?", Main.Prefix));
                     ps5.setInt(1, idProt);
                     ps5.setString(2, fileName);
@@ -115,20 +117,20 @@ public class Prot {
                     ps5.close();
                 }
             }
-            if(lotApplicationsList != null && lotApplicationsList.protocolLotApplications != null && lotApplicationsList.protocolLotApplications.application != null){
+            if (lotApplicationsList != null && lotApplicationsList.protocolLotApplications != null && lotApplicationsList.protocolLotApplications.application != null) {
                 ArrayList<Application> app = Parser.GetApplications(lotApplicationsList.protocolLotApplications.application);
-                for(Application appl: app){
+                for (Application appl : app) {
                     int idSup = 0;
-                    if(appl.supplierInfo != null && !appl.supplierInfo.getInn().equals("")){
+                    if (appl.supplierInfo != null && !appl.supplierInfo.getInn().equals("")) {
                         PreparedStatement ps6 = con.prepareStatement(String.format("SELECT id FROM %sprotocols223_supp WHERE inn = ? AND kpp = ?", Main.Prefix));
                         ps6.setString(1, appl.supplierInfo.getInn());
                         ps6.setString(2, appl.supplierInfo.getKpp());
                         ResultSet rs = ps6.executeQuery();
-                        if(rs.next()){
+                        if (rs.next()) {
                             idSup = rs.getInt(1);
                             rs.close();
                             ps6.close();
-                        } else{
+                        } else {
                             rs.close();
                             ps6.close();
                             PreparedStatement ps7 = con.prepareStatement(String.format("INSERT INTO %sprotocols223_supp SET inn = ?, kpp = ?, address = ?, ogrn = ?, name = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
@@ -148,8 +150,8 @@ public class Prot {
                         }
 
                     }
-                    String curCode = (appl.currency != null && !appl.currency.getCode().equals(""))?appl.currency.getCode():"";
-                    PreparedStatement ps8 = con.prepareStatement(String.format("INSERT INTO %sptotocols223_appl SET id_protocol = ?, app_number = ?, id_supplier = ?, price = ?, price_info = ?, accepted = ?, winner_indication = ?, currency_code = ?", Main.Prefix));
+                    String curCode = (appl.currency != null && !appl.currency.getCode().equals("")) ? appl.currency.getCode() : "";
+                    PreparedStatement ps8 = con.prepareStatement(String.format("INSERT INTO %sptotocols223_appl SET id_protocol = ?, app_number = ?, id_supplier = ?, price = ?, price_info = ?, accepted = ?, winner_indication = ?, currency_code = ?, rejection_reason = ?, last_price = ?, last_price_info = ?, application_rate = ?", Main.Prefix));
                     ps8.setInt(1, idProt);
                     ps8.setString(2, appl.getApplicationNumber());
                     ps8.setInt(3, idSup);
@@ -157,15 +159,16 @@ public class Prot {
                     ps8.setString(5, appl.getPriceInfo());
                     ps8.setString(6, appl.getAccepted());
                     ps8.setString(7, appl.getWinnerIndication());
+                    ps8.setString(8, curCode);
+                    ps8.setString(9, appl.getRejectionReason());
+                    ps8.setString(10, appl.getLastPrice());
+                    ps8.setString(11, appl.getLastPriceInfo());
+                    ps8.setString(12, appl.getApplicationRate());
                     ps8.executeUpdate();
                     ps8.close();
 
-
-
-
                 }
             }
-
 
 
         } catch (Exception e) {
