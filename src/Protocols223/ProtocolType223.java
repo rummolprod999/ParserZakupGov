@@ -7,6 +7,7 @@ import org.json.JSONObject;
 import org.json.XML;
 
 import java.io.File;
+import java.sql.Connection;
 
 public class ProtocolType223 {
     Region region;
@@ -26,7 +27,7 @@ public class ProtocolType223 {
 
     }
 
-    public void ParserType223() {
+    public void ParserType223(Connection con) {
         JSONObject jsonObj = null;
         String JsonString = null;
         try {
@@ -45,7 +46,7 @@ public class ProtocolType223 {
                     Prot prot = null;
                     prot = p.purchaseProtocol.body.item.purchaseProtocolData;
                     if (prot != null) {
-                        prot.Parsing(new Settings());
+                        prot.Parsing(new Settings(), con);
 
                     } else {
                         Log.Logger("Не смогли создать объект", f.getAbsolutePath());

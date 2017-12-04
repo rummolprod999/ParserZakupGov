@@ -47,70 +47,74 @@ public class ParserProtocols223 extends Parser {
             if (!Objects.equals(pathUnzip, "")) {
                 File unzp = new File(pathUnzip);
                 File[] filelist = unzp.listFiles();
-                for (File f : filelist != null ? filelist : new File[0]) {
-                    switch (prot) {
-                        case "purchaseProtocol":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocol);
-                            break;
-                        case "purchaseProtocolIP":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolIP);
-                            break;
-                        case "purchaseProtocolOSZ":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolOSZ);
-                            break;
-                        case "purchaseProtocolPA_AE":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPA_AE);
-                            break;
-                        case "purchaseProtocolPA_OA":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPA_OA);
-                            break;
-                        case "purchaseProtocolPAAE":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAAE);
-                            break;
-                        case "purchaseProtocolPAAE94":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAAE94);
-                            break;
-                        case "purchaseProtocolPAEP":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAEP);
-                            break;
-                        case "purchaseProtocolPAOA":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAOA);
-                            break;
-                        case "purchaseProtocolRKZ":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRKZ);
-                            break;
-                        case "purchaseProtocolRZ1AE":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ1AE);
-                            break;
-                        case "purchaseProtocolRZ2AE":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ2AE);
-                            break;
-                        case "purchaseProtocolRZ_AE":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_AE);
-                            break;
-                        case "purchaseProtocolRZ_OA":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_OA);
-                            break;
-                        case "purchaseProtocolRZ_OK":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_OK);
-                            break;
-                        case "purchaseProtocolRZAE":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZAE);
-                            break;
-                        case "purchaseProtocolRZOA":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZOA);
-                            break;
-                        case "purchaseProtocolRZOK":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZOK);
-                            break;
-                        case "purchaseProtocolVK":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolVK);
-                            break;
-                        case "purchaseProtocolZK":
-                            Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolZK);
-                            break;
-                    }
+                try (Connection con = DriverManager.getConnection(Main.UrlConnect, Main.UserDb, Main.PassDb)) {
+                    for (File f : filelist != null ? filelist : new File[0]) {
+                        switch (prot) {
+                            case "purchaseProtocol":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocol, con);
+                                break;
+                            case "purchaseProtocolIP":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolIP, con);
+                                break;
+                            case "purchaseProtocolOSZ":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolOSZ, con);
+                                break;
+                            case "purchaseProtocolPA_AE":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPA_AE, con);
+                                break;
+                            case "purchaseProtocolPA_OA":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPA_OA, con);
+                                break;
+                            case "purchaseProtocolPAAE":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAAE, con);
+                                break;
+                            case "purchaseProtocolPAAE94":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAAE94, con);
+                                break;
+                            case "purchaseProtocolPAEP":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAEP, con);
+                                break;
+                            case "purchaseProtocolPAOA":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAOA, con);
+                                break;
+                            case "purchaseProtocolRKZ":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRKZ, con);
+                                break;
+                            case "purchaseProtocolRZ1AE":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ1AE, con);
+                                break;
+                            case "purchaseProtocolRZ2AE":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ2AE, con);
+                                break;
+                            case "purchaseProtocolRZ_AE":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_AE, con);
+                                break;
+                            case "purchaseProtocolRZ_OA":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_OA, con);
+                                break;
+                            case "purchaseProtocolRZ_OK":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_OK, con);
+                                break;
+                            case "purchaseProtocolRZAE":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZAE, con);
+                                break;
+                            case "purchaseProtocolRZOA":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZOA, con);
+                                break;
+                            case "purchaseProtocolRZOK":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZOK, con);
+                                break;
+                            case "purchaseProtocolVK":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolVK, con);
+                                break;
+                            case "purchaseProtocolZK":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolZK, con);
+                                break;
+                        }
 
+                    }
+                } catch (Exception e) {
+                    Log.Logger("Error parsing list protocol", e.getStackTrace());
                 }
                 try {
                     FileUtils.deleteDirectory(unzp);
@@ -122,22 +126,22 @@ public class ParserProtocols223 extends Parser {
         }
     }
 
-    public void Bolter(File f, String pathParse, String prot, Region region, TypeProt223 type) {
+    public void Bolter(File f, String pathParse, String prot, Region region, TypeProt223 type, Connection con) {
         if (!f.getName().toLowerCase().endsWith(".xml") || f.length() == 0) {
             return;
         }
         try {
-            ParsingXml(f, pathParse, prot, region, type);
+            ParsingXml(f, pathParse, prot, region, type, con);
         } catch (Exception e) {
             Log.Logger("Ошибка при парсинге xml", e.getStackTrace(), f.getName());
         }
 
     }
 
-    public void ParsingXml(File f, String pathParse, String prot, Region region, TypeProt223 type) {
+    public void ParsingXml(File f, String pathParse, String prot, Region region, TypeProt223 type, Connection con) {
         String ftext = ClearString(f);
         ProtocolType223 p = new ProtocolType223(f, pathParse, prot, region, type, ftext);
-        p.ParserType223();
+        p.ParserType223(con);
     }
 
     public void ParsingLast223(String pathParse, String prot, Region region) {
