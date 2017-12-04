@@ -4,6 +4,9 @@ import Protocols223.Log;
 import Protocols223.Main;
 import Protocols223.Parser;
 import Protocols223.ProtocolType223;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.internal.LinkedTreeMap;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -17,7 +20,22 @@ public class Prot {
     public String typeName;
     public String missedContest;
     public String missedReason;
-    public LotApplicationsList lotApplicationsList;
+
+    public LotApplicationsList getLotAppList() {
+        if (lotApplicationsList instanceof String) {
+            return null;
+        } else if (lotApplicationsList instanceof LinkedTreeMap) {
+            LinkedTreeMap l = (LinkedTreeMap) lotApplicationsList;
+            JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+            return new Gson().fromJson(jsonObject.toString(), LotApplicationsList.class);
+
+        } else {
+            return null;
+        }
+    }
+
+
+    public Object lotApplicationsList;
     public PurchaseInfo purchaseInfo;
     public Attachments attachments;
 
@@ -115,8 +133,9 @@ public class Prot {
                 ps5.close();
             }
         }
-        if (lotApplicationsList != null && lotApplicationsList.protocolLotApplications != null) {
-            ArrayList<ProtocolLotApplications> protocolLotAppl = Parser.GetProtocolLotApplications(lotApplicationsList.protocolLotApplications);
+        LotApplicationsList la = getLotAppList();
+        if (la != null && la.protocolLotApplications != null) {
+            ArrayList<ProtocolLotApplications> protocolLotAppl = Parser.GetProtocolLotApplications(la.protocolLotApplications);
             for (ProtocolLotApplications pa : protocolLotAppl) {
                 String lotNum = "";
                 if (pa.lot != null) {

@@ -177,14 +177,17 @@ public class Parser implements IParser {
             try {
                 file = String.format("%s%s%s", Main.tempDirProtocols, File.separator, arch);
                 FTPClient ftpClient = new FTPClient();
+                ftpClient.setConnectTimeout(160000);
                 ftpClient.connect("ftp.zakupki.gov.ru", 21);
                 ftpClient.login(login, pass);
                 ftpClient.enterLocalPassiveMode();
                 ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
+                ftpClient.setDataTimeout(150000);
                 ftpClient.changeWorkingDirectory(PathParse);
                 OutputStream outputStream1 = new BufferedOutputStream(new FileOutputStream(file));
                 boolean success = ftpClient.retrieveFile(arch, outputStream1);
                 outputStream1.close();
+                ftpClient.abort();
                 if (!success) {
                     throw new Exception("errrrrrrrrrrrrrrr");
                 }
