@@ -117,7 +117,56 @@ public class Prot {
         }
         rt.close();
         ps4.close();
-        Main.CountPurchaseProtocol++;
+        switch(set.Type){
+            case purchaseProtocol:
+                Main.CountPurchaseProtocol++;
+                break;
+            case purchaseProtocolIP:
+                break;
+            case purchaseProtocolOSZ:
+                Main.CountPurchaseProtocolOSZ++;
+                break;
+            case purchaseProtocolPA_AE:
+                break;
+            case purchaseProtocolPA_OA:
+                break;
+            case purchaseProtocolPAAE:
+                Main.CountPurchaseProtocolPAAE++;
+                break;
+            case purchaseProtocolPAAE94:
+                Main.CountPurchaseProtocolPAAE94++;
+                break;
+            case purchaseProtocolPAEP:
+                Main.CountPurchaseProtocolPAEP++;
+                break;
+            case purchaseProtocolPAOA:
+                Main.CountPurchaseProtocolPAOA++;
+                break;
+            case purchaseProtocolRKZ:
+                break;
+            case purchaseProtocolRZ1AE:
+                Main.CountPurchaseProtocolRZ1AE++;
+                break;
+            case purchaseProtocolRZ2AE:
+                break;
+            case purchaseProtocolRZ_AE:
+                break;
+            case purchaseProtocolRZ_OA:
+                break;
+            case purchaseProtocolRZ_OK:
+                break;
+            case purchaseProtocolRZAE:
+                break;
+            case purchaseProtocolRZOA:
+                break;
+            case purchaseProtocolRZOK:
+                break;
+            case purchaseProtocolVK:
+                break;
+            case purchaseProtocolZK:
+                break;
+        }
+
         if (attachments != null && attachments.document != null) {
             ArrayList<Document> att = Parser.GetDocuments(attachments.document);
             for (Document doc : att) {

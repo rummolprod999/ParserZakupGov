@@ -1,7 +1,6 @@
 package Protocols223;
 
-import PurchaseProtocols.Prot;
-import PurchaseProtocols.Protocol;
+import PurchaseProtocols.*;
 import com.google.gson.Gson;
 import org.json.JSONObject;
 import org.json.XML;
@@ -43,8 +42,7 @@ public class ProtocolType223 {
             case purchaseProtocol:
                 try {
                     Protocol p = gson.fromJson(JsonString, Protocol.class);
-                    Prot prot = null;
-                    prot = p.purchaseProtocol.body.item.purchaseProtocolData;
+                    Prot prot = p.purchaseProtocol.body.item.purchaseProtocolData;
                     if (prot != null) {
                         prot.Parsing(new Settings(), con);
 
@@ -52,29 +50,101 @@ public class ProtocolType223 {
                         Log.Logger("Не смогли создать объект", f.getAbsolutePath());
                     }
                 } catch (Exception e) {
-                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(),"Error get gson object");
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(),"Error get gson object purchaseProtocol");
                 }
                 break;
 
             case purchaseProtocolIP:
                 break;
             case purchaseProtocolOSZ:
+                try {
+                    ProtocolOSZ p = gson.fromJson(JsonString, ProtocolOSZ.class);
+                    Prot prot = p.purchaseProtocolOSZ.body.item.purchaseProtocolOSZData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(),"Error get gson object purchaseProtocolOSZ");
+                }
                 break;
             case purchaseProtocolPA_AE:
                 break;
             case purchaseProtocolPA_OA:
                 break;
             case purchaseProtocolPAAE:
+                try {
+                    ProtocolPAAE p = gson.fromJson(JsonString, ProtocolPAAE.class);
+                    Prot prot = p.purchaseProtocolPAAE.body.item.purchaseProtocolPAAEData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(),"Error get gson object purchaseProtocolPAAE");
+                }
                 break;
             case purchaseProtocolPAAE94:
+                try {
+                    ProtocolPAAE94FZ p = gson.fromJson(JsonString, ProtocolPAAE94FZ.class);
+                    Prot prot = p.purchaseProtocolPAAE94FZ.body.item.purchaseProtocolPAAE94FZData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(),"Error get gson object purchaseProtocolPAAE94");
+                }
                 break;
             case purchaseProtocolPAEP:
+                try {
+                    ProtocolPAEP p = gson.fromJson(JsonString, ProtocolPAEP.class);
+                    Prot prot = p.purchaseProtocolPAEP.body.item.purchaseProtocolPAEPData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(),"Error get gson object purchaseProtocolPAEP");
+                }
                 break;
             case purchaseProtocolPAOA:
+                try {
+                    ProtocolPAOA p = gson.fromJson(JsonString, ProtocolPAOA.class);
+                    Prot prot = p.purchaseProtocolPAOA.body.item.purchaseProtocolPAOAData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(),"Error get gson object purchaseProtocolPAOA");
+                }
                 break;
             case purchaseProtocolRKZ:
                 break;
             case purchaseProtocolRZ1AE:
+                try {
+                    ProtocolRZ1AE p = gson.fromJson(JsonString, ProtocolRZ1AE.class);
+                    Prot prot = p.purchaseProtocolRZ1AE.body.item.purchaseProtocolRZ1AEData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(),"Error get gson object purchaseProtocolRZ1AE");
+                }
                 break;
             case purchaseProtocolRZ2AE:
                 break;
