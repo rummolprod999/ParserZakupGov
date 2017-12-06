@@ -131,7 +131,7 @@ public class Main {
             Log.Logger(String.format("Добавлено PurchaseProtocolRZOA %d", CountPurchaseProtocolRZOA));
             Log.Logger(String.format("Добавлено PurchaseProtocolRZOK %d", CountPurchaseProtocolRZOK));
             Log.Logger(String.format("Добавлено PurchaseProtocolVK %d", CountPurchaseProtocolVK));
-            Log.Logger(String.format("Добавлено PurchaseProtocolVK %d", CountPurchaseProtocolZK));
+            Log.Logger(String.format("Добавлено PurchaseProtocolZK %d", CountPurchaseProtocolZK));
 
 
         }
