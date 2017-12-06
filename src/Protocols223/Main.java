@@ -4,8 +4,6 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -106,9 +104,9 @@ public class Main {
     private static void ParserProtocols223() {
         Log.Logger("Начало парсинга");
         try {
-            /*ParserProtocols223 p = new ParserProtocols223();
-            p.Parsing();*/
-            Region r = new Region();
+            ParserProtocols223 p = new ParserProtocols223();
+            p.Parsing();
+            /*Region r = new Region();
             File f = new File(Main.executePath + File.separator + "purchaseProtocolZK_Moskva_20170701_000000_20170731_235959_006.xml");
             String ftext = Parser.ClearString(f);
             ProtocolType223 p = new ProtocolType223(f, "ggg", "purchaseProtocolZK", r, TypeProt223.purchaseProtocolZK, ftext);
@@ -116,7 +114,7 @@ public class Main {
                 p.ParserType223(con);
             } catch (Exception e) {
                 System.out.println(e);
-            }
+            }*/
         } catch (Exception e) {
             Log.Logger("Error Main function", e.getStackTrace(), e);
         } finally {
