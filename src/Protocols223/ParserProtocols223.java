@@ -56,7 +56,7 @@ public class ParserProtocols223 extends Parser {
                             case "purchaseProtocolIP":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolIP, con);
                                 break;
-                            case "PurchaseProtocolOSZ":
+                            case "purchaseProtocolOSZ":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolOSZ, con);
                                 break;
                             case "purchaseProtocolPA_AE":

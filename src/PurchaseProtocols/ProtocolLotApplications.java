@@ -1,9 +1,6 @@
 package PurchaseProtocols;
 
-public class ProtocolLotApplications {
+public class ProtocolLotApplications extends LotApp{
     public ProtocolLotApplications() {
     }
-
-    public Object application;
-    public Lot lot;
 }

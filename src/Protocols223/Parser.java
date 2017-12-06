@@ -3,6 +3,7 @@ package Protocols223;
 import PurchaseProtocols.Application;
 import PurchaseProtocols.Document;
 import PurchaseProtocols.ProtocolLotApplications;
+import PurchaseProtocols.ProtocolVKLotApplications;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.internal.LinkedTreeMap;
@@ -29,7 +30,7 @@ public class Parser implements IParser {
     private static final int BUFFER_SIZE = 4096;
     public static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
     public String[] __protocols223Dir = {"purchaseProtocol", "purchaseProtocolIP", "purchaseProtocolOSZ", "purchaseProtocolPA_AE", "purchaseProtocolPA_OA", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRKZ", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZ_AE", "purchaseProtocolRZ_OA", "purchaseProtocolRZ_OK", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolVK", "purchaseProtocolZK"};
-    public String[] protocols223Dir = {"purchaseProtocol", "purchaseProtocolOSZ", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRZ1AE"};
+    public String[] protocols223Dir = {"purchaseProtocol", "purchaseProtocolOSZ", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolVK", "purchaseProtocolZK"};
 
     public static String ClearString(File s) {
         String res = "";
@@ -124,6 +125,31 @@ public class Parser implements IParser {
             }
         } catch (Exception e) {
             Log.Logger("Ошибка получения ProtocolLotApplications", e.getStackTrace(), e);
+        }
+        return a;
+    }
+
+
+    @SuppressWarnings("unchecked")
+    public static ArrayList<ProtocolVKLotApplications> GetProtocolVKLotApplications(Object o) {
+        ArrayList<ProtocolVKLotApplications> a = new ArrayList<>();
+        try {
+            if (o instanceof ArrayList<?>) {
+                ArrayList<LinkedTreeMap> alist = (ArrayList<LinkedTreeMap>) o;
+                for (LinkedTreeMap l : alist) {
+                    JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                    ProtocolVKLotApplications d = new Gson().fromJson(jsonObject.toString(), ProtocolVKLotApplications.class);
+                    a.add(d);
+                }
+
+            } else if (o instanceof LinkedTreeMap) {
+                LinkedTreeMap l = (LinkedTreeMap) o;
+                JsonObject jsonObject = new Gson().toJsonTree(l).getAsJsonObject();
+                ProtocolVKLotApplications d = new Gson().fromJson(jsonObject.toString(), ProtocolVKLotApplications.class);
+                a.add(d);
+            }
+        } catch (Exception e) {
+            Log.Logger("Ошибка получения ProtocolVKLotApplications", e.getStackTrace(), e);
         }
         return a;
     }

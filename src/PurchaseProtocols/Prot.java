@@ -117,7 +117,7 @@ public class Prot {
         }
         rt.close();
         ps4.close();
-        switch(set.Type){
+        switch (set.Type) {
             case purchaseProtocol:
                 Main.CountPurchaseProtocol++;
                 break;
@@ -148,6 +148,7 @@ public class Prot {
                 Main.CountPurchaseProtocolRZ1AE++;
                 break;
             case purchaseProtocolRZ2AE:
+                Main.CountPurchaseProtocolRZ2AE++;
                 break;
             case purchaseProtocolRZ_AE:
                 break;
@@ -156,14 +157,19 @@ public class Prot {
             case purchaseProtocolRZ_OK:
                 break;
             case purchaseProtocolRZAE:
+                Main.CountPurchaseProtocolRZAE++;
                 break;
             case purchaseProtocolRZOA:
+                Main.CountPurchaseProtocolRZOA++;
                 break;
             case purchaseProtocolRZOK:
+                Main.CountPurchaseProtocolRZOK++;
                 break;
             case purchaseProtocolVK:
+                Main.CountPurchaseProtocolVK++;
                 break;
             case purchaseProtocolZK:
+                Main.CountPurchaseProtocolZK++;
                 break;
         }
 
@@ -190,63 +196,73 @@ public class Prot {
                 if (pa.lot != null) {
                     lotNum = pa.lot.getOrdinalNumber();
                 }
-                if (pa.application != null) {
-                    ArrayList<Application> app = Parser.GetApplications(pa.application);
-                    for (Application appl : app) {
-                        int idSup = 0;
-                        if (appl.supplierInfo != null && !appl.supplierInfo.getInn().equals("")) {
-                            PreparedStatement ps6 = con.prepareStatement(String.format("SELECT id FROM %sprotocols223_supp WHERE inn = ? AND kpp = ?", Main.Prefix));
-                            ps6.setString(1, appl.supplierInfo.getInn());
-                            ps6.setString(2, appl.supplierInfo.getKpp());
-                            ResultSet rs = ps6.executeQuery();
-                            if (rs.next()) {
-                                idSup = rs.getInt(1);
-                                rs.close();
-                                ps6.close();
-                            } else {
-                                rs.close();
-                                ps6.close();
-                                PreparedStatement ps7 = con.prepareStatement(String.format("INSERT INTO %sprotocols223_supp SET inn = ?, kpp = ?, address = ?, ogrn = ?, name = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
-                                ps7.setString(1, appl.supplierInfo.getInn());
-                                ps7.setString(2, appl.supplierInfo.getKpp());
-                                ps7.setString(3, appl.supplierInfo.getAddress());
-                                ps7.setString(4, appl.supplierInfo.getOgrn());
-                                ps7.setString(5, appl.supplierInfo.getName());
-                                ps7.executeUpdate();
-                                ResultSet rsoi = ps7.getGeneratedKeys();
-                                if (rsoi.next()) {
-                                    idSup = rsoi.getInt(1);
-                                }
-                                rsoi.close();
-                                ps7.close();
-
-                            }
-
-                        }
-                        String curCode = (appl.currency != null && !appl.currency.getCode().equals("")) ? appl.currency.getCode() : "";
-                        PreparedStatement ps8 = con.prepareStatement(String.format("INSERT INTO %sptotocols223_appl SET id_protocol = ?, app_number = ?, id_supplier = ?, price = ?, price_info = ?, accepted = ?, winner_indication = ?, currency_code = ?, rejection_reason = ?, last_price = ?, last_price_info = ?, application_rate = ?, ordinal_number = ?", Main.Prefix));
-                        ps8.setInt(1, idProt);
-                        ps8.setString(2, appl.getApplicationNumber());
-                        ps8.setInt(3, idSup);
-                        ps8.setString(4, appl.getPrice());
-                        ps8.setString(5, appl.getPriceInfo());
-                        ps8.setString(6, appl.getAccepted());
-                        ps8.setString(7, appl.getWinnerIndication());
-                        ps8.setString(8, curCode);
-                        ps8.setString(9, appl.getRejectionReason());
-                        ps8.setString(10, appl.getLastPrice());
-                        ps8.setString(11, appl.getLastPriceInfo());
-                        ps8.setString(12, appl.getApplicationRate());
-                        ps8.setString(13, lotNum);
-
-                        ps8.executeUpdate();
-                        ps8.close();
-
-                    }
+                GetApp(con, idProt, pa, lotNum, pa.application != null);
+            }
+        } else if (la != null && la.protocolVKLotApplications != null) {
+            ArrayList<ProtocolVKLotApplications> protocolLotAppl = Parser.GetProtocolVKLotApplications(la.protocolVKLotApplications);
+            for (ProtocolVKLotApplications pa : protocolLotAppl) {
+                String lotNum = "";
+                if (pa.lot != null) {
+                    lotNum = pa.lot.getOrdinalNumber();
                 }
+                GetApp(con, idProt, pa, lotNum, pa.application != null);
             }
         }
+    }
 
+    private void GetApp(Connection con, int idProt, LotApp pa, String lotNum, boolean b) throws SQLException {
+        if (b) {
+            ArrayList<Application> app = Parser.GetApplications(pa.application);
+            for (Application appl : app) {
+                int idSup = 0;
+                if (appl.supplierInfo != null && !appl.supplierInfo.getInn().equals("")) {
+                    PreparedStatement ps6 = con.prepareStatement(String.format("SELECT id FROM %sprotocols223_supp WHERE inn = ? AND kpp = ?", Main.Prefix));
+                    ps6.setString(1, appl.supplierInfo.getInn());
+                    ps6.setString(2, appl.supplierInfo.getKpp());
+                    ResultSet rs = ps6.executeQuery();
+                    if (rs.next()) {
+                        idSup = rs.getInt(1);
+                        rs.close();
+                        ps6.close();
+                    } else {
+                        rs.close();
+                        ps6.close();
+                        PreparedStatement ps7 = con.prepareStatement(String.format("INSERT INTO %sprotocols223_supp SET inn = ?, kpp = ?, address = ?, ogrn = ?, name = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
+                        ps7.setString(1, appl.supplierInfo.getInn());
+                        ps7.setString(2, appl.supplierInfo.getKpp());
+                        ps7.setString(3, appl.supplierInfo.getAddress());
+                        ps7.setString(4, appl.supplierInfo.getOgrn());
+                        ps7.setString(5, appl.supplierInfo.getName());
+                        ps7.executeUpdate();
+                        ResultSet rsoi = ps7.getGeneratedKeys();
+                        if (rsoi.next()) {
+                            idSup = rsoi.getInt(1);
+                        }
+                        rsoi.close();
+                        ps7.close();
 
+                    }
+
+                }
+                String curCode = (appl.currency != null && !appl.currency.getCode().equals("")) ? appl.currency.getCode() : "";
+                PreparedStatement ps8 = con.prepareStatement(String.format("INSERT INTO %sptotocols223_appl SET id_protocol = ?, app_number = ?, id_supplier = ?, price = ?, price_info = ?, accepted = ?, winner_indication = ?, currency_code = ?, rejection_reason = ?, last_price = ?, last_price_info = ?, application_rate = ?, ordinal_number = ?", Main.Prefix));
+                ps8.setInt(1, idProt);
+                ps8.setString(2, appl.getApplicationNumber());
+                ps8.setInt(3, idSup);
+                ps8.setString(4, appl.getPrice());
+                ps8.setString(5, appl.getPriceInfo());
+                ps8.setString(6, appl.getAccepted());
+                ps8.setString(7, appl.getWinnerIndication());
+                ps8.setString(8, curCode);
+                ps8.setString(9, appl.getRejectionReason());
+                ps8.setString(10, appl.getLastPrice());
+                ps8.setString(11, appl.getLastPriceInfo());
+                ps8.setString(12, appl.getApplicationRate());
+                ps8.setString(13, lotNum);
+                ps8.executeUpdate();
+                ps8.close();
+
+            }
+        }
     }
 }

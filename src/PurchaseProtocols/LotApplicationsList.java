@@ -5,4 +5,5 @@ public class LotApplicationsList {
     }
 
     public Object protocolLotApplications;
+    public Object protocolVKLotApplications;
 }
