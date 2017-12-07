@@ -18,6 +18,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.concurrent.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -202,20 +203,16 @@ public class Parser implements IParser {
         while (true) {
             try {
                 file = String.format("%s%s%s", Main.tempDirProtocols, File.separator, arch);
-                FTPClient ftpClient = new FTPClient();
-                ftpClient.setConnectTimeout(160000);
-                ftpClient.connect("ftp.zakupki.gov.ru", 21);
-                ftpClient.login(login, pass);
-                ftpClient.enterLocalPassiveMode();
-                ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
-                ftpClient.setDataTimeout(150000);
-                ftpClient.changeWorkingDirectory(PathParse);
-                OutputStream outputStream1 = new BufferedOutputStream(new FileOutputStream(file));
-                boolean success = ftpClient.retrieveFile(arch, outputStream1);
-                outputStream1.close();
-                ftpClient.abort();
-                if (!success) {
-                    throw new Exception("errrrrrrrrrrrrrrr");
+                ExecutorService executor = Executors.newCachedThreadPool();
+                String finalFile = file;
+                Callable<Object> task = () -> GetArchWait(arch, PathParse, login, pass, finalFile);
+                Future<Object> future = executor.submit(task);
+                try {
+                    Object result = future.get(200, TimeUnit.SECONDS);
+                } catch (TimeoutException | InterruptedException | ExecutionException ex) {
+                    throw ex;
+                } finally {
+                    future.cancel(true);
                 }
                 if (count > 1) {
                     Log.Logger("Удалось скачать архив после попытки", count, PathParse);
@@ -237,6 +234,25 @@ public class Parser implements IParser {
             }
         }
         return file;
+    }
+
+    private Object GetArchWait(String arch, String PathParse, String login, String pass, String file) throws Exception {
+        FTPClient ftpClient = new FTPClient();
+        ftpClient.setConnectTimeout(160000);
+        ftpClient.connect("ftp.zakupki.gov.ru", 21);
+        ftpClient.login(login, pass);
+        ftpClient.enterLocalPassiveMode();
+        ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
+        ftpClient.setDataTimeout(150000);
+        ftpClient.changeWorkingDirectory(PathParse);
+        OutputStream outputStream1 = new BufferedOutputStream(new FileOutputStream(file));
+        boolean success = ftpClient.retrieveFile(arch, outputStream1);
+        outputStream1.close();
+        ftpClient.abort();
+        if (!success) {
+            throw new Exception("errrrrrrrrrrrrrrr");
+        }
+        return null;
     }
 
     public String Unzip(String filea) {
