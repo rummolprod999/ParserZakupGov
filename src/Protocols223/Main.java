@@ -27,18 +27,31 @@ public class Main {
     public static Arguments arg;
     public static ArrayList<String> Years;
     public static int CountPurchaseProtocol;
+    public static int UpCountPurchaseProtocol;
     public static int CountPurchaseProtocolOSZ;
+    public static int UpCountPurchaseProtocolOSZ;
     public static int CountPurchaseProtocolPAAE;
+    public static int UpCountPurchaseProtocolPAAE;
     public static int CountPurchaseProtocolPAAE94;
+    public static int UpCountPurchaseProtocolPAAE94;
     public static int CountPurchaseProtocolPAEP;
+    public static int UpCountPurchaseProtocolPAEP;
     public static int CountPurchaseProtocolPAOA;
+    public static int UpCountPurchaseProtocolPAOA;
     public static int CountPurchaseProtocolRZ1AE;
+    public static int UpCountPurchaseProtocolRZ1AE;
     public static int CountPurchaseProtocolRZ2AE;
+    public static int UpCountPurchaseProtocolRZ2AE;
     public static int CountPurchaseProtocolRZAE;
+    public static int UpCountPurchaseProtocolRZAE;
     public static int CountPurchaseProtocolRZOA;
+    public static int UpCountPurchaseProtocolRZOA;
     public static int CountPurchaseProtocolRZOK;
+    public static int UpCountPurchaseProtocolRZOK;
     public static int CountPurchaseProtocolVK;
+    public static int UpCountPurchaseProtocolVK;
     public static int CountPurchaseProtocolZK;
+    public static int UpCountPurchaseProtocolZK;
 
     public static void main(String[] args) {
         if (args.length == 0) {
@@ -120,19 +133,31 @@ public class Main {
         } finally {
             Log.Logger("Конец парсинга");
             Log.Logger(String.format("Добавлено PurchaseProtocol %d", CountPurchaseProtocol));
+            Log.Logger(String.format("Обновлено PurchaseProtocol %d", UpCountPurchaseProtocol));
             Log.Logger(String.format("Добавлено PurchaseProtocolOSZ %d", CountPurchaseProtocolOSZ));
+            Log.Logger(String.format("Обновлено PurchaseProtocolOSZ %d", UpCountPurchaseProtocolOSZ));
             Log.Logger(String.format("Добавлено PurchaseProtocolPAAE %d", CountPurchaseProtocolPAAE));
+            Log.Logger(String.format("Обновлено PurchaseProtocolPAAE %d", UpCountPurchaseProtocolPAAE));
             Log.Logger(String.format("Добавлено PurchaseProtocolPAAE94 %d", CountPurchaseProtocolPAAE94));
+            Log.Logger(String.format("Обновлено PurchaseProtocolPAAE94 %d", UpCountPurchaseProtocolPAAE94));
             Log.Logger(String.format("Добавлено PurchaseProtocolPAEP %d", CountPurchaseProtocolPAEP));
+            Log.Logger(String.format("Обновлено PurchaseProtocolPAEP %d", UpCountPurchaseProtocolPAEP));
             Log.Logger(String.format("Добавлено PurchaseProtocolPAOA %d", CountPurchaseProtocolPAOA));
+            Log.Logger(String.format("Обновлено PurchaseProtocolPAOA %d", UpCountPurchaseProtocolPAOA));
             Log.Logger(String.format("Добавлено PurchaseProtocolRZ1AE %d", CountPurchaseProtocolRZ1AE));
+            Log.Logger(String.format("Обновлено PurchaseProtocolRZ1AE %d", UpCountPurchaseProtocolRZ1AE));
             Log.Logger(String.format("Добавлено PurchaseProtocolRZ2AE %d", CountPurchaseProtocolRZ2AE));
+            Log.Logger(String.format("Обновлено PurchaseProtocolRZ2AE %d", UpCountPurchaseProtocolRZ2AE));
             Log.Logger(String.format("Добавлено PurchaseProtocolRZAE %d", CountPurchaseProtocolRZAE));
+            Log.Logger(String.format("Обновлено PurchaseProtocolRZAE %d", UpCountPurchaseProtocolRZAE));
             Log.Logger(String.format("Добавлено PurchaseProtocolRZOA %d", CountPurchaseProtocolRZOA));
+            Log.Logger(String.format("Обновлено PurchaseProtocolRZOA %d", UpCountPurchaseProtocolRZOA));
             Log.Logger(String.format("Добавлено PurchaseProtocolRZOK %d", CountPurchaseProtocolRZOK));
+            Log.Logger(String.format("Обновлено PurchaseProtocolRZOK %d", UpCountPurchaseProtocolRZOK));
             Log.Logger(String.format("Добавлено PurchaseProtocolVK %d", CountPurchaseProtocolVK));
+            Log.Logger(String.format("Обновлено PurchaseProtocolVK %d", UpCountPurchaseProtocolVK));
             Log.Logger(String.format("Добавлено PurchaseProtocolZK %d", CountPurchaseProtocolZK));
-
+            Log.Logger(String.format("Обновлено PurchaseProtocolZK %d", UpCountPurchaseProtocolZK));
 
         }
 

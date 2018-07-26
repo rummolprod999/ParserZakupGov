@@ -79,10 +79,12 @@ public class Prot {
         r.close();
         ps1.close();
         int cancel = 0;
+        boolean updated = false;
         PreparedStatement ps2 = con.prepareStatement(String.format("SELECT id, protocol_date FROM %sprotocols223 WHERE purchase_number = ?", Main.Prefix));
         ps2.setString(1, purchaseNumber);
         ResultSet r1 = ps2.executeQuery();
         while (r1.next()) {
+            updated = true;
             int idP = r1.getInt(1);
             Date dateB = r1.getTimestamp(2);
             //out.println((dateB.equals(new Timestamp(protocolDate.getTime()))));
@@ -117,60 +119,118 @@ public class Prot {
         }
         rt.close();
         ps4.close();
-        switch (set.Type) {
-            case purchaseProtocol:
-                Main.CountPurchaseProtocol++;
-                break;
-            case purchaseProtocolIP:
-                break;
-            case purchaseProtocolOSZ:
-                Main.CountPurchaseProtocolOSZ++;
-                break;
-            case purchaseProtocolPA_AE:
-                break;
-            case purchaseProtocolPA_OA:
-                break;
-            case purchaseProtocolPAAE:
-                Main.CountPurchaseProtocolPAAE++;
-                break;
-            case purchaseProtocolPAAE94:
-                Main.CountPurchaseProtocolPAAE94++;
-                break;
-            case purchaseProtocolPAEP:
-                Main.CountPurchaseProtocolPAEP++;
-                break;
-            case purchaseProtocolPAOA:
-                Main.CountPurchaseProtocolPAOA++;
-                break;
-            case purchaseProtocolRKZ:
-                break;
-            case purchaseProtocolRZ1AE:
-                Main.CountPurchaseProtocolRZ1AE++;
-                break;
-            case purchaseProtocolRZ2AE:
-                Main.CountPurchaseProtocolRZ2AE++;
-                break;
-            case purchaseProtocolRZ_AE:
-                break;
-            case purchaseProtocolRZ_OA:
-                break;
-            case purchaseProtocolRZ_OK:
-                break;
-            case purchaseProtocolRZAE:
-                Main.CountPurchaseProtocolRZAE++;
-                break;
-            case purchaseProtocolRZOA:
-                Main.CountPurchaseProtocolRZOA++;
-                break;
-            case purchaseProtocolRZOK:
-                Main.CountPurchaseProtocolRZOK++;
-                break;
-            case purchaseProtocolVK:
-                Main.CountPurchaseProtocolVK++;
-                break;
-            case purchaseProtocolZK:
-                Main.CountPurchaseProtocolZK++;
-                break;
+        if (updated) {
+            switch (set.Type) {
+                case purchaseProtocol:
+                    Main.UpCountPurchaseProtocol++;
+                    break;
+                case purchaseProtocolIP:
+                    break;
+                case purchaseProtocolOSZ:
+                    Main.UpCountPurchaseProtocolOSZ++;
+                    break;
+                case purchaseProtocolPA_AE:
+                    break;
+                case purchaseProtocolPA_OA:
+                    break;
+                case purchaseProtocolPAAE:
+                    Main.UpCountPurchaseProtocolPAAE++;
+                    break;
+                case purchaseProtocolPAAE94:
+                    Main.UpCountPurchaseProtocolPAAE94++;
+                    break;
+                case purchaseProtocolPAEP:
+                    Main.UpCountPurchaseProtocolPAEP++;
+                    break;
+                case purchaseProtocolPAOA:
+                    Main.UpCountPurchaseProtocolPAOA++;
+                    break;
+                case purchaseProtocolRKZ:
+                    break;
+                case purchaseProtocolRZ1AE:
+                    Main.UpCountPurchaseProtocolRZ1AE++;
+                    break;
+                case purchaseProtocolRZ2AE:
+                    Main.UpCountPurchaseProtocolRZ2AE++;
+                    break;
+                case purchaseProtocolRZ_AE:
+                    break;
+                case purchaseProtocolRZ_OA:
+                    break;
+                case purchaseProtocolRZ_OK:
+                    break;
+                case purchaseProtocolRZAE:
+                    Main.UpCountPurchaseProtocolRZAE++;
+                    break;
+                case purchaseProtocolRZOA:
+                    Main.UpCountPurchaseProtocolRZOA++;
+                    break;
+                case purchaseProtocolRZOK:
+                    Main.UpCountPurchaseProtocolRZOK++;
+                    break;
+                case purchaseProtocolVK:
+                    Main.UpCountPurchaseProtocolVK++;
+                    break;
+                case purchaseProtocolZK:
+                    Main.UpCountPurchaseProtocolZK++;
+                    break;
+            }
+        } else {
+            switch (set.Type) {
+                case purchaseProtocol:
+                    Main.CountPurchaseProtocol++;
+                    break;
+                case purchaseProtocolIP:
+                    break;
+                case purchaseProtocolOSZ:
+                    Main.CountPurchaseProtocolOSZ++;
+                    break;
+                case purchaseProtocolPA_AE:
+                    break;
+                case purchaseProtocolPA_OA:
+                    break;
+                case purchaseProtocolPAAE:
+                    Main.CountPurchaseProtocolPAAE++;
+                    break;
+                case purchaseProtocolPAAE94:
+                    Main.CountPurchaseProtocolPAAE94++;
+                    break;
+                case purchaseProtocolPAEP:
+                    Main.CountPurchaseProtocolPAEP++;
+                    break;
+                case purchaseProtocolPAOA:
+                    Main.CountPurchaseProtocolPAOA++;
+                    break;
+                case purchaseProtocolRKZ:
+                    break;
+                case purchaseProtocolRZ1AE:
+                    Main.CountPurchaseProtocolRZ1AE++;
+                    break;
+                case purchaseProtocolRZ2AE:
+                    Main.CountPurchaseProtocolRZ2AE++;
+                    break;
+                case purchaseProtocolRZ_AE:
+                    break;
+                case purchaseProtocolRZ_OA:
+                    break;
+                case purchaseProtocolRZ_OK:
+                    break;
+                case purchaseProtocolRZAE:
+                    Main.CountPurchaseProtocolRZAE++;
+                    break;
+                case purchaseProtocolRZOA:
+                    Main.CountPurchaseProtocolRZOA++;
+                    break;
+                case purchaseProtocolRZOK:
+                    Main.CountPurchaseProtocolRZOK++;
+                    break;
+                case purchaseProtocolVK:
+                    Main.CountPurchaseProtocolVK++;
+                    break;
+                case purchaseProtocolZK:
+                    Main.CountPurchaseProtocolZK++;
+                    break;
+            }
         }
 
         if (attachments != null && attachments.document != null) {

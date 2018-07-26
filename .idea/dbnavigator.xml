@@ -30,6 +30,9 @@
       <console name="localhost" type="STANDARD"><![CDATA[select * from tender;]]></console>
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatabaseSessionManager">
+    <connection id="7f4522c3-18d3-4d70-8abb-aae99dca7e75" />
+  </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-list connection-id="7f4522c3-18d3-4d70-8abb-aae99dca7e75" dataset="tender.tender" active-filter-id="">
       <filter id="d590d633-1bbd-47de-905c-4d33e9ac5dec" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
@@ -96,6 +99,7 @@
         </ssh-settings>
         <details>
           <charset value="UTF-8" />
+          <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="false" />
           <connect-automatically value="true" />
@@ -103,6 +107,7 @@
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
           <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
           <password-expiry-time value="10" />
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
@@ -284,6 +289,7 @@
           <content-type name="AIDL" enabled="true" />
           <content-type name="YAML" enabled="true" />
           <content-type name="Flex" enabled="true" />
+          <content-type name="Bash" enabled="true" />
           <content-type name="Manifest" enabled="true" />
         </content-types>
       </qualified-text-editor>
@@ -295,6 +301,8 @@
       <general>
         <show-object-navigation-gutter value="false" />
         <show-spec-declaration-navigation-gutter value="true" />
+        <enable-spellchecking value="true" />
+        <enable-reference-spellchecking value="false" />
       </general>
       <confirmations>
         <save-changes value="false" />
@@ -464,7 +472,6 @@
         <debug-execution-timeout value="600" />
         <focus-result value="false" />
         <prompt-execution value="false" />
-        <target-connection value="ASK" />
       </statement-execution>
       <script-execution>
         <command-line-interfaces />
