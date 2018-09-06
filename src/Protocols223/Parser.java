@@ -221,7 +221,7 @@ public class Parser implements IParser {
 
             } catch (Exception e) {
 
-                if (count > 50) {
+                if (count > 100) {
                     Log.Logger("Не удалось скачать файл после попытки ", count, arch, e.getStackTrace());
                     break;
                 }
