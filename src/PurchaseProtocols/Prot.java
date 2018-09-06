@@ -1,9 +1,6 @@
 package PurchaseProtocols;
 
-import Protocols223.Log;
-import Protocols223.Main;
-import Protocols223.Parser;
-import Protocols223.ProtocolType223;
+import Protocols223.*;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.internal.LinkedTreeMap;
@@ -17,9 +14,11 @@ public class Prot {
     public String guid;
     public String createDateTime;
     public String urlOOS;
+    public String urlEIS;
     public String typeName;
     public String missedContest;
     public String missedReason;
+    public String сancellationReason;
 
     public LotApplicationsList getLotAppList() {
         if (lotApplicationsList instanceof String) {
@@ -38,6 +37,7 @@ public class Prot {
     public Object lotApplicationsList;
     public PurchaseInfo purchaseInfo;
     public Attachments attachments;
+    public ProtocolInfo protocolInfo;
 
     public Prot() {
     }
@@ -62,6 +62,9 @@ public class Prot {
         }
         String idProtocol = guid != null ? guid : "";
         String url = urlOOS != null ? urlOOS : "";
+        if(url.equals("") && urlEIS != null){
+            url = urlEIS;
+        }
         Date protocolDate = (createDateTime != null) ? Parser.GetDate(createDateTime) : new Date(0L);
         //out.println("this data " + protocolDate);
 
@@ -322,6 +325,108 @@ public class Prot {
                 ps8.executeUpdate();
                 ps8.close();
 
+            }
+        }
+    }
+
+    public void ParsingCancelation(ProtocolType223Cancel.Settings set, Connection con) throws Exception {
+        String purchaseNumber = "";
+        if (purchaseInfo != null && purchaseInfo.purchaseNoticeNumber != null) {
+            purchaseNumber = purchaseInfo.purchaseNoticeNumber;
+        }
+        if (Objects.equals(purchaseNumber, "")) {
+            Log.Logger("У протокола нет purchaseNumber", set.F);
+            return;
+        }
+        String idProtocol = guid != null ? guid : "";
+        String url = urlEIS != null ? urlEIS : "";
+        if(url.equals("") && urlOOS != null){
+            url = urlOOS;
+        }
+        String RegistrationNumber = "";
+        if (protocolInfo != null && protocolInfo.registrationNumber != null) {
+            RegistrationNumber = protocolInfo.registrationNumber;
+        }
+        Date protocolDate = (createDateTime != null) ? Parser.GetDate(createDateTime) : new Date(0L);
+        //out.println("this data " + protocolDate);
+
+        PreparedStatement ps1 = con.prepareStatement(String.format("SELECT id FROM %sprotocols223_cancel WHERE purchase_number = ? AND protocol_date = ? AND guid = ?", Main.Prefix));
+        ps1.setString(1, purchaseNumber);
+        ps1.setTimestamp(2, new Timestamp(protocolDate.getTime()));
+        ps1.setString(3, idProtocol);
+        ResultSet r = ps1.executeQuery();
+        if (r.next()) {
+            r.close();
+            ps1.close();
+            //Log.Logger("Такой протокол уже есть в базе", String.valueOf(guid));
+            return;
+        }
+        r.close();
+        ps1.close();
+        int cancel = 0;
+        boolean updated = false;
+        PreparedStatement ps2 = con.prepareStatement(String.format("SELECT id, protocol_date FROM %sprotocols223_cancel WHERE purchase_number = ? AND registration_number = ?", Main.Prefix));
+        ps2.setString(1, purchaseNumber);
+        ps2.setString(2, RegistrationNumber);
+        ResultSet r1 = ps2.executeQuery();
+        while (r1.next()) {
+            updated = true;
+            int idP = r1.getInt(1);
+            Date dateB = r1.getTimestamp(2);
+            //out.println((dateB.equals(new Timestamp(protocolDate.getTime()))));
+            if (protocolDate.after(dateB) || (dateB.equals(new Timestamp(protocolDate.getTime())))) {
+                PreparedStatement ps3 = con.prepareStatement(String.format("UPDATE %sprotocols223_cancel SET cancel=1 WHERE id = ?", Main.Prefix));
+                ps3.setInt(1, idP);
+                ps3.executeUpdate();
+                ps3.close();
+            } else {
+                cancel = 1;
+            }
+        }
+        r1.close();
+        ps2.close();
+        int idProt = 0;
+        String typeProtocol = "";
+        if (protocolInfo != null && protocolInfo.typeName != null) {
+            typeProtocol = protocolInfo.typeName;
+        }
+
+        String CancellationReason = (сancellationReason != null) ? сancellationReason : "";
+        PreparedStatement ps4 = con.prepareStatement(String.format("INSERT INTO %sprotocols223_cancel SET guid = ?, protocol_date = ?, url = ?, purchase_number = ?, type_protocol = ?, cancel = ?, xml = ?, registration_number = ?, cancellation_reason = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
+        ps4.setString(1, idProtocol);
+        ps4.setTimestamp(2, new Timestamp(protocolDate.getTime()));
+        ps4.setString(3, url);
+        ps4.setString(4, purchaseNumber);
+        ps4.setString(5, typeProtocol);
+        ps4.setInt(6, cancel);
+        ps4.setString(7, set.PathParse);
+        ps4.setString(8, RegistrationNumber);
+        ps4.setString(9, CancellationReason);
+        ps4.executeUpdate();
+        ResultSet rt = ps4.getGeneratedKeys();
+        if (rt.next()) {
+            idProt = rt.getInt(1);
+        }
+        rt.close();
+        ps4.close();
+        if (updated) {
+            Main.UpCountPurchaseProtocolCancel++;
+        } else {
+            Main.CountPurchaseProtocolCancel++;
+        }
+        if (attachments != null && attachments.document != null) {
+            ArrayList<Document> att = Parser.GetDocuments(attachments.document);
+            for (Document doc : att) {
+                String fileName = (doc.fileName != null) ? doc.fileName : "";
+                String description = (doc.description != null) ? doc.description : "";
+                String urlAtt = (doc.url != null) ? doc.url : "";
+                PreparedStatement ps5 = con.prepareStatement(String.format("INSERT INTO %sprotocols223_attach_cancel SET id_protocol_cancel = ?, filename = ?, description = ?, url = ?", Main.Prefix));
+                ps5.setInt(1, idProt);
+                ps5.setString(2, fileName);
+                ps5.setString(3, description);
+                ps5.setString(4, urlAtt);
+                ps5.executeUpdate();
+                ps5.close();
             }
         }
     }

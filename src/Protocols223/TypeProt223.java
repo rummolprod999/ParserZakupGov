@@ -20,5 +20,6 @@ public enum TypeProt223 {
     purchaseProtocolRZOA,
     purchaseProtocolRZOK,
     purchaseProtocolVK,
-    purchaseProtocolZK
+    purchaseProtocolZK,
+    purchaseProtocolCancellation
 }

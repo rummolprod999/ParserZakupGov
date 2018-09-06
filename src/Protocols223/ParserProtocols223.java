@@ -110,6 +110,9 @@ public class ParserProtocols223 extends Parser {
                             case "purchaseProtocolZK":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolZK, con);
                                 break;
+                            case "purchaseProtocolCancellation":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolCancellation, con);
+                                break;
                         }
 
                     }
@@ -140,8 +143,17 @@ public class ParserProtocols223 extends Parser {
 
     public void ParsingXml(File f, String pathParse, String prot, Region region, TypeProt223 type, Connection con) {
         String ftext = ClearString(f);
-        ProtocolType223 p = new ProtocolType223(f, pathParse, prot, region, type, ftext);
-        p.ParserType223(con);
+        switch (type) {
+            case purchaseProtocolCancellation:
+                ProtocolType223Cancel p = new ProtocolType223Cancel(f, pathParse, prot, region, type, ftext);
+                p.ParserType223Cancel(con);
+                break;
+            default:
+                ProtocolType223 b = new ProtocolType223(f, pathParse, prot, region, type, ftext);
+                b.ParserType223(con);
+                break;
+        }
+
     }
 
     public void ParsingLast223(String pathParse, String prot, Region region) {

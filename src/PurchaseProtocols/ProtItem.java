@@ -14,6 +14,7 @@ public class ProtItem {
     public PurchaseProtocolRZOKData purchaseProtocolRZOKData;
     public PurchaseProtocolVKData purchaseProtocolVKData;
     public PurchaseProtocolZKData purchaseProtocolZKData;
+    public ProtocolCancellationData protocolCancellationData;
     public ProtItem() {
     }
 }

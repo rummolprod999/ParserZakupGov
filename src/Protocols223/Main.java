@@ -52,6 +52,8 @@ public class Main {
     public static int UpCountPurchaseProtocolVK;
     public static int CountPurchaseProtocolZK;
     public static int UpCountPurchaseProtocolZK;
+    public static int CountPurchaseProtocolCancel;
+    public static int UpCountPurchaseProtocolCancel;
 
     public static void main(String[] args) {
         if (args.length == 0) {

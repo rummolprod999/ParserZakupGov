@@ -31,7 +31,7 @@ public class Parser implements IParser {
     private static final int BUFFER_SIZE = 4096;
     public static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
     public String[] __protocols223Dir = {"purchaseProtocol", "purchaseProtocolIP", "purchaseProtocolOSZ", "purchaseProtocolPA_AE", "purchaseProtocolPA_OA", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRKZ", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZ_AE", "purchaseProtocolRZ_OA", "purchaseProtocolRZ_OK", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolVK", "purchaseProtocolZK"};
-    public String[] protocols223Dir = {"purchaseProtocol", "purchaseProtocolOSZ", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolVK", "purchaseProtocolZK"};
+    public String[] protocols223Dir = {"purchaseProtocolCancellation", "purchaseProtocol", "purchaseProtocolOSZ", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolVK", "purchaseProtocolZK"};
 
     public static String ClearString(File s) {
         String res = "";
