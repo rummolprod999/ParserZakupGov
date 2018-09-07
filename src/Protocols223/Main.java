@@ -158,8 +158,8 @@ public class Main {
             Log.Logger(String.format("Обновлено PurchaseProtocolRZOK %d", UpCountPurchaseProtocolRZOK));
             Log.Logger(String.format("Добавлено PurchaseProtocolVK %d", CountPurchaseProtocolVK));
             Log.Logger(String.format("Обновлено PurchaseProtocolVK %d", UpCountPurchaseProtocolVK));
-            Log.Logger(String.format("Добавлено PurchaseProtocolZK %d", CountPurchaseProtocolZK));
-            Log.Logger(String.format("Обновлено PurchaseProtocolZK %d", UpCountPurchaseProtocolZK));
+            Log.Logger(String.format("Добавлено ProtocolCancellation %d", CountPurchaseProtocolCancel));
+            Log.Logger(String.format("Обновлено ProtocolCancellation %d", UpCountPurchaseProtocolCancel));
 
         }
 
