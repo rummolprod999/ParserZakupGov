@@ -27,18 +27,21 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="7f4522c3-18d3-4d70-8abb-aae99dca7e75">
-      <console name="localhost" type="STANDARD"><![CDATA[select * from tender;]]></console>
+      <console name="localhost" type="STANDARD" schema="" session="Main"><![CDATA[select * from tender;]]></console>
     </connection>
+  </component>
+  <component name="DBNavigator.Project.DatabaseFileManager">
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="7f4522c3-18d3-4d70-8abb-aae99dca7e75" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-list connection-id="7f4522c3-18d3-4d70-8abb-aae99dca7e75" dataset="tender.tender" active-filter-id="">
+    <filter-actions connection-id="7f4522c3-18d3-4d70-8abb-aae99dca7e75" dataset="tender.tender" active-filter-id="">
       <filter id="d590d633-1bbd-47de-905c-4d33e9ac5dec" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id_tender" operator="=" value="" active="true" />
       </filter>
-    </filter-list>
+    </filter-actions>
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -80,9 +83,9 @@
           <port value="3306" />
           <database value="" />
           <os-authentication value="false" />
-          <empty-password value="false" />
+          <empty-authentication value="false" />
           <user value="root" />
-          <password value="MTIzNA==" />
+          <deprecated-pwd value="MTIzNA==" />
         </database>
         <properties>
           <auto-commit value="false" />
@@ -92,11 +95,17 @@
           <proxy-host value="" />
           <proxy-port value="22" />
           <proxy-user value="" />
-          <proxy-password value="" />
+          <deprecated-proxy-pwd value="" />
           <auth-type value="PASSWORD" />
           <key-file value="" />
           <key-passphrase value="" />
         </ssh-settings>
+        <ssl-settings>
+          <active value="false" />
+          <certificate-authority-file value="" />
+          <client-certificate-file value="" />
+          <client-key-file value="" />
+        </ssl-settings>
         <details>
           <charset value="UTF-8" />
           <session-management value="true" />
@@ -108,7 +117,7 @@
           <environment-type value="default" />
           <idle-time-to-disconnect value="30" />
           <idle-time-to-disconnect-pool value="5" />
-          <password-expiry-time value="10" />
+          <credential-expiry-time value="10" />
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
@@ -247,11 +256,11 @@
         <data-length-threshold value="100" />
         <popup-delay value="1000" />
       </text-editor-popup>
-      <values-list-popup>
+      <values-actions-popup>
         <show-popup-button value="true" />
         <element-count-threshold value="1000" />
         <data-length-threshold value="250" />
-      </values-list-popup>
+      </values-actions-popup>
       <general>
         <fetch-block-size value="100" />
         <fetch-timeout value="30" />
@@ -276,7 +285,6 @@
           <content-type name="Java" enabled="true" />
           <content-type name="SQL" enabled="true" />
           <content-type name="PL/SQL" enabled="true" />
-          <content-type name="JPA QL" enabled="true" />
           <content-type name="JavaScript" enabled="true" />
           <content-type name="JSP" enabled="true" />
           <content-type name="JSPx" enabled="true" />

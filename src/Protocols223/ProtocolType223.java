@@ -31,7 +31,7 @@ public class ProtocolType223 {
         String JsonString = null;
         try {
             jsonObj = XML.toJSONObject(ftext, true);
-            JsonString = jsonObj.toString();
+            JsonString = jsonObj.toString().replace("\"attachments\":\"\"", "\"attachments\":{}");
             //System.out.println(JsonString);
         } catch (Exception e) {
             Log.Logger("JSON exception", e.getMessage());

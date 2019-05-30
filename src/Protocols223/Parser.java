@@ -40,6 +40,7 @@ public class Parser implements IParser {
             res = res.replace("ns2:", "");
             res = res.replace("oos:", "");
             res = res.replace("\u001B", "");
+            res = res.replaceAll("ns\\d{1,2}:", "");
         } catch (Exception ignored) {
 
         }

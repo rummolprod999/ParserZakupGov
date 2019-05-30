@@ -122,9 +122,9 @@ public class Main {
             ParserProtocols223 p = new ParserProtocols223();
             p.Parsing();
             /*Region r = new Region();
-            File f = new File(Main.executePath + File.separator + "purchaseProtocolZK_Moskva_20170701_000000_20170731_235959_006.xml");
+            File f = new File(Main.executePath + File.separator + "purchaseProtocol_Moskva_20161001_000000_20161031_235959_304.xml");
             String ftext = Parser.ClearString(f);
-            ProtocolType223 p = new ProtocolType223(f, "ggg", "purchaseProtocolZK", r, TypeProt223.purchaseProtocolZK, ftext);
+            ProtocolType223 p = new ProtocolType223(f, "ggg", "purchaseProtocol", r, TypeProt223.purchaseProtocol, ftext);
             try (Connection con = DriverManager.getConnection(Main.UrlConnect, Main.UserDb, Main.PassDb)) {
                 p.ParserType223(con);
             } catch (Exception e) {
