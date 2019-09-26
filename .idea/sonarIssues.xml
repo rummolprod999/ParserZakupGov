@@ -53,6 +53,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/ProtocolCCZKESMBO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolCCAESMBO.java">
           <value>
             <set />
@@ -69,6 +74,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolCCKESMBOData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolCCKESMBOOData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolCCZKESMBO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolCCZKESMBOData.java">
           <value>
             <set />
           </value>
