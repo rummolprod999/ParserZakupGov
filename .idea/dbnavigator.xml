@@ -81,9 +81,8 @@
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="3306" />
-          <database value="" />
-          <os-authentication value="false" />
-          <empty-authentication value="false" />
+          <database value="database" />
+          <type value="USER_PASSWORD" />
           <user value="root" />
           <deprecated-pwd value="MTIzNA==" />
         </database>
@@ -121,7 +120,7 @@
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false">
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
           <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />

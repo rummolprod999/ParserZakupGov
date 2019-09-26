@@ -1,0 +1,37 @@
+
+_squid:HiddenFieldCheck>"8Rename "prot" which hides the field declared at line 15.(ñÕÈùÿÿÿÿÿ
+[squid:HiddenFieldCheckå"8Rename "prot" which hides the field declared at line 15.(ûÊœ
+[squid:HiddenFieldCheck˜"8Rename "prot" which hides the field declared at line 15.(¡×´
+„"squid:ClassVariableVisibilityCheckˆ"PMake Prot a static final constant or non-public and provide accessors if needed.(¦¸™øúÿÿÿÿ
+isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 67 to the 15 allowed.(ĞÌœ›
+hsquid:CommentedOutCodeLineü"<This block of commented-out lines of code should be removed.(“ù»ƒûÿÿÿÿ
+"squid:ClassVariableVisibilityCheckŠ"QMake Ftext a static final constant or non-public and provide accessors if needed.(óİ¼
+msquid:S00116ˆ"ORename this field "Prot" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¸™øúÿÿÿÿ
+`squid:HiddenFieldCheck­"8Rename "prot" which hides the field declared at line 15.(èË‰øÿÿÿÿ
+[squid:HiddenFieldCheck×"8Rename "prot" which hides the field declared at line 15.(³Ï×€
+jsquid:S00116†"LRename this field "F" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï€ÃÙøÿÿÿÿ
+[squid:HiddenFieldCheckŠ"8Rename "prot" which hides the field declared at line 15.(Ùó™Ã
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô©ˆÅüÿÿÿÿ
+Zsquid:HiddenFieldCheckP"8Rename "prot" which hides the field declared at line 15.(« Ù
+fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÌœ›
+…squid:S11922"oDefine a constant instead of duplicating this literal "ĞĞµ ÑĞ¼Ğ¾Ğ³Ğ»Ğ¸ ÑĞ¾Ğ·Ğ´Ğ°Ñ‚ÑŒ Ğ¾Ğ±ÑŠĞµĞºÑ‚" 13 times.(·‘üN
+_squid:HiddenFieldCheck^"8Rename "prot" which hides the field declared at line 15.(ìşôâüÿÿÿÿ
+osquid:S00116…"QRename this field "Region" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İïìÃıÿÿÿÿ
+_squid:HiddenFieldCheckl"8Rename "prot" which hides the field declared at line 15.(ÖŠêÉıÿÿÿÿ
+Zsquid:HiddenFieldCheckz"8Rename "prot" which hides the field declared at line 15.(ª…©§
+Zsquid:HiddenFieldCheck-"8Rename "prot" which hides the field declared at line 15.(â‘ĞÚ
+[squid:HiddenFieldCheck»"8Rename "prot" which hides the field declared at line 15.(šŠÉä
+„"squid:ClassVariableVisibilityCheck‡"UMake PathParse a static final constant or non-public and provide accessors if needed.(»¨¹Œ
+hsquid:S00116‰"ORename this field "Type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‹ƒ’
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
+[squid:HiddenFieldCheckÉ"8Rename "prot" which hides the field declared at line 15.(æñ• 
+"squid:ClassVariableVisibilityCheck†"MMake F a static final constant or non-public and provide accessors if needed.(Ï€ÃÙøÿÿÿÿ
+"squid:ClassVariableVisibilityCheck‰"PMake Type a static final constant or non-public and provide accessors if needed.(—‹ƒ’
+hsquid:S00116Š"PRename this field "Ftext" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óİ¼
+hsquid:CommentedOutCodeLineş"<This block of commented-out lines of code should be removed.(öàÒòÿÿÿÿÿ
+msquid:S00116‡"TRename this field "PathParse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¨¹Œ
+bsquid:CommentedOutCodeLineö"<This block of commented-out lines of code should be removed.(Åû¬9
+bsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(ï¦å•
+‡"squid:SwitchLastCaseIsDefaultCheck)"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÜŸ•
+†"squid:ClassVariableVisibilityCheck…"RMake Region a static final constant or non-public and provide accessors if needed.(İïìÃıÿÿÿÿ
+csquid:CommentedOutCodeLineñ"<This block of commented-out lines of code should be removed.(ÈåÖº
