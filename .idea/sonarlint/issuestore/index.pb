@@ -56,3 +56,5 @@ d
 ,src/PurchaseProtocols/ProtocolCCZKESMBO.java,b/a/ba87ad4789b67eb95a0671cf9bd55c5d436c141b
 [
 +src/PurchaseProtocols/ProtocolCCKESMBO.java,2/0/2053055a33d095b38dd8f8737b6b5e8d04684aa8
+h
+8src/PurchaseProtocols/PurchaseProtocolCCKESMBOOData.java,a/2/a2a5f83d92c9dccfa5d58839a5fe66abba752e25

@@ -1,144 +1,150 @@
 
-•"squid:ClassVariableVisibilityCheck&"gMake UpCountPurchaseProtocolPAEP a static final constant or non-public and provide accessors if needed.(†…Şö
-squid:S3008$"hRename this field "UpCountPurchaseProtocolPAAE94" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á«›ˆ
-€squid:S3008%"dRename this field "CountPurchaseProtocolPAEP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¯ˆìüÿÿÿÿ
-"squid:ClassVariableVisibilityCheck"SMake logPath a static final constant or non-public and provide accessors if needed.(éø¯å
-Wsquid:S14442"AMake this "public static UpCountPurchaseProtocolRZOK" field final(¯ÑŒj
-ˆsquid:S3008:"jRename this field "UpCountPurchaseProtocolCCKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ˜Ûè8Åá“çÖ-
-›"squid:ClassVariableVisibilityCheck2"gMake UpCountPurchaseProtocolRZOK a static final constant or non-public and provide accessors if needed.(¯ÑŒj8Ìíÿ¼°-
-Csquid:S1444",Make this "public static Prefix" field final(ÌÜ »
-~squid:S3008*"gRename this field "UpCountPurchaseProtocolRZ1AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚öİı
-“squid:S1319"pThe type of the "Years" object should be an interface such as "List" rather than the implementation "ArrayList".(ƒÌ¹¤ûÿÿÿÿ8Ìíÿ¼°-
-}squid:S3008#"fRename this field "CountPurchaseProtocolPAAE94" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à„Ó
-‡"squid:ClassVariableVisibilityCheck"TMake Database a static final constant or non-public and provide accessors if needed.(‰ôÚùÿÿÿÿ
-"squid:ClassVariableVisibilityCheck9"iMake CountPurchaseProtocolCCKESMBO a static final constant or non-public and provide accessors if needed.(ÅòÀŒ8Åá“çÖ-
-squid:S3008 "eRename this field "UpCountPurchaseProtocolOSZ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²£·àøÿÿÿÿ
-}squid:S3008""fRename this field "UpCountPurchaseProtocolPAAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö±™Ÿ
-bsquid:S14444"?Make this "public static UpCountPurchaseProtocolVK" field final(Şˆò´úÿÿÿÿ8Ìíÿ¼°-
+£"squid:ClassVariableVisibilityCheck7"iMake CountPurchaseProtocolCCAESMBO a static final constant or non-public and provide accessors if needed.(Ìé¦ƒùÿÿÿÿ8îìÄåÖ-
+†squid:S3008;"iRename this field "CountPurchaseProtocolCCZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥‚¨o8ÂüÅëÖ-
+•"squid:ClassVariableVisibilityCheck0"gMake UpCountPurchaseProtocolRZOA a static final constant or non-public and provide accessors if needed.(ÇÚÍã
+Ysquid:S1444*"BMake this "public static UpCountPurchaseProtocolRZ1AE" field final(‚öİı
+}squid:S3008="fRename this field "CountPurchaseProtocolCancel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Ì©ã
+‹squid:S3008>"hRename this field "UpCountPurchaseProtocolCancel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¦äÑıÿÿÿÿ8Ìíÿ¼°-
+†"squid:ClassVariableVisibilityCheck"SMake DateNow a static final constant or non-public and provide accessors if needed.(Ââ‡åşÿÿÿÿ
 nsquid:S3008"RRename this field "DateNow" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ââ‡åşÿÿÿÿ
-ˆsquid:S30088"jRename this field "UpCountPurchaseProtocolCCAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú­…ƒ8îìÄåÖ-
-squid:S3008"cRename this field "CountPurchaseProtocolOSZ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÑé›ÿÿÿÿÿ
-‹squid:S3008<"hRename this field "UpCountPurchaseProtocolCancel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¦äÑıÿÿÿÿ8Ìíÿ¼°-
+›"squid:ClassVariableVisibilityCheck,"hMake UpCountPurchaseProtocolRZ2AE a static final constant or non-public and provide accessors if needed.(‰Í‘Åıÿÿÿÿ
+Qsquid:S1444"5Make this "public static logDirProtocols" field final(ú€¼ªûÿÿÿÿ
+}squid:S30080"fRename this field "UpCountPurchaseProtocolRZOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÚÍã
+Xsquid:S1444""AMake this "public static UpCountPurchaseProtocolPAAE" field final(Ö±™Ÿ
+Xsquid:S1444."AMake this "public static UpCountPurchaseProtocolRZAE" field final(Ÿ±±
+š"squid:ClassVariableVisibilityCheck("gMake UpCountPurchaseProtocolPAOA a static final constant or non-public and provide accessors if needed.(´º×Ìúÿÿÿÿ
+‰squid:S3008<"kRename this field "UpCountPurchaseProtocolCCZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œâøŸ8ÂüÅëÖ-
 {squid:S30086"dRename this field "UpCountPurchaseProtocolZK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îœÃü
-‚squid:S3008("fRename this field "UpCountPurchaseProtocolPAOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´º×Ìúÿÿÿÿ
-Gsquid:S1444"0Make this "public static UrlConnect" field final(Î´‰
-|squid:S3008)"eRename this field "CountPurchaseProtocolRZ1AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹®…Ô
-csquid:S14448"EMake this "public static UpCountPurchaseProtocolCCAESMBO" field final(Ú­…ƒ8îìÄåÖ-
-˜"squid:ClassVariableVisibilityCheck4"eMake UpCountPurchaseProtocolVK a static final constant or non-public and provide accessors if needed.(Şˆò´úÿÿÿÿ
-™"squid:ClassVariableVisibilityCheck "fMake UpCountPurchaseProtocolOSZ a static final constant or non-public and provide accessors if needed.(²£·àøÿÿÿÿ
-msquid:S3008"QRename this field "Server" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¯×Ïøÿÿÿÿ
-rsquid:S3008"ORename this field "Port" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ó†Äÿÿÿÿÿ8Ìíÿ¼°-
-{squid:S3008!"dRename this field "CountPurchaseProtocolPAAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†·Ê…
-^squid:S1444,"BMake this "public static UpCountPurchaseProtocolRZ2AE" field final(‰Í‘Åıÿÿÿÿ
-{squid:S3008'"dRename this field "CountPurchaseProtocolPAOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²¡Î›
-Wsquid:S1444)"@Make this "public static CountPurchaseProtocolRZ1AE" field final(‹®…Ô
+asquid:S14449"CMake this "public static CountPurchaseProtocolCCKESMBO" field final(ÅòÀŒ8Åá“çÖ-
+•"squid:ClassVariableVisibilityCheck""gMake UpCountPurchaseProtocolPAAE a static final constant or non-public and provide accessors if needed.(Ö±™Ÿ
+[squid:S14441"?Make this "public static CountPurchaseProtocolRZOK" field final(ıĞÂëüÿÿÿÿ
 ‘"squid:ClassVariableVisibilityCheck5"cMake CountPurchaseProtocolZK a static final constant or non-public and provide accessors if needed.(å¬é£
-Ysquid:S14443"=Make this "public static CountPurchaseProtocolVK" field final(•€ò¡şÿÿÿÿ
-˜"squid:ClassVariableVisibilityCheck%"eMake CountPurchaseProtocolPAEP a static final constant or non-public and provide accessors if needed.(¾¯ˆìüÿÿÿÿ
-ysquid:S30085"bRename this field "CountPurchaseProtocolZK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¬é£
-hsquid:S3008"QRename this field "Prefix" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÜ »
-msquid:S00100{"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¿èù8Ìíÿ¼°-
-Vsquid:S1444/"?Make this "public static CountPurchaseProtocolRZOA" field final(ÑÄŒô
-”"squid:ClassVariableVisibilityCheck)"fMake CountPurchaseProtocolRZ1AE a static final constant or non-public and provide accessors if needed.(‹®…Ô
-rsquid:S00100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¦Ô§ûÿÿÿÿ8Ìíÿ¼°-
-Vsquid:S1444!"?Make this "public static CountPurchaseProtocolPAAE" field final(†·Ê…
-"squid:ClassVariableVisibilityCheck"aMake CountPurchaseProtocol a static final constant or non-public and provide accessors if needed.(Ş´üÌ
-—"squid:ClassVariableVisibilityCheck$"iMake UpCountPurchaseProtocolPAAE94 a static final constant or non-public and provide accessors if needed.(á«›ˆ
-“"squid:ClassVariableVisibilityCheck'"eMake CountPurchaseProtocolPAOA a static final constant or non-public and provide accessors if needed.(²¡Î›
-“"squid:ClassVariableVisibilityCheck-"eMake CountPurchaseProtocolRZAE a static final constant or non-public and provide accessors if needed.(Ù¢Ä
-squid:S3008+"eRename this field "CountPurchaseProtocolRZ2AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¶Áıÿÿÿÿ
-Vsquid:S1444'"?Make this "public static CountPurchaseProtocolPAOA" field final(²¡Î›
- "squid:ClassVariableVisibilityCheck8"kMake UpCountPurchaseProtocolCCAESMBO a static final constant or non-public and provide accessors if needed.(Ú­…ƒ8îìÄåÖ-
 €squid:S30081"dRename this field "CountPurchaseProtocolRZOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıĞÂëüÿÿÿÿ
-–"squid:ClassVariableVisibilityCheck*"hMake UpCountPurchaseProtocolRZ1AE a static final constant or non-public and provide accessors if needed.(‚öİı
-wsquid:S3008"`Rename this field "CountPurchaseProtocol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş´üÌ
-™"squid:ClassVariableVisibilityCheck+"fMake CountPurchaseProtocolRZ2AE a static final constant or non-public and provide accessors if needed.(Ü¶Áıÿÿÿÿ
-Csquid:S1444",Make this "public static PassDb" field final(ˆŒ¢ç
-[squid:S1444%"?Make this "public static CountPurchaseProtocolPAEP" field final(¾¯ˆìüÿÿÿÿ
-Dsquid:S1444"-Make this "public static logPath" field final(éø¯å
-\squid:S1444 "@Make this "public static UpCountPurchaseProtocolOSZ" field final(²£·àøÿÿÿÿ
-ƒsquid:S3008,"gRename this field "UpCountPurchaseProtocolRZ2AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Í‘Åıÿÿÿÿ
-{squid:S3008/"dRename this field "CountPurchaseProtocolRZOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÄŒô
-Xsquid:S1444#"AMake this "public static CountPurchaseProtocolPAAE94" field final(à„Ó
-–"squid:ClassVariableVisibilityCheck3"cMake CountPurchaseProtocolVK a static final constant or non-public and provide accessors if needed.(•€ò¡şÿÿÿÿ
 }"squid:ClassVariableVisibilityCheck"OMake arg a static final constant or non-public and provide accessors if needed.(Ùøº€
-„"squid:ClassVariableVisibilityCheck"QMake Years a static final constant or non-public and provide accessors if needed.(ƒÌ¹¤ûÿÿÿÿ
-\squid:S1444+"@Make this "public static CountPurchaseProtocolRZ2AE" field final(Ü¶Áıÿÿÿÿ
-–"squid:ClassVariableVisibilityCheck"cMake UpCountPurchaseProtocol a static final constant or non-public and provide accessors if needed.(–Öå÷ûÿÿÿÿ
-†squid:S30089"hRename this field "CountPurchaseProtocolCCKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅòÀŒ8Åá“çÖ-
-{squid:S3008-"dRename this field "CountPurchaseProtocolRZAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¢Ä
-"squid:ClassVariableVisibilityCheck"[Make logDirProtocols a static final constant or non-public and provide accessors if needed.(ú€¼ªûÿÿÿÿ
-@squid:S2386"Make this member "protected".(Ââ‡åşÿÿÿÿ8Ìíÿ¼°-
-Hsquid:S1444",Make this "public static UserDb" field final(ë¢Œïûÿÿÿÿ
+}squid:S3008""fRename this field "UpCountPurchaseProtocolPAAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö±™Ÿ
+–"squid:ClassVariableVisibilityCheck*"hMake UpCountPurchaseProtocolRZ1AE a static final constant or non-public and provide accessors if needed.(‚öİı
 •"squid:ClassVariableVisibilityCheck."gMake UpCountPurchaseProtocolRZAE a static final constant or non-public and provide accessors if needed.(Ÿ±±
-msquid:S3008"QRename this field "UserDb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë¢Œïûÿÿÿÿ
+msquid:S3008"QRename this field "Server" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¯×Ïøÿÿÿÿ
+\squid:S1444+"@Make this "public static CountPurchaseProtocolRZ2AE" field final(Ü¶Áıÿÿÿÿ
+hsquid:S3008"QRename this field "PassDb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆŒ¢ç
+•"squid:ClassVariableVisibilityCheck="gMake CountPurchaseProtocolCancel a static final constant or non-public and provide accessors if needed.(÷Ì©ã
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
+Rsquid:S1444";Make this "public static CountPurchaseProtocol" field final(Ş´üÌ
+…"squid:ClassVariableVisibilityCheck"RMake Server a static final constant or non-public and provide accessors if needed.(¢¯×Ïøÿÿÿÿ
+Ysquid:S14443"=Make this "public static CountPurchaseProtocolVK" field final(•€ò¡şÿÿÿÿ
+{squid:S3008-"dRename this field "CountPurchaseProtocolRZAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¢Ä
+•"squid:ClassVariableVisibilityCheck&"gMake UpCountPurchaseProtocolPAEP a static final constant or non-public and provide accessors if needed.(†…Şö
+@squid:S1444")Make this "public static arg" field final(Ùøº€
+Vsquid:S1444-"?Make this "public static CountPurchaseProtocolRZAE" field final(Ù¢Ä
+Xsquid:S1444&"AMake this "public static UpCountPurchaseProtocolPAEP" field final(†…Şö
+€"squid:ClassVariableVisibilityCheck"RMake Prefix a static final constant or non-public and provide accessors if needed.(ÌÜ »
+”"squid:ClassVariableVisibilityCheck)"fMake CountPurchaseProtocolRZ1AE a static final constant or non-public and provide accessors if needed.(‹®…Ô
+Gsquid:S1444"0Make this "public static UrlConnect" field final(Î´‰
+˜"squid:ClassVariableVisibilityCheck%"eMake CountPurchaseProtocolPAEP a static final constant or non-public and provide accessors if needed.(¾¯ˆìüÿÿÿÿ
+"squid:ClassVariableVisibilityCheck;"jMake CountPurchaseProtocolCCZKESMBO a static final constant or non-public and provide accessors if needed.(¥‚¨o8ÂüÅëÖ-
+Vsquid:S1444/"?Make this "public static CountPurchaseProtocolRZOA" field final(ÑÄŒô
+ysquid:S30085"bRename this field "CountPurchaseProtocolZK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¬é£
+Vsquid:S1444'"?Make this "public static CountPurchaseProtocolPAOA" field final(²¡Î›
+[squid:S1444%"?Make this "public static CountPurchaseProtocolPAEP" field final(¾¯ˆìüÿÿÿÿ
+Wsquid:S1444)"@Make this "public static CountPurchaseProtocolRZ1AE" field final(‹®…Ô
+wsquid:S3008"`Rename this field "CountPurchaseProtocol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş´üÌ
+^squid:S1444,"BMake this "public static UpCountPurchaseProtocolRZ2AE" field final(‰Í‘Åıÿÿÿÿ
+“"squid:ClassVariableVisibilityCheck!"eMake CountPurchaseProtocolPAAE a static final constant or non-public and provide accessors if needed.(†·Ê…
+{squid:S3008!"dRename this field "CountPurchaseProtocolPAAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†·Ê…
+–"squid:ClassVariableVisibilityCheck3"cMake CountPurchaseProtocolVK a static final constant or non-public and provide accessors if needed.(•€ò¡şÿÿÿÿ
+]squid:S1444("AMake this "public static UpCountPurchaseProtocolPAOA" field final(´º×Ìúÿÿÿÿ
+–"squid:ClassVariableVisibilityCheck"cMake UpCountPurchaseProtocol a static final constant or non-public and provide accessors if needed.(–Öå÷ûÿÿÿÿ
+Hsquid:S1444",Make this "public static UserDb" field final(ë¢Œïûÿÿÿÿ
+~squid:S3008"bRename this field "UpCountPurchaseProtocol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Öå÷ûÿÿÿÿ
+Fsquid:S1444"*Make this "public static Port" field final(«ó†Äÿÿÿÿÿ
+Hsquid:S1444",Make this "public static Server" field final(¢¯×Ïøÿÿÿÿ
+|squid:S30082"fRename this field "UpCountPurchaseProtocolRZOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÑŒj
+†squid:S30089"hRename this field "CountPurchaseProtocolCCKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅòÀŒ8Åá“çÖ-
+Wsquid:S14442"AMake this "public static UpCountPurchaseProtocolRZOK" field final(¯ÑŒj
+bsquid:S14444"?Make this "public static UpCountPurchaseProtocolVK" field final(Şˆò´úÿÿÿÿ8Ìíÿ¼°-
+"squid:ClassVariableVisibilityCheck"aMake CountPurchaseProtocol a static final constant or non-public and provide accessors if needed.(Ş´üÌ
+fsquid:S1444>"CMake this "public static UpCountPurchaseProtocolCancel" field final(À¦äÑıÿÿÿÿ8Ìíÿ¼°-
+Gsquid:S1444"+Make this "public static Years" field final(ƒÌ¹¤ûÿÿÿÿ
+£"squid:ClassVariableVisibilityCheck>"iMake UpCountPurchaseProtocolCancel a static final constant or non-public and provide accessors if needed.(À¦äÑıÿÿÿÿ8Ìíÿ¼°-
+lsquid:S3008"PRename this field "Years" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒÌ¹¤ûÿÿÿÿ
+€"squid:ClassVariableVisibilityCheck"RMake PassDb a static final constant or non-public and provide accessors if needed.(ˆŒ¢ç
+Xsquid:S1444="AMake this "public static CountPurchaseProtocolCancel" field final(÷Ì©ã
+€squid:S3008%"dRename this field "CountPurchaseProtocolPAEP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¯ˆìüÿÿÿÿ
+Isquid:S1444"-Make this "public static DateNow" field final(Ââ‡åşÿÿÿÿ
+Tsquid:S14445"=Make this "public static CountPurchaseProtocolZK" field final(å¬é£
+fsquid:S14447"CMake this "public static CountPurchaseProtocolCCAESMBO" field final(Ìé¦ƒùÿÿÿÿ8îìÄåÖ-
+ "squid:ClassVariableVisibilityCheck:"kMake UpCountPurchaseProtocolCCKESMBO a static final constant or non-public and provide accessors if needed.(Œ˜Ûè8Åá“çÖ-
+"squid:ClassVariableVisibilityCheck9"iMake CountPurchaseProtocolCCKESMBO a static final constant or non-public and provide accessors if needed.(ÅòÀŒ8Åá“çÖ-
+“"squid:ClassVariableVisibilityCheck/"eMake CountPurchaseProtocolRZOA a static final constant or non-public and provide accessors if needed.(ÑÄŒô
+{squid:S3008'"dRename this field "CountPurchaseProtocolPAOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²¡Î›
+csquid:S1444:"EMake this "public static UpCountPurchaseProtocolCCKESMBO" field final(Œ˜Ûè8Åá“çÖ-
+ˆsquid:S3008:"jRename this field "UpCountPurchaseProtocolCCKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ˜Ûè8Åá“çÖ-
+Csquid:S1444",Make this "public static Prefix" field final(ÌÜ »
+„"squid:ClassVariableVisibilityCheck"VMake UrlConnect a static final constant or non-public and provide accessors if needed.(Î´‰
+‹squid:S30087"hRename this field "CountPurchaseProtocolCCAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìé¦ƒùÿÿÿÿ8îìÄåÖ-
 }squid:S3008&"fRename this field "UpCountPurchaseProtocolPAEP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†…Şö
 ~squid:S30083"bRename this field "CountPurchaseProtocolVK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•€ò¡şÿÿÿÿ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(“×·ôşÿÿÿÿ8Ìíÿ¼°-
-Zsquid:S1444$"CMake this "public static UpCountPurchaseProtocolPAAE94" field final(á«›ˆ
-˜"squid:ClassVariableVisibilityCheck1"eMake CountPurchaseProtocolRZOK a static final constant or non-public and provide accessors if needed.(ıĞÂëüÿÿÿÿ
-Vsquid:S14446"?Make this "public static UpCountPurchaseProtocolZK" field final(îœÃü
-š"squid:ClassVariableVisibilityCheck("gMake UpCountPurchaseProtocolPAOA a static final constant or non-public and provide accessors if needed.(´º×Ìúÿÿÿÿ
-|squid:S30082"fRename this field "UpCountPurchaseProtocolRZOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÑŒj
-Csquid:S2386]" Make member "Years" "protected".(şïíøÿÿÿÿ8Ìíÿ¼°-
-•"squid:ClassVariableVisibilityCheck#"gMake CountPurchaseProtocolPAAE94 a static final constant or non-public and provide accessors if needed.(à„Ó
-•"squid:ClassVariableVisibilityCheck;"gMake CountPurchaseProtocolCancel a static final constant or non-public and provide accessors if needed.(÷Ì©ã
-‹squid:S30087"hRename this field "CountPurchaseProtocolCCAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìé¦ƒùÿÿÿÿ8îìÄåÖ-
-}squid:S3008."fRename this field "UpCountPurchaseProtocolRZAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ±±
 ‡squid:S30084"dRename this field "UpCountPurchaseProtocolVK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şˆò´úÿÿÿÿ8Ìíÿ¼°-
-Xsquid:S1444""AMake this "public static UpCountPurchaseProtocolPAAE" field final(Ö±™Ÿ
-fsquid:S1444<"CMake this "public static UpCountPurchaseProtocolCancel" field final(À¦äÑıÿÿÿÿ8Ìíÿ¼°-
-£"squid:ClassVariableVisibilityCheck7"iMake CountPurchaseProtocolCCAESMBO a static final constant or non-public and provide accessors if needed.(Ìé¦ƒùÿÿÿÿ8îìÄåÖ-
-Ysquid:S1444*"BMake this "public static UpCountPurchaseProtocolRZ1AE" field final(‚öİı
-£"squid:ClassVariableVisibilityCheck<"iMake UpCountPurchaseProtocolCancel a static final constant or non-public and provide accessors if needed.(À¦äÑıÿÿÿÿ8Ìíÿ¼°-
-}squid:S30080"fRename this field "UpCountPurchaseProtocolRZOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÚÍã
-Ysquid:S1444"=Make this "public static UpCountPurchaseProtocol" field final(–Öå÷ûÿÿÿÿ
-•"squid:ClassVariableVisibilityCheck0"gMake UpCountPurchaseProtocolRZOA a static final constant or non-public and provide accessors if needed.(ÇÚÍã
-Zsquid:S1444">Make this "public static CountPurchaseProtocolOSZ" field final(ÀÑé›ÿÿÿÿÿ
-Fsquid:S1444"*Make this "public static Port" field final(«ó†Äÿÿÿÿÿ
-asquid:S14449"CMake this "public static CountPurchaseProtocolCCKESMBO" field final(ÅòÀŒ8Åá“çÖ-
-ƒ"squid:ClassVariableVisibilityCheck"PMake Port a static final constant or non-public and provide accessors if needed.(«ó†Äÿÿÿÿÿ
-„"squid:ClassVariableVisibilityCheck"VMake UrlConnect a static final constant or non-public and provide accessors if needed.(Î´‰
-csquid:S1444:"EMake this "public static UpCountPurchaseProtocolCCKESMBO" field final(Œ˜Ûè8Åá“çÖ-
-fsquid:S14447"CMake this "public static CountPurchaseProtocolCCAESMBO" field final(Ìé¦ƒùÿÿÿÿ8îìÄåÖ-
-Xsquid:S1444."AMake this "public static UpCountPurchaseProtocolRZAE" field final(Ÿ±±
-Rsquid:S1444";Make this "public static CountPurchaseProtocol" field final(Ş´üÌ
-"squid:ClassVariableVisibilityCheck"\Make tempDirProtocols a static final constant or non-public and provide accessors if needed.(áãæ¸üÿÿÿÿ
-vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ç‹Ãıÿÿÿÿ8Ìíÿ¼°-
-vsquid:S3008"SRename this field "Database" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ôÚùÿÿÿÿ8Ìíÿ¼°-
-ssquid:S3008"URename this field "UrlConnect" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î´‰8Ìíÿ¼°-
-€"squid:ClassVariableVisibilityCheck"RMake Prefix a static final constant or non-public and provide accessors if needed.(ÌÜ »
-lsquid:S3008"PRename this field "Years" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒÌ¹¤ûÿÿÿÿ
-Qsquid:S1444"5Make this "public static logDirProtocols" field final(ú€¼ªûÿÿÿÿ
-…"squid:ClassVariableVisibilityCheck"RMake Server a static final constant or non-public and provide accessors if needed.(¢¯×Ïøÿÿÿÿ
-Hsquid:S1444",Make this "public static Server" field final(¢¯×Ïøÿÿÿÿ
-Xsquid:S1444;"AMake this "public static CountPurchaseProtocolCancel" field final(÷Ì©ã
-“"squid:ClassVariableVisibilityCheck!"eMake CountPurchaseProtocolPAAE a static final constant or non-public and provide accessors if needed.(†·Ê…
-Rsquid:S1444"6Make this "public static tempDirProtocols" field final(áãæ¸üÿÿÿÿ
-•"squid:ClassVariableVisibilityCheck""gMake UpCountPurchaseProtocolPAAE a static final constant or non-public and provide accessors if needed.(Ö±™Ÿ
-Xsquid:S14440"AMake this "public static UpCountPurchaseProtocolRZOA" field final(ÇÚÍã
-›"squid:ClassVariableVisibilityCheck,"hMake UpCountPurchaseProtocolRZ2AE a static final constant or non-public and provide accessors if needed.(‰Í‘Åıÿÿÿÿ
-—"squid:ClassVariableVisibilityCheck"dMake CountPurchaseProtocolOSZ a static final constant or non-public and provide accessors if needed.(ÀÑé›ÿÿÿÿÿ
-~squid:S3008"bRename this field "UpCountPurchaseProtocol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Öå÷ûÿÿÿÿ
-†"squid:ClassVariableVisibilityCheck"SMake DateNow a static final constant or non-public and provide accessors if needed.(Ââ‡åşÿÿÿÿ
-…"squid:ClassVariableVisibilityCheck"RMake UserDb a static final constant or non-public and provide accessors if needed.(ë¢Œïûÿÿÿÿ
-[squid:S14441"?Make this "public static CountPurchaseProtocolRZOK" field final(ıĞÂëüÿÿÿÿ
-Fsquid:S1148k"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ìíÿ¼°-
-Tsquid:S14445"=Make this "public static CountPurchaseProtocolZK" field final(å¬é£
-Jsquid:S1444".Make this "public static Database" field final(‰ôÚùÿÿÿÿ
- "squid:ClassVariableVisibilityCheck:"kMake UpCountPurchaseProtocolCCKESMBO a static final constant or non-public and provide accessors if needed.(Œ˜Ûè8Åá“çÖ-
-€"squid:ClassVariableVisibilityCheck"RMake PassDb a static final constant or non-public and provide accessors if needed.(ˆŒ¢ç
-usquid:S00117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ƒ•…úÿÿÿÿ8Ìíÿ¼°-
-Gsquid:S1444"+Make this "public static Years" field final(ƒÌ¹¤ûÿÿÿÿ
-Xsquid:S1444&"AMake this "public static UpCountPurchaseProtocolPAEP" field final(†…Şö
-Isquid:S1444"-Make this "public static DateNow" field final(Ââ‡åşÿÿÿÿ
+‚squid:S3008("fRename this field "UpCountPurchaseProtocolPAOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´º×Ìúÿÿÿÿ
 “"squid:ClassVariableVisibilityCheck6"eMake UpCountPurchaseProtocolZK a static final constant or non-public and provide accessors if needed.(îœÃü
-hsquid:S3008"QRename this field "PassDb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆŒ¢ç
-]squid:S1444("AMake this "public static UpCountPurchaseProtocolPAOA" field final(´º×Ìúÿÿÿÿ
-}squid:S3008;"fRename this field "CountPurchaseProtocolCancel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Ì©ã
-Vsquid:S1444-"?Make this "public static CountPurchaseProtocolRZAE" field final(Ù¢Ä
-@squid:S1444")Make this "public static arg" field final(Ùøº€
-“"squid:ClassVariableVisibilityCheck/"eMake CountPurchaseProtocolRZOA a static final constant or non-public and provide accessors if needed.(ÑÄŒô
-osquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(½£Öœûÿÿÿÿ8©ŠŠèÖ-
+Vsquid:S1444!"?Make this "public static CountPurchaseProtocolPAAE" field final(†·Ê…
+}squid:S3008."fRename this field "UpCountPurchaseProtocolRZAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ±±
+{squid:S3008/"dRename this field "CountPurchaseProtocolRZOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÄŒô
+Vsquid:S14446"?Make this "public static UpCountPurchaseProtocolZK" field final(îœÃü
+ƒ"squid:ClassVariableVisibilityCheck"PMake Port a static final constant or non-public and provide accessors if needed.(«ó†Äÿÿÿÿÿ
+ƒsquid:S3008,"gRename this field "UpCountPurchaseProtocolRZ2AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Í‘Åıÿÿÿÿ
+asquid:S1444;"DMake this "public static CountPurchaseProtocolCCZKESMBO" field final(¥‚¨o8ÂüÅëÖ-
+|squid:S3008)"eRename this field "CountPurchaseProtocolRZ1AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹®…Ô
+Xsquid:S14440"AMake this "public static UpCountPurchaseProtocolRZOA" field final(ÇÚÍã
+squid:S3008+"eRename this field "CountPurchaseProtocolRZ2AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¶Áıÿÿÿÿ
+„"squid:ClassVariableVisibilityCheck"QMake Years a static final constant or non-public and provide accessors if needed.(ƒÌ¹¤ûÿÿÿÿ
+™"squid:ClassVariableVisibilityCheck+"fMake CountPurchaseProtocolRZ2AE a static final constant or non-public and provide accessors if needed.(Ü¶Áıÿÿÿÿ
+"squid:ClassVariableVisibilityCheck"SMake logPath a static final constant or non-public and provide accessors if needed.(éø¯å
+˜"squid:ClassVariableVisibilityCheck4"eMake UpCountPurchaseProtocolVK a static final constant or non-public and provide accessors if needed.(Şˆò´úÿÿÿÿ
+›"squid:ClassVariableVisibilityCheck2"gMake UpCountPurchaseProtocolRZOK a static final constant or non-public and provide accessors if needed.(¯ÑŒj8Ìíÿ¼°-
+rsquid:S3008"ORename this field "Port" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ó†Äÿÿÿÿÿ8Ìíÿ¼°-
+˜"squid:ClassVariableVisibilityCheck1"eMake CountPurchaseProtocolRZOK a static final constant or non-public and provide accessors if needed.(ıĞÂëüÿÿÿÿ
+“"squid:ClassVariableVisibilityCheck-"eMake CountPurchaseProtocolRZAE a static final constant or non-public and provide accessors if needed.(Ù¢Ä
+~squid:S3008*"gRename this field "UpCountPurchaseProtocolRZ1AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚öİı
+“"squid:ClassVariableVisibilityCheck'"eMake CountPurchaseProtocolPAOA a static final constant or non-public and provide accessors if needed.(²¡Î›
+csquid:S14448"EMake this "public static UpCountPurchaseProtocolCCAESMBO" field final(Ú­…ƒ8îìÄåÖ-
+ "squid:ClassVariableVisibilityCheck8"kMake UpCountPurchaseProtocolCCAESMBO a static final constant or non-public and provide accessors if needed.(Ú­…ƒ8îìÄåÖ-
+…"squid:ClassVariableVisibilityCheck"RMake UserDb a static final constant or non-public and provide accessors if needed.(ë¢Œïûÿÿÿÿ
+ˆsquid:S30088"jRename this field "UpCountPurchaseProtocolCCAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú­…ƒ8îìÄåÖ-
+Ysquid:S1444"=Make this "public static UpCountPurchaseProtocol" field final(–Öå÷ûÿÿÿÿ
+¡"squid:ClassVariableVisibilityCheck<"lMake UpCountPurchaseProtocolCCZKESMBO a static final constant or non-public and provide accessors if needed.(œâøŸ8ÂüÅëÖ-
+Dsquid:S1444"-Make this "public static logPath" field final(éø¯å
+Csquid:S1444",Make this "public static PassDb" field final(ˆŒ¢ç
+dsquid:S1444<"FMake this "public static UpCountPurchaseProtocolCCZKESMBO" field final(œâøŸ8ÂüÅëÖ-
+"squid:ClassVariableVisibilityCheck"[Make logDirProtocols a static final constant or non-public and provide accessors if needed.(ú€¼ªûÿÿÿÿ
+Qsquid:S1444".Make this "public static Database" field final(‰ôÚùÿÿÿÿ8š”µíÖ-
+Ysquid:S1444"6Make this "public static tempDirProtocols" field final(áãæ¸üÿÿÿÿ8š”µíÖ-
+asquid:S1444">Make this "public static CountPurchaseProtocolOSZ" field final(ÀÑé›ÿÿÿÿÿ8š”µíÖ-
+csquid:S1444 "@Make this "public static UpCountPurchaseProtocolOSZ" field final(²£·àøÿÿÿÿ8š”µíÖ-
+_squid:S1444#"AMake this "public static CountPurchaseProtocolPAAE94" field final(à„Ó8š”µíÖ-
+asquid:S1444$"CMake this "public static UpCountPurchaseProtocolPAAE94" field final(á«›ˆ8š”µíÖ-
+“squid:S1319"pThe type of the "Years" object should be an interface such as "List" rather than the implementation "ArrayList".(ƒÌ¹¤ûÿÿÿÿ8š”µíÖ-
+"squid:ClassVariableVisibilityCheck"TMake Database a static final constant or non-public and provide accessors if needed.(‰ôÚùÿÿÿÿ8š”µíÖ-
+–"squid:ClassVariableVisibilityCheck"\Make tempDirProtocols a static final constant or non-public and provide accessors if needed.(áãæ¸üÿÿÿÿ8š”µíÖ-
+"squid:ClassVariableVisibilityCheck"dMake CountPurchaseProtocolOSZ a static final constant or non-public and provide accessors if needed.(ÀÑé›ÿÿÿÿÿ8š”µíÖ-
+ "squid:ClassVariableVisibilityCheck "fMake UpCountPurchaseProtocolOSZ a static final constant or non-public and provide accessors if needed.(²£·àøÿÿÿÿ8š”µíÖ-
+œ"squid:ClassVariableVisibilityCheck#"gMake CountPurchaseProtocolPAAE94 a static final constant or non-public and provide accessors if needed.(à„Ó8š”µíÖ-
+"squid:ClassVariableVisibilityCheck$"iMake UpCountPurchaseProtocolPAAE94 a static final constant or non-public and provide accessors if needed.(á«›ˆ8š”µíÖ-
+usquid:S00117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ƒ•…úÿÿÿÿ8š”µíÖ-
+Fsquid:S1148m"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8š”µíÖ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(“×·ôşÿÿÿÿ8š”µíÖ-
+vsquid:S3008"SRename this field "Database" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ôÚùÿÿÿÿ8š”µíÖ-
+osquid:S3008"QRename this field "Prefix" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÜ »8š”µíÖ-
+tsquid:S3008"QRename this field "UserDb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë¢Œïûÿÿÿÿ8š”µíÖ-
+ssquid:S3008"URename this field "UrlConnect" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î´‰8š”µíÖ-
+†squid:S3008"cRename this field "CountPurchaseProtocolOSZ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÑé›ÿÿÿÿÿ8š”µíÖ-
+ˆsquid:S3008 "eRename this field "UpCountPurchaseProtocolOSZ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²£·àøÿÿÿÿ8š”µíÖ-
+„squid:S3008#"fRename this field "CountPurchaseProtocolPAAE94" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à„Ó8š”µíÖ-
+†squid:S3008$"hRename this field "UpCountPurchaseProtocolPAAE94" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á«›ˆ8š”µíÖ-
+@squid:S2386"Make this member "protected".(Ââ‡åşÿÿÿÿ8š”µíÖ-
+vsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ç‹Ãıÿÿÿÿ8š”µíÖ-
+rsquid:S00100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¦Ô§ûÿÿÿÿ8š”µíÖ-
+Csquid:S2386_" Make member "Years" "protected".(şïíøÿÿÿÿ8š”µíÖ-
+msquid:S00100}"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¿èù8š”µíÖ-
+osquid:CommentedOutCodeLine‚"<This block of commented-out lines of code should be removed.(½£Öœûÿÿÿÿ8š”µíÖ-
