@@ -68,6 +68,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/ProtocolEvasionAESMBO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/ProtocolEvasionDecisionInfo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolCCAESMBO.java">
           <value>
             <set />
@@ -119,6 +129,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolCollationAESMBOData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolEvasionAESMBO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolEvasionAESMBOData.java">
           <value>
             <set />
           </value>
