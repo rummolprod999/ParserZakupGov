@@ -1,51 +1,51 @@
 
-=squid:S2885 "&Make "formatter" an instance variable.(ÛÑæô
+lsquid:S00100ˆ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€˜±±ýÿÿÿÿ
+Gsquid:S00108é")Either remove or fill this block of code.(®ûºöÿÿÿÿÿ
+‡squid:S1319V"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ˆ‘ÿ¡
+rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(°†ôè
+lsquid:S00100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ–ñ¾øÿÿÿÿ
+_squid:S00112ñ"FDefine and throw a dedicated exception instead of using a generic one.(§ëÅá
 squid:S1319ˆ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(€˜±±ýÿÿÿÿ
 csquid:S2142é"FEither re-interrupt this method or rethrow the "InterruptedException".(®ûºöÿÿÿÿÿ
-gsquid:S00100ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ëÅá
-Rsquid:S1141Ó"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
-lsquid:S00100½"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï“ªÅýÿÿÿÿ
-jsquid:S00117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ëÅá
-ysquid:S00116!"\Rename this field "__protocols223Dir" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óú»Òüÿÿÿÿ
-tsquid:S2737Ö"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(¤­—Îþÿÿÿÿ
-Fsquid:S001087")Either remove or fill this block of code.(½ÊûÛýÿÿÿÿ
-rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(°†ôè
-ksquid:S00100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û‰—üÿÿÿÿ
-fsquid:S4042¡"IUse "java.nio.Files#delete" here for better messages on error conditions.(é‘‚©úÿÿÿÿ
-_squid:S00112ñ"FDefine and throw a dedicated exception instead of using a generic one.(§ëÅá
-Œsquid:S1319>"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÁÈð´øÿÿÿÿ
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ãÐØ¤ùÿÿÿÿ
-™squid:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ðÂ§™
-lsquid:S00100ˆ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€˜±±ýÿÿÿÿ
-lsquid:S00100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ–ñ¾øÿÿÿÿ
-"squid:ClassVariableVisibilityCheck!"]Make __protocols223Dir a static final constant or non-public and provide accessors if needed.(Óú»Òüÿÿÿÿ
-gsquid:S00100É"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÃì“
-W
-squid:S899¡";Do something with the "boolean" value returned by "delete".(é‘‚©úÿÿÿÿ
-‡squid:S1319V"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ˆ‘ÿ¡
-Fsquid:S1444 "/Make this "public static formatter" field final(ÛÑæô
-ksquid:S00100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÈð´øÿÿÿÿ
-Fsquid:S00108,")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ
-Gsquid:S00108´")Either remove or fill this block of code.(®ûºöÿÿÿÿÿ
-csquid:S2142´"FEither re-interrupt this method or rethrow the "InterruptedException".(®ûºöÿÿÿÿÿ
-osquid:S2095§"RUse try-with-resources or close this "BufferedOutputStream" in a "finally" clause.(‹¯øÑüÿÿÿÿ
-asquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(ÁÙD
-hsquid:CommentedOutCodeLine”"<This block of commented-out lines of code should be removed.(Æ‘Ð°ÿÿÿÿÿ
-jsquid:S00117É"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÃì“
-Ž"squid:ClassVariableVisibilityCheck""[Make protocols223Dir a static final constant or non-public and provide accessors if needed.(ñŸÃÑùÿÿÿÿ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
-Œsquid:S1319o"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(äˆÍÓýÿÿÿÿ
-lsquid:S00100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌèÁ§ùÿÿÿÿ
-fsquid:S00100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ‘ÿ¡
 ƒ"squid:ClassVariableVisibilityCheck "UMake formatter a static final constant or non-public and provide accessors if needed.(ÛÑæô
-hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æ‘Ð°ÿÿÿÿÿ
-Rsquid:S1854¾"5Remove this useless assignment to local variable "s".(’ µéþÿÿÿÿ
-Gsquid:S00108é")Either remove or fill this block of code.(®ûºöÿÿÿÿÿ
-u
-squid:S135§"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆžÿÿÿÿÿ
+fsquid:S4042¡"IUse "java.nio.Files#delete" here for better messages on error conditions.(é‘‚©úÿÿÿÿ
+ksquid:S00100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÈð´øÿÿÿÿ
+ksquid:S00100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äˆÍÓýÿÿÿÿ
 _squid:S00112ÿ"FDefine and throw a dedicated exception instead of using a generic one.(úØ¹¥
+csquid:S2142´"FEither re-interrupt this method or rethrow the "InterruptedException".(®ûºöÿÿÿÿÿ
+lsquid:S00100½"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï“ªÅýÿÿÿÿ
+asquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(ÁÙD
+ksquid:S00100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û‰—üÿÿÿÿ
+Œsquid:S1319o"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(äˆÍÓýÿÿÿÿ
+gsquid:S00100É"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÃì“
+hsquid:CommentedOutCodeLine”"<This block of commented-out lines of code should be removed.(Æ‘Ð°ÿÿÿÿÿ
 Hsquid:S1481Ô"+Remove this unused "result" local variable.(”“øùÿÿÿÿ
-fsquid:S001003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ð±÷È
+osquid:S2095§"RUse try-with-resources or close this "BufferedOutputStream" in a "finally" clause.(‹¯øÑüÿÿÿÿ
+Ž"squid:ClassVariableVisibilityCheck""[Make protocols223Dir a static final constant or non-public and provide accessors if needed.(œÑ½™ÿÿÿÿÿ
+jsquid:S00117É"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÃì“
+Fsquid:S00108,")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ
 u
 squid:S135Ì"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆžÿÿÿÿÿ
-ksquid:S00100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äˆÍÓýÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ãÐØ¤ùÿÿÿÿ
+Rsquid:S1141Ó"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Fsquid:S1444 "/Make this "public static formatter" field final(ÛÑæô
+™squid:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ðÂ§™
+lsquid:S00100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌèÁ§ùÿÿÿÿ
+tsquid:S2737Ö"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(¤­—Îþÿÿÿÿ
+Rsquid:S1854¾"5Remove this useless assignment to local variable "s".(’ µéþÿÿÿÿ
+Fsquid:S001087")Either remove or fill this block of code.(½ÊûÛýÿÿÿÿ
+Gsquid:S00108´")Either remove or fill this block of code.(®ûºöÿÿÿÿÿ
+ysquid:S00116!"\Rename this field "__protocols223Dir" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óú»Òüÿÿÿÿ
+=squid:S2885 "&Make "formatter" an instance variable.(ÛÑæô
+jsquid:S00117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ëÅá
+gsquid:S00100ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ëÅá
+"squid:ClassVariableVisibilityCheck!"]Make __protocols223Dir a static final constant or non-public and provide accessors if needed.(Óú»Òüÿÿÿÿ
+hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æ‘Ð°ÿÿÿÿÿ
+fsquid:S001003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ð±÷È
+u
+squid:S135§"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆžÿÿÿÿÿ
+Œsquid:S1319>"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÁÈð´øÿÿÿÿ
+fsquid:S00100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ‘ÿ¡
+W
+squid:S899¡";Do something with the "boolean" value returned by "delete".(é‘‚©úÿÿÿÿ
