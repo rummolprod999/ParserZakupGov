@@ -126,3 +126,17 @@ e
 5src/PurchaseProtocols/PurchaseProtocolFKVOKESMBO.java,6/5/65ea81ae0b9234963acacbbdeb4b2091e456fe4b
 i
 9src/PurchaseProtocols/PurchaseProtocolFKVOKESMBOData.java,d/1/d18c995b01d71937b3d4e50ba902ac787c46c2e5
+W
+'src/PurchaseProtocols/ProtocolPAOA.java,3/5/35aeaf387adb71df1170e7867ae865f5ee82ac24
+b
+2src/PurchaseProtocols/ProtocolRejectionKESMBO.java,a/5/a589b47c4f5868ff5bcfed2d6bd6da6c6a1f0887
+c
+3src/PurchaseProtocols/ProtocolRejectionZKESMBO.java,3/8/386afc6a9308de38f2eb98d3247d29166393d9ac
+j
+:src/PurchaseProtocols/PurchaseProtocolRejectionKESMBO.java,f/b/fb80691e9db222046493a8dedf01a8c38fbb6e8e
+n
+>src/PurchaseProtocols/PurchaseProtocolRejectionKESMBOData.java,c/3/c325b7d3456bb90d42678fb9ef6053e9771dabc3
+k
+;src/PurchaseProtocols/PurchaseProtocolRejectionZKESMBO.java,e/5/e58a9278ca25fbe9154cdfbbe9b55d08d6748b4b
+o
+?src/PurchaseProtocols/PurchaseProtocolRejectionZKESMBOData.java,2/5/25c3c79c0d13519b9436d61d8b4302f7af04c263
