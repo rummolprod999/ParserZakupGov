@@ -1,0 +1,20 @@
+
+bsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(ï¦å•
+nsquid:S00116="QRename this field "Region" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İïìÃıÿÿÿÿ
+Zsquid:HiddenFieldCheck."8Rename "prot" which hides the field declared at line 16.(¥çÌò
+isquid:S00116>"LRename this field "F" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï€ÃÙøÿÿÿÿ
+~"squid:ClassVariableVisibilityCheckA"PMake Type a static final constant or non-public and provide accessors if needed.(—‹ƒ’
+ƒ"squid:ClassVariableVisibilityCheck?"UMake PathParse a static final constant or non-public and provide accessors if needed.(»¨¹Œ
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿá–±üÿÿÿÿ
+…"squid:ClassVariableVisibilityCheck="RMake Region a static final constant or non-public and provide accessors if needed.(İïìÃıÿÿÿÿ
+ƒ"squid:ClassVariableVisibilityCheck@"PMake Prot a static final constant or non-public and provide accessors if needed.(¦¸™øúÿÿÿÿ
+gsquid:S00116A"ORename this field "Type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‹ƒ’
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
+~"squid:ClassVariableVisibilityCheckB"QMake Ftext a static final constant or non-public and provide accessors if needed.(óİ¼
+lsquid:S00116@"ORename this field "Prot" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¸™øúÿÿÿÿ
+lsquid:S00116?"TRename this field "PathParse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¨¹Œ
+bsquid:S1301*"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•
+nsquid:S00117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô©ˆÅüÿÿÿÿ
+€"squid:ClassVariableVisibilityCheck>"MMake F a static final constant or non-public and provide accessors if needed.(Ï€ÃÙøÿÿÿÿ
+gsquid:S00116B"PRename this field "Ftext" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óİ¼
+‡"squid:SwitchLastCaseIsDefaultCheck*"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÜŸ•

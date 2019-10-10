@@ -1,0 +1,4 @@
+
+¤squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õ’üôÿÿÿÿÿ8Ú¸áŠØ-
+qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘‡¸<
+Š"squid:ClassVariableVisibilityCheck"PMake body a static final constant or non-public and provide accessors if needed.(’§À’ùÿÿÿÿ8Ú¸áŠØ-

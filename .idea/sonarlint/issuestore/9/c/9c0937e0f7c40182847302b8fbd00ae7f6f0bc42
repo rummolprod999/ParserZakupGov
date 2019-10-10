@@ -1,0 +1,8 @@
+
+~"squid:ClassVariableVisibilityCheck"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾
+‚"squid:ClassVariableVisibilityCheck"OMake inn a static final constant or non-public and provide accessors if needed.(¦ßÚŸùÿÿÿÿ
+‚"squid:ClassVariableVisibilityCheck3"OMake kpp a static final constant or non-public and provide accessors if needed.(€íÍúÿÿÿÿ
+†"squid:ClassVariableVisibilityCheck4"SMake address a static final constant or non-public and provide accessors if needed.(€ªµúÿÿÿÿÿ
+ƒ"squid:ClassVariableVisibilityCheck5"PMake ogrn a static final constant or non-public and provide accessors if needed.(À‚áõşÿÿÿÿ
+qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘‡¸<
+˜squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(—ğ†±
