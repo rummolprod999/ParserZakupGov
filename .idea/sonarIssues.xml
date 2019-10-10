@@ -178,6 +178,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/ProtocolSummingupZKESMBO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolCCAESMBO.java">
           <value>
             <set />
@@ -434,6 +439,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolSummingupKESMBOData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolSummingupZKESMBO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/PurchaseProtocols/PurchaseProtocolSummingupZKESMBOData.java">
           <value>
             <set />
           </value>
