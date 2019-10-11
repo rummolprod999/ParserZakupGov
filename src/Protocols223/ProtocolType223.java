@@ -237,6 +237,456 @@ public class ProtocolType223 {
                     Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolZK");
                 }
                 break;
+            case purchaseProtocolCCAESMBO:
+                try {
+                    ProtocolCCAESMBO p = gson.fromJson(JsonString, ProtocolCCAESMBO.class);
+                    Prot prot = p.purchaseProtocolCCAESMBO.body.item.purchaseProtocolCCAESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolCCAESMBO");
+                }
+                break;
+            case purchaseProtocolCCKESMBO:
+                try {
+                    ProtocolCCKESMBO p = gson.fromJson(JsonString, ProtocolCCKESMBO.class);
+                    Prot prot = p.purchaseProtocolCCKESMBO.body.item.purchaseProtocolCCKESMBOData;
+                    if (prot == null) {
+                        prot = p.purchaseProtocolCCKESMBO.body.item.purchaseProtocolCCKESMBOOData;
+                    }
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolCCKESMBO");
+                }
+                break;
+            case purchaseProtocolCCZKESMBO:
+                try {
+                    ProtocolCCZKESMBO p = gson.fromJson(JsonString, ProtocolCCZKESMBO.class);
+                    Prot prot = p.purchaseProtocolCCZKESMBO.body.item.purchaseProtocolCCZKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolCCZKESMBO");
+                }
+                break;
+
+            case purchaseProtocolCCZPESMBO:
+                try {
+                    ProtocolCCZPESMBO p = gson.fromJson(JsonString, ProtocolCCZPESMBO.class);
+                    Prot prot = p.purchaseProtocolCCZPESMBO.body.item.purchaseProtocolCCZPESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolCCZPESMBO");
+                }
+                break;
+            case purchaseProtocolCollationAESMBO:
+                try {
+                    ProtocolCollationAESMBO p = gson.fromJson(JsonString, ProtocolCollationAESMBO.class);
+                    Prot prot = p.purchaseProtocolCollationAESMBO.body.item.purchaseProtocolCollationAESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolCollationAESMBO");
+                }
+                break;
+            case purchaseProtocolEvasionAESMBO:
+                try {
+                    ProtocolEvasionAESMBO p = gson.fromJson(JsonString, ProtocolEvasionAESMBO.class);
+                    Prot prot = p.purchaseProtocolEvasionAESMBO.body.item.purchaseProtocolEvasionAESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolEvasionAESMBO");
+                }
+                break;
+            case purchaseProtocolEvasionKESMBO:
+                try {
+                    ProtocolEvasionKESMBO p = gson.fromJson(JsonString, ProtocolEvasionKESMBO.class);
+                    Prot prot = p.purchaseProtocolEvasionKESMBO.body.item.purchaseProtocolEvasionKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolEvasionKESMBO");
+                }
+                break;
+            case purchaseProtocolEvasionZKESMBO:
+                try {
+                    ProtocolEvasionZKESMBO p = gson.fromJson(JsonString, ProtocolEvasionZKESMBO.class);
+                    Prot prot = p.purchaseProtocolEvasionZKESMBO.body.item.purchaseProtocolEvasionZKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolEvasionZKESMBO");
+                }
+                break;
+            case purchaseProtocolEvasionZPESMBO:
+                try {
+                    ProtocolEvasionZPESMBO p = gson.fromJson(JsonString, ProtocolEvasionZPESMBO.class);
+                    Prot prot = p.purchaseProtocolEvasionZPESMBO.body.item.purchaseProtocolEvasionZPESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolEvasionZPESMBO");
+                }
+                break;
+            case purchaseProtocolFCDKESMBO:
+                try {
+                    ProtocolFCDKESMBO p = gson.fromJson(JsonString, ProtocolFCDKESMBO.class);
+                    Prot prot = p.purchaseProtocolFCDKESMBO.body.item.purchaseProtocolFCDKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolFCDKESMBO");
+                }
+                break;
+            case purchaseProtocolFCODKESMBO:
+                try {
+                    ProtocolFCODKESMBO p = gson.fromJson(JsonString, ProtocolFCODKESMBO.class);
+                    Prot prot = p.purchaseProtocolFCODKESMBO.body.item.purchaseProtocolFCODKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolFCODKESMBO");
+                }
+                break;
+            case purchaseProtocolFKVOKESMBO:
+                try {
+                    ProtocolFKVOKESMBO p = gson.fromJson(JsonString, ProtocolFKVOKESMBO.class);
+                    Prot prot = p.purchaseProtocolFKVOKESMBO.body.item.purchaseProtocolFKVOKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolFKVOKESMBO");
+                }
+                break;
+            case purchaseProtocolRejectionAESMBO:
+                try {
+                    Protocol p = gson.fromJson(JsonString, Protocol.class);
+                    Prot prot = p.purchaseProtocol.body.item.purchaseProtocolData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRejectionAESMBO");
+                    try {
+                        ProtocolRejectionAESMBO p = gson.fromJson(JsonString, ProtocolRejectionAESMBO.class);
+                        Prot prot = p.purchaseProtocolRejectionAESMBO.body.item.purchaseProtocolRejectionAESMBOData;
+                        if (prot != null) {
+                            prot.Parsing(new Settings(), con);
+
+                        } else {
+                            Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                        }
+                    } catch (Exception ff) {
+                        Log.Logger(ff, ff.getStackTrace(), f.getAbsolutePath(), "Error 2 get gson object purchaseProtocolRejectionAESMBO");
+                    }
+                }
+                break;
+            case purchaseProtocolRejectionKESMBO:
+                try {
+                    ProtocolRejectionKESMBO p = gson.fromJson(JsonString, ProtocolRejectionKESMBO.class);
+                    Prot prot = p.purchaseProtocolRejectionKESMBO.body.item.purchaseProtocolRejectionKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRejectionKESMBO");
+                }
+                break;
+            case purchaseProtocolRejectionZKESMBO:
+                try {
+                    ProtocolRejectionZKESMBO p = gson.fromJson(JsonString, ProtocolRejectionZKESMBO.class);
+                    Prot prot = p.purchaseProtocolRejectionZKESMBO.body.item.purchaseProtocolRejectionZKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRejectionZKESMBO");
+                }
+                break;
+            case purchaseProtocolRejectionZPESMBO:
+                try {
+                    ProtocolRejectionZPESMBO p = gson.fromJson(JsonString, ProtocolRejectionZPESMBO.class);
+                    Prot prot = p.purchaseProtocolRejectionZPESMBO.body.item.purchaseProtocolRejectionZPESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRejectionZPESMBO");
+                }
+                break;
+            case purchaseProtocolRZ1AESMBO:
+                try {
+                    ProtocolRZ1AESMBO p = gson.fromJson(JsonString, ProtocolRZ1AESMBO.class);
+                    Prot prot = p.purchaseProtocolRZ1AESMBO.body.item.purchaseProtocolRZ1AESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRZ1AESMBO");
+                }
+                break;
+            case purchaseProtocolRZ1KESMBO:
+                try {
+                    ProtocolRZ1KESMBO p = gson.fromJson(JsonString, ProtocolRZ1KESMBO.class);
+                    Prot prot = p.purchaseProtocolRZ1KESMBO.body.item.purchaseProtocolRZ1KESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRZ1KESMBO");
+                }
+                break;
+            case purchaseProtocolRZ1ZPESMBO:
+                try {
+                    ProtocolRZ1ZPESMBO p = gson.fromJson(JsonString, ProtocolRZ1ZPESMBO.class);
+                    Prot prot = p.purchaseProtocolRZ1ZPESMBO.body.item.purchaseProtocolRZ1ZPESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRZ1ZPESMBO");
+                }
+                break;
+            case purchaseProtocolRZ2AESMBO:
+                try {
+                    ProtocolRZ2AESMBO p = gson.fromJson(JsonString, ProtocolRZ2AESMBO.class);
+                    Prot prot = p.purchaseProtocolRZ2AESMBO.body.item.purchaseProtocolRZ2AESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRZ2AESMBO");
+                }
+                break;
+            case purchaseProtocolRZ2KESMBO:
+                try {
+                    ProtocolRZ2KESMBO p = gson.fromJson(JsonString, ProtocolRZ2KESMBO.class);
+                    Prot prot = p.purchaseProtocolRZ2KESMBO.body.item.purchaseProtocolRZ2KESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRZ2KESMBO");
+                }
+                break;
+            case purchaseProtocolRZ2ZPESMBO:
+                try {
+                    ProtocolRZ2ZPESMBO p = gson.fromJson(JsonString, ProtocolRZ2ZPESMBO.class);
+                    Prot prot = p.purchaseProtocolRZ2ZPESMBO.body.item.purchaseProtocolRZ2ZPESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRZ2ZPESMBO");
+                }
+                break;
+            case purchaseProtocolRZZKESMBO:
+                try {
+                    ProtocolRZZKESMBO p = gson.fromJson(JsonString, ProtocolRZZKESMBO.class);
+                    Prot prot = p.purchaseProtocolRZZKESMBO.body.item.purchaseProtocolRZZKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRZZKESMBO");
+                }
+                break;
+            case purchaseProtocolSummingupAESMBO:
+                try {
+                    ProtocolSummingupAESMBO p = gson.fromJson(JsonString, ProtocolSummingupAESMBO.class);
+                    Prot prot = p.purchaseProtocolSummingupAESMBO.body.item.purchaseProtocolSummingupAESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolSummingupAESMBO");
+                }
+                break;
+            case purchaseProtocolSummingupKESMBO:
+                try {
+                    ProtocolSummingupKESMBO p = gson.fromJson(JsonString, ProtocolSummingupKESMBO.class);
+                    Prot prot = p.purchaseProtocolSummingupKESMBO.body.item.purchaseProtocolSummingupKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolSummingupKESMBO");
+                }
+                break;
+            case purchaseProtocolSummingupZKESMBO:
+                try {
+                    ProtocolSummingupZKESMBO p = gson.fromJson(JsonString, ProtocolSummingupZKESMBO.class);
+                    Prot prot = p.purchaseProtocolSummingupZKESMBO.body.item.purchaseProtocolSummingupZKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolSummingupZKESMBO");
+                }
+                break;
+            case purchaseProtocolSummingupZPESMBO:
+                try {
+                    ProtocolSummingupZPESMBO p = gson.fromJson(JsonString, ProtocolSummingupZPESMBO.class);
+                    Prot prot = p.purchaseProtocolSummingupZPESMBO.body.item.purchaseProtocolSummingupZPESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolSummingupZPESMBO");
+                }
+                break;
+            case purchaseProtocolZRPZAESMBO:
+                try {
+                    ProtocolZRPZAESMBO p = gson.fromJson(JsonString, ProtocolZRPZAESMBO.class);
+                    Prot prot = p.purchaseProtocolZRPZAESMBO.body.item.purchaseProtocolZRPZAESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolZRPZAESMBO");
+                }
+                break;
+            case purchaseProtocolZRPZKESMBO:
+                try {
+                    ProtocolZRPZKESMBO p = gson.fromJson(JsonString, ProtocolZRPZKESMBO.class);
+                    Prot prot = p.purchaseProtocolZRPZKESMBO.body.item.purchaseProtocolZRPZKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolZRPZKESMBO");
+                }
+                break;
+            case purchaseProtocolZRPZZKESMBO:
+                try {
+                    ProtocolZRPZZKESMBO p = gson.fromJson(JsonString, ProtocolZRPZZKESMBO.class);
+                    Prot prot = p.purchaseProtocolZRPZZKESMBO.body.item.purchaseProtocolZRPZZKESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolZRPZZKESMBO");
+                }
+                break;
+            case purchaseProtocolZRPZZPESMBO:
+                try {
+                    ProtocolZRPZZPESMBO p = gson.fromJson(JsonString, ProtocolZRPZZPESMBO.class);
+                    Prot prot = p.purchaseProtocolZRPZZPESMBO.body.item.purchaseProtocolZRPZZPESMBOData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolZRPZZPESMBO");
+                }
+                break;
         }
 //        Protocol p = gson.fromJson(JsonString, Protocol.class);
 //        System.out.println(p.purchaseProtocol.body.item.purchaseProtocolData.guid);

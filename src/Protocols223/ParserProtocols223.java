@@ -38,10 +38,13 @@ public class ParserProtocols223 extends Parser {
         }
     }
 
-    public void GetListFileArch(String pathParse, String prot, Region region, String file) {
+    public Boolean GetListFileArch(String pathParse, String prot, Region region, String file) {
         String filea = "";
         String pathUnzip = "";
         filea = GetArch(file, pathParse, Ftp223Login, Ftp223Pass);
+        if(filea.isEmpty()){
+            return false;
+        }
         if (!Objects.equals(filea, "")) {
             pathUnzip = Unzip(filea);
             if (!Objects.equals(pathUnzip, "")) {
@@ -110,6 +113,99 @@ public class ParserProtocols223 extends Parser {
                             case "purchaseProtocolZK":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolZK, con);
                                 break;
+                            case "purchaseProtocolCCAESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolCCAESMBO, con);
+                                break;
+                            case "purchaseProtocolCCKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolCCKESMBO, con);
+                                break;
+                            case "purchaseProtocolCCZKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolCCZKESMBO, con);
+                                break;
+                            case "purchaseProtocolCCZPESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolCCZPESMBO, con);
+                                break;
+                            case "purchaseProtocolCollationAESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolCollationAESMBO, con);
+                                break;
+                            case "purchaseProtocolEvasionAESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolEvasionAESMBO, con);
+                                break;
+                            case "purchaseProtocolEvasionKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolEvasionKESMBO, con);
+                                break;
+                            case "purchaseProtocolEvasionZKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolEvasionZKESMBO, con);
+                                break;
+                            case "purchaseProtocolEvasionZPESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolEvasionZPESMBO, con);
+                                break;
+                            case "purchaseProtocolFCDKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolFCDKESMBO, con);
+                                break;
+                            case "purchaseProtocolFCODKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolFCODKESMBO, con);
+                                break;
+                            case "purchaseProtocolFKVOKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolFKVOKESMBO, con);
+                                break;
+                            case "purchaseProtocolRejectionAESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRejectionAESMBO, con);
+                                break;
+                            case "purchaseProtocolRejectionKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRejectionKESMBO, con);
+                                break;
+                            case "purchaseProtocolRejectionZKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRejectionZKESMBO, con);
+                                break;
+                            case "purchaseProtocolRejectionZPESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRejectionZPESMBO, con);
+                                break;
+                            case "purchaseProtocolRZ1AESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ1AESMBO, con);
+                                break;
+                            case "purchaseProtocolRZ1KESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ1KESMBO, con);
+                                break;
+                            case "purchaseProtocolRZ1ZPESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ1ZPESMBO, con);
+                                break;
+                            case "purchaseProtocolRZ2AESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ2AESMBO, con);
+                                break;
+                            case "purchaseProtocolRZ2KESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ2KESMBO, con);
+                                break;
+                            case "purchaseProtocolRZ2ZPESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ2ZPESMBO, con);
+                                break;
+                            case "purchaseProtocolRZZKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZZKESMBO, con);
+                                break;
+                            case "purchaseProtocolSummingupAESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolSummingupAESMBO, con);
+                                break;
+                            case "purchaseProtocolSummingupKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolSummingupKESMBO, con);
+                                break;
+                            case "purchaseProtocolSummingupZKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolSummingupZKESMBO, con);
+                                break;
+                            case "purchaseProtocolSummingupZPESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolSummingupZPESMBO, con);
+                                break;
+                            case "purchaseProtocolZRPZAESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolZRPZAESMBO, con);
+                                break;
+                            case "purchaseProtocolZRPZKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolZRPZKESMBO, con);
+                                break;
+                            case "purchaseProtocolZRPZZKESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolZRPZZKESMBO, con);
+                                break;
+                            case "purchaseProtocolZRPZZPESMBO":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolZRPZZPESMBO, con);
+                                break;
                             case "purchaseProtocolCancellation":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolCancellation, con);
                                 break;
@@ -127,6 +223,7 @@ public class ParserProtocols223 extends Parser {
             }
 
         }
+        return true;
     }
 
     public void Bolter(File f, String pathParse, String prot, Region region, TypeProt223 type, Connection con) {
@@ -181,7 +278,10 @@ public class ParserProtocols223 extends Parser {
         }
         for (String st : s) {
             try {
-                GetListFileArch(pathParse, prot, region, st);
+                Boolean b = GetListFileArch(pathParse, prot, region, st);
+                if(!b){
+                    continue;
+                }
                 InsertArrMysql(st);
             } catch (Exception e) {
                 Log.Logger("Error on parsing list from ftp", e.getStackTrace(), e);

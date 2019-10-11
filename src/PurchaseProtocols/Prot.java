@@ -19,6 +19,8 @@ public class Prot {
     public String missedContest;
     public String missedReason;
     public String сancellationReason;
+    public String cancellationReason;
+    public String purchaseCancellationReason;
 
     public LotApplicationsList getLotAppList() {
         if (lotApplicationsList instanceof String) {
@@ -38,6 +40,7 @@ public class Prot {
     public PurchaseInfo purchaseInfo;
     public Attachments attachments;
     public ProtocolInfo protocolInfo;
+    public ProtocolEvasionDecisionInfo protocolEvasionDecisionInfo;
 
     public Prot() {
     }
@@ -62,7 +65,7 @@ public class Prot {
         }
         String idProtocol = guid != null ? guid : "";
         String url = urlOOS != null ? urlOOS : "";
-        if(url.equals("") && urlEIS != null){
+        if (url.equals("") && urlEIS != null) {
             url = urlEIS;
         }
         Date protocolDate = (createDateTime != null) ? Parser.GetDate(createDateTime) : new Date(0L);
@@ -105,7 +108,19 @@ public class Prot {
         int idProt = 0;
         String typeProtocol = (typeName != null) ? typeName : "";
         String missedR = (missedReason != null) ? missedReason : "";
-        PreparedStatement ps4 = con.prepareStatement(String.format("INSERT INTO %sprotocols223 SET guid = ?, protocol_date = ?, url = ?, purchase_number = ?, type_protocol = ?, cancel = ?, missed_contest = ?, missed_reason = ?, xml = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
+        if (missedR.equals("")) {
+            if (protocolEvasionDecisionInfo != null && protocolEvasionDecisionInfo.confirmingDocsRequisites != null) {
+                missedR = missedR + (String.format("%s", protocolEvasionDecisionInfo.confirmingDocsRequisites));
+            }
+            if (protocolEvasionDecisionInfo != null && protocolEvasionDecisionInfo.commissionDecisionReason != null) {
+                missedR = missedR + (String.format(" %s", protocolEvasionDecisionInfo.commissionDecisionReason));
+            }
+            missedR = missedR.trim();
+        }
+        if (missedR.isEmpty() && (purchaseCancellationReason != null)) {
+            missedR = purchaseCancellationReason;
+        }
+        PreparedStatement ps4 = con.prepareStatement(String.format("INSERT INTO %sprotocols223 SET guid = ?, protocol_date = ?, url = ?, purchase_number = ?, type_protocol = ?, cancel = ?, missed_contest = ?, missed_reason = ?, xml = ?, type_ftp = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
         ps4.setString(1, idProtocol);
         ps4.setTimestamp(2, new Timestamp(protocolDate.getTime()));
         ps4.setString(3, url);
@@ -115,6 +130,7 @@ public class Prot {
         ps4.setString(7, getMissedContest());
         ps4.setString(8, missedR);
         ps4.setString(9, set.PathParse);
+        ps4.setString(10, set.Type.toString());
         ps4.executeUpdate();
         ResultSet rt = ps4.getGeneratedKeys();
         if (rt.next()) {
@@ -177,6 +193,100 @@ public class Prot {
                 case purchaseProtocolZK:
                     Main.UpCountPurchaseProtocolZK++;
                     break;
+                case purchaseProtocolCCAESMBO:
+                    Main.UpCountPurchaseProtocolCCAESMBO++;
+                    break;
+                case purchaseProtocolCCKESMBO:
+                    Main.UpCountPurchaseProtocolCCKESMBO++;
+                    break;
+                case purchaseProtocolCCZKESMBO:
+                    Main.UpCountPurchaseProtocolCCZKESMBO++;
+                    break;
+                case purchaseProtocolCCZPESMBO:
+                    Main.UpCountPurchaseProtocolCCZPESMBO++;
+                    break;
+                case purchaseProtocolCollationAESMBO:
+                    Main.UpCountPurchaseProtocolCollationAESMBO++;
+                    break;
+                case purchaseProtocolEvasionAESMBO:
+                    Main.UpCountPurchaseProtocolEvasionAESMBO++;
+                    break;
+                case purchaseProtocolEvasionKESMBO:
+                    Main.UpCountPurchaseProtocolEvasionKESMBO++;
+                    break;
+                case purchaseProtocolEvasionZKESMBO:
+                    Main.UpCountPurchaseProtocolEvasionZKESMBO++;
+                    break;
+                case purchaseProtocolEvasionZPESMBO:
+                    Main.UpCountPurchaseProtocolEvasionZPESMBO++;
+                    break;
+                case purchaseProtocolFCDKESMBO:
+                    Main.UpCountPurchaseProtocolFCDKESMBO++;
+                    break;
+                case purchaseProtocolFCODKESMBO:
+                    Main.UpCountPurchaseProtocolFCODKESMBO++;
+                    break;
+                case purchaseProtocolFKVOKESMBO:
+                    Main.UpCountPurchaseProtocolFKVOKESMBO++;
+                    break;
+                case purchaseProtocolRejectionAESMBO:
+                    Main.UpCountPurchaseProtocolRejectionAESMBO++;
+                    break;
+                case purchaseProtocolRejectionKESMBO:
+                    Main.UpCountPurchaseProtocolRejectionKESMBO++;
+                    break;
+                case purchaseProtocolRejectionZKESMBO:
+                    Main.UpCountPurchaseProtocolRejectionZKESMBO++;
+                    break;
+                case purchaseProtocolRejectionZPESMBO:
+                    Main.UpCountPurchaseProtocolRejectionZPESMBO++;
+                    break;
+                case purchaseProtocolRZ1AESMBO:
+                    Main.UpCountPurchaseProtocolRZ1AESMBO++;
+                    break;
+                case purchaseProtocolRZ1KESMBO:
+                    Main.UpCountPurchaseProtocolRZ1KESMBO++;
+                    break;
+                case purchaseProtocolRZ1ZPESMBO:
+                    Main.UpCountPurchaseProtocolRZ1ZPESMBO++;
+                    break;
+                case purchaseProtocolRZ2AESMBO:
+                    Main.UpCountPurchaseProtocolRZ2AESMBO++;
+                    break;
+                case purchaseProtocolRZ2KESMBO:
+                    Main.UpCountPurchaseProtocolRZ2KESMBO++;
+                    break;
+                case purchaseProtocolRZ2ZPESMBO:
+                    Main.UpCountPurchaseProtocolRZ2ZPESMBO++;
+                    break;
+                case purchaseProtocolRZZKESMBO:
+                    Main.UpCountPurchaseProtocolRZZKESMBO++;
+                    break;
+                case purchaseProtocolSummingupAESMBO:
+                    Main.UpCountPurchaseProtocolSummingupAESMBO++;
+                    break;
+                case purchaseProtocolSummingupKESMBO:
+                    Main.UpCountPurchaseProtocolSummingupKESMBO++;
+                    break;
+                case purchaseProtocolSummingupZKESMBO:
+                    Main.UpCountPurchaseProtocolSummingupZKESMBO++;
+                    break;
+                case purchaseProtocolSummingupZPESMBO:
+                    Main.UpCountPurchaseProtocolSummingupZPESMBO++;
+                    break;
+                case purchaseProtocolZRPZAESMBO:
+                    Main.UpCountPurchaseProtocolZRPZAESMBO++;
+                    break;
+                case purchaseProtocolZRPZKESMBO:
+                    Main.UpCountPurchaseProtocolZRPZKESMBO++;
+                    break;
+                case purchaseProtocolZRPZZKESMBO:
+                    Main.UpCountPurchaseProtocolZRPZZKESMBO++;
+                    break;
+                case purchaseProtocolZRPZZPESMBO:
+                    Main.UpCountPurchaseProtocolZRPZZPESMBO++;
+                    break;
+
             }
         } else {
             switch (set.Type) {
@@ -232,6 +342,99 @@ public class Prot {
                     break;
                 case purchaseProtocolZK:
                     Main.CountPurchaseProtocolZK++;
+                    break;
+                case purchaseProtocolCCAESMBO:
+                    Main.CountPurchaseProtocolCCAESMBO++;
+                    break;
+                case purchaseProtocolCCKESMBO:
+                    Main.CountPurchaseProtocolCCKESMBO++;
+                    break;
+                case purchaseProtocolCCZKESMBO:
+                    Main.CountPurchaseProtocolCCZKESMBO++;
+                    break;
+                case purchaseProtocolCCZPESMBO:
+                    Main.CountPurchaseProtocolCCZPESMBO++;
+                    break;
+                case purchaseProtocolCollationAESMBO:
+                    Main.CountPurchaseProtocolCollationAESMBO++;
+                    break;
+                case purchaseProtocolEvasionAESMBO:
+                    Main.CountPurchaseProtocolEvasionAESMBO++;
+                    break;
+                case purchaseProtocolEvasionKESMBO:
+                    Main.CountPurchaseProtocolEvasionKESMBO++;
+                    break;
+                case purchaseProtocolEvasionZKESMBO:
+                    Main.CountPurchaseProtocolEvasionZKESMBO++;
+                    break;
+                case purchaseProtocolEvasionZPESMBO:
+                    Main.CountPurchaseProtocolEvasionZPESMBO++;
+                    break;
+                case purchaseProtocolFCDKESMBO:
+                    Main.CountPurchaseProtocolFCDKESMBO++;
+                    break;
+                case purchaseProtocolFCODKESMBO:
+                    Main.CountPurchaseProtocolFCODKESMBO++;
+                    break;
+                case purchaseProtocolFKVOKESMBO:
+                    Main.CountPurchaseProtocolFKVOKESMBO++;
+                    break;
+                case purchaseProtocolRejectionAESMBO:
+                    Main.CountPurchaseProtocolRejectionAESMBO++;
+                    break;
+                case purchaseProtocolRejectionKESMBO:
+                    Main.CountPurchaseProtocolRejectionKESMBO++;
+                    break;
+                case purchaseProtocolRejectionZKESMBO:
+                    Main.CountPurchaseProtocolRejectionZKESMBO++;
+                    break;
+                case purchaseProtocolRejectionZPESMBO:
+                    Main.CountPurchaseProtocolRejectionZPESMBO++;
+                    break;
+                case purchaseProtocolRZ1AESMBO:
+                    Main.CountPurchaseProtocolRZ1AESMBO++;
+                    break;
+                case purchaseProtocolRZ1KESMBO:
+                    Main.CountPurchaseProtocolRZ1KESMBO++;
+                    break;
+                case purchaseProtocolRZ1ZPESMBO:
+                    Main.CountPurchaseProtocolRZ1ZPESMBO++;
+                    break;
+                case purchaseProtocolRZ2AESMBO:
+                    Main.CountPurchaseProtocolRZ2AESMBO++;
+                    break;
+                case purchaseProtocolRZ2KESMBO:
+                    Main.CountPurchaseProtocolRZ2KESMBO++;
+                    break;
+                case purchaseProtocolRZ2ZPESMBO:
+                    Main.CountPurchaseProtocolRZ2ZPESMBO++;
+                    break;
+                case purchaseProtocolRZZKESMBO:
+                    Main.CountPurchaseProtocolRZZKESMBO++;
+                    break;
+                case purchaseProtocolSummingupAESMBO:
+                    Main.CountPurchaseProtocolSummingupAESMBO++;
+                    break;
+                case purchaseProtocolSummingupKESMBO:
+                    Main.CountPurchaseProtocolSummingupKESMBO++;
+                    break;
+                case purchaseProtocolSummingupZKESMBO:
+                    Main.CountPurchaseProtocolSummingupZKESMBO++;
+                    break;
+                case purchaseProtocolSummingupZPESMBO:
+                    Main.CountPurchaseProtocolSummingupZPESMBO++;
+                    break;
+                case purchaseProtocolZRPZAESMBO:
+                    Main.CountPurchaseProtocolZRPZAESMBO++;
+                    break;
+                case purchaseProtocolZRPZKESMBO:
+                    Main.CountPurchaseProtocolZRPZKESMBO++;
+                    break;
+                case purchaseProtocolZRPZZKESMBO:
+                    Main.CountPurchaseProtocolZRPZZKESMBO++;
+                    break;
+                case purchaseProtocolZRPZZPESMBO:
+                    Main.CountPurchaseProtocolZRPZZPESMBO++;
                     break;
             }
         }
@@ -340,7 +543,7 @@ public class Prot {
         }
         String idProtocol = guid != null ? guid : "";
         String url = urlEIS != null ? urlEIS : "";
-        if(url.equals("") && urlOOS != null){
+        if (url.equals("") && urlOOS != null) {
             url = urlOOS;
         }
         String RegistrationNumber = "";
@@ -392,6 +595,9 @@ public class Prot {
         }
 
         String CancellationReason = (сancellationReason != null) ? сancellationReason : "";
+        if(CancellationReason.equals("")){
+            CancellationReason =  (cancellationReason != null) ? cancellationReason : "";
+        }
         PreparedStatement ps4 = con.prepareStatement(String.format("INSERT INTO %sprotocols223_cancel SET guid = ?, protocol_date = ?, url = ?, purchase_number = ?, type_protocol = ?, cancel = ?, xml = ?, registration_number = ?, cancellation_reason = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
         ps4.setString(1, idProtocol);
         ps4.setTimestamp(2, new Timestamp(protocolDate.getTime()));
