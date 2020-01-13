@@ -189,6 +189,8 @@ public class Parser implements IParser {
     private ArrayList<String> FtpLst(String pathParse, String login, String pass) throws IOException {
         ArrayList<String> s = new ArrayList<>();
         FTPClient ftpClient = new FTPClient();
+        ftpClient.setDefaultTimeout(30000);
+        ftpClient.setConnectTimeout(30000);
         ftpClient.connect("ftp.zakupki.gov.ru", 21);
         ftpClient.login(login, pass);
         ftpClient.enterLocalPassiveMode();
@@ -204,13 +206,13 @@ public class Parser implements IParser {
         while (true) {
             try {
                 file = String.format("%s%s%s", Main.tempDirProtocols, File.separator, arch);
-                ExecutorService executor = Executors.newCachedThreadPool();
+                ExecutorService executor = Executors.newSingleThreadExecutor();
                 String finalFile = file;
                 Callable<Object> task = () -> GetArchWait(arch, PathParse, login, pass, finalFile);
                 Future<Object> future = executor.submit(task);
                 try {
                     Object result = future.get(200, TimeUnit.SECONDS);
-                } catch (TimeoutException | InterruptedException | ExecutionException ex) {
+                } catch (Exception ex) {
                     throw ex;
                 } finally {
                     future.cancel(true);
@@ -246,6 +248,8 @@ public class Parser implements IParser {
         ftpClient.enterLocalPassiveMode();
         ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
         ftpClient.setDataTimeout(150000);
+        ftpClient.setConnectTimeout(30000);
+        ftpClient.setDefaultTimeout(30000);
         ftpClient.changeWorkingDirectory(PathParse);
         OutputStream outputStream1 = new BufferedOutputStream(new FileOutputStream(file));
         boolean success = ftpClient.retrieveFile(arch, outputStream1);

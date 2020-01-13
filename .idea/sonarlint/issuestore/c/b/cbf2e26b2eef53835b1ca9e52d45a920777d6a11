@@ -1,25 +1,25 @@
 
-”squid:S1319™"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Î¬ËÇıÿÿÿÿ8ùºÒÒÚ-
+”squid:S1319­"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8ùºÒÒÚ-
+jsquid:S1301ó"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8ùºÒÒÚ-
+nsquid:S00100å"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æéœì8ùºÒÒÚ-
+Nsquid:S5411š"*Use the primitive boolean expression here.(™ÒÑ üÿÿÿÿ8ùºÒÒÚ-
+ssquid:S00100­"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó´´æùÿÿÿÿ8ùºÒÒÚ-
+squid:S1319­"lThe type of the "s" object should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8ùºÒÒÚ-
+ssquid:S00100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô’´¾ùÿÿÿÿ8ùºÒÒÚ-
 ?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-ssquid:S00100ô"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô’´¾ùÿÿÿÿ8ùºÒÒÚ-
-jsquid:S1301ç"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8ùºÒÒÚ-
-squid:S1319¡"lThe type of the "s" object should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8ùºÒÒÚ-
-ksquid:S00100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰‡‘ïıÿÿÿÿ
-ssquid:S00100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¬êÄøÿÿÿÿ8ùºÒÒÚ-
-ssquid:S00100º"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥áä±ıÿÿÿÿ8ùºÒÒÚ-
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(öÅƒÜøÿÿÿÿ
-gsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ô¿“ªùÿÿÿÿ
-nsquid:S00100Ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æéœì8ùºÒÒÚ-
-nsquid:S3776)"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‰‡‘ïıÿÿÿÿ
-ssquid:S00100å"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÖŸ£úÿÿÿÿ8ùºÒÒÚ-
-msquid:S2095¼"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¿äÚ)8ùºÒÒÚ-
+ssquid:S2095²"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨»ÂÄşÿÿÿÿ8ùºÒÒÚ-
+Nsquid:S00108Ü")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ8ùºÒÒÚ-
+msquid:S2095È"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¿äÚ)8ùºÒÒÚ-
+”squid:S1319¥"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Î¬ËÇıÿÿÿÿ8ùºÒÒÚ-
+ksquid:S2095´"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(àäœ»ıÿÿÿÿ8ùºÒÒÚ-
 rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
-ksquid:S2095¨"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(àäœ»ıÿÿÿÿ8ùºÒÒÚ-
-ssquid:S00100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¬ËÇıÿÿÿÿ8ùºÒÒÚ-
-”squid:S1319¡"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8ùºÒÒÚ-
-ssquid:S00100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó´´æùÿÿÿÿ8ùºÒÒÚ-
-Nsquid:S5411"*Use the primitive boolean expression here.(™ÒÑ üÿÿÿÿ8ùºÒÒÚ-
+ssquid:S00100¥"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¬ËÇıÿÿÿÿ8ùºÒÒÚ-
 P"squid:SwitchLastCaseIsDefaultCheck7""Add a default case to this switch.(›Ï—ú
-ssquid:S2095¦"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨»ÂÄşÿÿÿÿ8ùºÒÒÚ-
-Nsquid:S00108Ğ")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ8ùºÒÒÚ-
-`squid:S14797"BReduce the number of non-empty switch cases from 48 to at most 30.(›Ï—ú8ˆáÇßØ-
+ksquid:S00100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰‡‘ïıÿÿÿÿ
+ssquid:S00100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥áä±ıÿÿÿÿ8ùºÒÒÚ-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(öÅƒÜøÿÿÿÿ
+ssquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¬êÄøÿÿÿÿ8ùºÒÒÚ-
+gsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ô¿“ªùÿÿÿÿ
+nsquid:S3776)"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‰‡‘ïıÿÿÿÿ
+`squid:S14797"BReduce the number of non-empty switch cases from 52 to at most 30.(›Ï—ú8ˆáÇßØ-
+ssquid:S00100ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÖŸ£úÿÿÿÿ8ùºÒÒÚ-

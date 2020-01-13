@@ -1,128 +1,142 @@
 
-‡"squid:ClassVariableVisibilityCheck"TMake typeName a static final constant or non-public and provide accessors if needed.(Ý±¨Œùÿÿÿÿ
-Usquid:S2696Û"6Make the enclosing method "static" or remove this set.(Œàéð8œ¿í¨Û-
-Usquid:S2696Ó"6Make the enclosing method "static" or remove this set.(“‚“Í8ÞÎë©Û-
-nsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(‘ò÷œþÿÿÿÿ8«™üÑÚ-
-"squid:ClassVariableVisibilityCheck"_Make ÑancellationReason a static final constant or non-public and provide accessors if needed.(×É›š
-Zsquid:S2696Š"6Make the enclosing method "static" or remove this set.(‘žÚÄúÿÿÿÿ8û°š©Û-
-Usquid:S2696Ÿ"6Make the enclosing method "static" or remove this set.(ø‡Á8œ¿í¨Û-
-nsquid:S2095”"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ùŸþ8ÞÎë©Û-
-Zsquid:S2696¶"6Make the enclosing method "static" or remove this set.(õéïÓøÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696¹"6Make the enclosing method "static" or remove this set.(â„‡•8œ¿í¨Û-
-ssquid:S2095ê"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(×øÖ×øÿÿÿÿ8ÞÎë©Û-
-rsquid:S2095Y"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½ÇœÖþÿÿÿÿ8«™üÑÚ-
-psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ð¯´Q8ÞÎë©Û-
-Š"squid:ClassVariableVisibilityCheck)"WMake attachments a static final constant or non-public and provide accessors if needed.(ï¯»Èüÿÿÿÿ
-jsquid:S001128"FDefine and throw a dedicated exception instead of using a generic one.(‡…¹øÿÿÿÿ8«™üÑÚ-
-Usquid:S2696·"6Make the enclosing method "static" or remove this set.(“¥¡½8’Ëê©Û-
-Zsquid:S2696…"6Make the enclosing method "static" or remove this set.(“’Ë›øÿÿÿÿ8œ¿í¨Û-
-nsquid:S00100ÿ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éì¿¾8ÞÎë©Û-
-Usquid:S2696Ú"6Make the enclosing method "static" or remove this set.(èÆç8œ¿í¨Û-
-osquid:CommentedOutCodeLineœ"<This block of commented-out lines of code should be removed.(ðæ²—úÿÿÿÿ8ÞÎë©Û-
-Zsquid:S2696´"6Make the enclosing method "static" or remove this set.(Œªøÿÿÿÿ8œ¿í¨Û-
-qsquid:S3776ÿ"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(éì¿¾8ÞÎë©Û-
-Usquid:S2696ç"6Make the enclosing method "static" or remove this set.(»ÈÇ›8œ¿í¨Û-
-nsquid:S2095£"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(®µÒÄ8œ¿í¨Û-
-Zsquid:S2696À"6Make the enclosing method "static" or remove this set.(Ã¸´èùÿÿÿÿ8œ¿í¨Û-
-~"squid:ClassVariableVisibilityCheck"PMake guid a static final constant or non-public and provide accessors if needed.(…´©Ù
-Usquid:S2696Ñ"6Make the enclosing method "static" or remove this set.(¾—ù—8œ¿í¨Û-
-†"squid:ClassVariableVisibilityCheck("XMake purchaseInfo a static final constant or non-public and provide accessors if needed.(Æ¢áÛ
-Usquid:S2696ÿ"6Make the enclosing method "static" or remove this set.(Øê°8œ¿í¨Û-
-Usquid:S2696Ï"6Make the enclosing method "static" or remove this set.(Ç‡áò8œ¿í¨Û-
-Usquid:S2696Æ"6Make the enclosing method "static" or remove this set.(íãÌ8œ¿í¨Û-
-Zsquid:S2696Õ"6Make the enclosing method "static" or remove this set.(àžÇ«úÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696"6Make the enclosing method "static" or remove this set.(„½óó8œ¿í¨Û-
-Usquid:S2696"6Make the enclosing method "static" or remove this set.(Æœ©ï8ÚÊ©Û-
-Usquid:S2696é"6Make the enclosing method "static" or remove this set.(†¶’¥8œ¿í¨Û-
-Zsquid:S2696à"6Make the enclosing method "static" or remove this set.(€ŽáŒüÿÿÿÿ8œ¿í¨Û-
-Zsquid:S2696þ"6Make the enclosing method "static" or remove this set.(–Û³“øÿÿÿÿ8œ¿í¨Û-
-nsquid:S2095Ø"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ê›ÿâ8ÞÎë©Û-
-Zsquid:S2696È"6Make the enclosing method "static" or remove this set.(Ý©­Ìûÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696"6Make the enclosing method "static" or remove this set.(¹ÑŽÆ8œ¿í¨Û-
-˜"squid:ClassVariableVisibilityCheck"^Make cancellationReason a static final constant or non-public and provide accessors if needed.(ßª´Šúÿÿÿÿ8«ˆÁØ-
-Zsquid:S2696¥"6Make the enclosing method "static" or remove this set.(þ×Ñ‹ùÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696Ã"6Make the enclosing method "static" or remove this set.(°µÅÓ8œ¿í¨Û-
-Usquid:S2696Ø"6Make the enclosing method "static" or remove this set.(ñÓÙ8œ¿í¨Û-
-Usquid:S2696Ë"6Make the enclosing method "static" or remove this set.(Â¥Ýò8œ¿í¨Û-
-Zsquid:S2696Ì"6Make the enclosing method "static" or remove this set.(ª­ûÿÿÿÿ8œ¿í¨Û-
-ˆ"squid:ClassVariableVisibilityCheck"ZMake createDateTime a static final constant or non-public and provide accessors if needed.(àžŠÉ
-isquid:CommentedOutCodeLine`"<This block of commented-out lines of code should be removed.(éÅ»­8«™üÑÚ-
-}squid:S00116"^Rename this field "ÑancellationReason" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×É›š8«ˆÁØ-
-jsquid:CommentedOutCodeLine«"<This block of commented-out lines of code should be removed.(éÅ»­8ÞÎë©Û-
-Usquid:S2696Ý"6Make the enclosing method "static" or remove this set.(‹Áø8œ¿í¨Û-
-msquid:S2095b"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“êãÑ8«™üÑÚ-
-ksquid:S2095Ð"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÍÜ¯ýøÿÿÿÿ8ÞÎë©Û-
-Zsquid:S2696õ"6Make the enclosing method "static" or remove this set.(»žŠ›ùÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696ü"6Make the enclosing method "static" or remove this set.(âÿé®8œ¿í¨Û-
-…"squid:ClassVariableVisibilityCheck"RMake urlOOS a static final constant or non-public and provide accessors if needed.(ê¼²øüÿÿÿÿ
-Usquid:S2696Î"6Make the enclosing method "static" or remove this set.(Å„·ª8œ¿í¨Û-
-Zsquid:S2696ø"6Make the enclosing method "static" or remove this set.(ìè…Íýÿÿÿÿ8œ¿í¨Û-
-Zsquid:S2696¿"6Make the enclosing method "static" or remove this set.(ïÝÖÓùÿÿÿÿ8œ¿í¨Û-
-†"squid:ClassVariableVisibilityCheck"XMake missedReason a static final constant or non-public and provide accessors if needed.(âõü°
-qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘‡¸<
-’"squid:ClassVariableVisibilityCheck'"_Make lotApplicationsList a static final constant or non-public and provide accessors if needed.(Î«šÙûÿÿÿÿ
-Zsquid:S2696ˆ"6Make the enclosing method "static" or remove this set.( …Öòøÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696¼"6Make the enclosing method "static" or remove this set.(¨€ÝÑ8œ¿í¨Û-
-Usquid:S2696¬"6Make the enclosing method "static" or remove this set.(‹¬·¥8œ¿í¨Û-
-…"squid:ClassVariableVisibilityCheck"RMake urlEIS a static final constant or non-public and provide accessors if needed.(Â²©øÿÿÿÿ
-Zsquid:S2696æ"6Make the enclosing method "static" or remove this set.(‰îÀþùÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696ò"6Make the enclosing method "static" or remove this set.(Ÿ’Äª8œ¿í¨Û-
-osquid:CommentedOutCodeLine’"<This block of commented-out lines of code should be removed.(‘ò÷œþÿÿÿÿ8ÞÎë©Û-
-Usquid:S2696¯"6Make the enclosing method "static" or remove this set.(Ú»ßÃ8’Ëê©Û-
-Zsquid:S2696ä"6Make the enclosing method "static" or remove this set.( Î¯ÿÿÿÿÿ8œ¿í¨Û-
-Zsquid:S2696í"6Make the enclosing method "static" or remove this set.(áÚËŒüÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696Ò"6Make the enclosing method "static" or remove this set.(„Ð“ÿ8œ¿í¨Û-
-msquid:S2095J"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(÷Üó’8«™üÑÚ-
-Zsquid:S2696û"6Make the enclosing method "static" or remove this set.(ÜýŒ¢ýÿÿÿÿ8œ¿í¨Û-
-Zsquid:S2696„"6Make the enclosing method "static" or remove this set.(‰Çžãÿÿÿÿÿ8œ¿í¨Û-
-Zsquid:S2696ê"6Make the enclosing method "static" or remove this set.(“ö‘àùÿÿÿÿ8œ¿í¨Û-
-Zsquid:S2696ö"6Make the enclosing method "static" or remove this set.(°Ã¬Šúÿÿÿÿ8œ¿í¨Û-
-psquid:S3776Ç"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(²Ùè8ÞÎë©Û-
-nsquid:S2095­"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(º—“²8ÞÎë©Û-
-‹"squid:ClassVariableVisibilityCheck*"XMake protocolInfo a static final constant or non-public and provide accessors if needed.(êÌõîûÿÿÿÿ
-usquid:S37768"RRefactor this method to reduce its Cognitive Complexity from 59 to the 15 allowed.(‡…¹øÿÿÿÿ8«™üÑÚ-
-Zsquid:S2696©"6Make the enclosing method "static" or remove this set.(á˜®ýÿÿÿÿ8’Ëê©Û-
-Usquid:S2696‹"6Make the enclosing method "static" or remove this set.(¢€‰8œ¿í¨Û-
-Usquid:S2696ª"6Make the enclosing method "static" or remove this set.(ëñÇæ8œ¿í¨Û-
-ssquid:S2095¨"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(±åâºøÿÿÿÿ8ÞÎë©Û-
-fsquid:S00112ÿ"FDefine and throw a dedicated exception instead of using a generic one.(éì¿¾8ÞÎë©Û-
-Tsquid:S2696¢"6Make the enclosing method "static" or remove this set.(Å‡ù8œ¿í¨Û-
-Ÿsquid:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ìè¾È8«™üÑÚ-
-Usquid:S2696ì"6Make the enclosing method "static" or remove this set.(ýüÐÑ8œ¿í¨Û-
-Usquid:S2696Å"6Make the enclosing method "static" or remove this set.(œðÕ‚8œ¿í¨Û-
-Tsquid:S2696‘"6Make the enclosing method "static" or remove this set.(ÍÇ„&8œ¿í¨Û-
-nsquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(ðæ²—úÿÿÿÿ8«™üÑÚ-
-¡"squid:ClassVariableVisibilityCheck+"gMake protocolEvasionDecisionInfo a static final constant or non-public and provide accessors if needed.(òÍ÷Œýÿÿÿÿ8«™üÑÚ-
-ssquid:S2095Ý"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ßóä·þÿÿÿÿ8ÞÎë©Û-
-Usquid:S2696Õ"6Make the enclosing method "static" or remove this set.(ÁÔßÄ8ÞÎë©Û-
-Zsquid:S2696Ž"6Make the enclosing method "static" or remove this set.(öß¼Ìùÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696¦"6Make the enclosing method "static" or remove this set.(‰ƒºË8œ¿í¨Û-
-msquid:S2095Í"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(øË¶08œ¿í¨Û-
-qsquid:S00117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ëÖ8ÞÎë©Û-
-Usquid:S2696É"6Make the enclosing method "static" or remove this set.(½Ãœê8œ¿í¨Û-
+jsquid:CommentedOutCodeLineÃ"<This block of commented-out lines of code should be removed.(éÅ»­8ì‡®ÐÛ-
+ssquid:S2095À"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(±åâºøÿÿÿÿ8ì‡®ÐÛ-
+Zsquid:S2696‘"6Make the enclosing method "static" or remove this set.(“’Ë›øÿÿÿÿ8œ¿í¨Û-
 rsquid:S001008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡…¹øÿÿÿÿ8«™üÑÚ-
-Usquid:S2696á"6Make the enclosing method "static" or remove this set.(€«ˆ‹8œ¿í¨Û-
-Zsquid:S2696ð"6Make the enclosing method "static" or remove this set.(»†é¼ùÿÿÿÿ8œ¿í¨Û-
 Zsquid:S2696Ô"6Make the enclosing method "static" or remove this set.(”†ÂÇøÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696ó"6Make the enclosing method "static" or remove this set.(ÃÎÇ“8œ¿í¨Û-
-Usquid:S2696‚"6Make the enclosing method "static" or remove this set.(ßÝ©‹8œ¿í¨Û-
-Usquid:S2696—"6Make the enclosing method "static" or remove this set.(ý¤è¤8’Ëê©Û-
-jsquid:S2095["GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ö­éüÿÿÿÿÿ8«™üÑÚ-
-Usquid:S2696•"6Make the enclosing method "static" or remove this set.( ü—ô8œ¿í¨Û-
-Usquid:S2696‡"6Make the enclosing method "static" or remove this set.(à¿ÀÓ8œ¿í¨Û-
-Usquid:S2696Ÿ"6Make the enclosing method "static" or remove this set.(ûÇéý8’Ëê©Û-
-Zsquid:S2696ù"6Make the enclosing method "static" or remove this set.(Ô…ÍÓùÿÿÿÿ8œ¿í¨Û-
-msquid:S00100Ç"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Ùè8ÞÎë©Û-
-Zsquid:S2696×"6Make the enclosing method "static" or remove this set.(Ë½Éíøÿÿÿÿ8œ¿í¨Û-
- "squid:ClassVariableVisibilityCheck"fMake purchaseCancellationReason a static final constant or non-public and provide accessors if needed.(œ¾ØŽýÿÿÿÿ8«™üÑÚ-
-fsquid:S2095ß"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¯ð¨Ã8ÞÎë©Û-
-Tsquid:S2696š"6Make the enclosing method "static" or remove this set.(ª×Åm8’Ëê©Û-
+Tsquid:S2696"6Make the enclosing method "static" or remove this set.(ÍÇ„&8œ¿í¨Û-
+Zsquid:S2696ø"6Make the enclosing method "static" or remove this set.(ìè…Íýÿÿÿÿ8œ¿í¨Û-
+Usquid:S2696—"6Make the enclosing method "static" or remove this set.(¢€‰8œ¿í¨Û-
+qsquid:S00117Õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ëÖ8ì‡®ÐÛ-
+Usquid:S2696ë"6Make the enclosing method "static" or remove this set.(“‚“Í8ì‡®ÐÛ-
+Usquid:S2696Ã"6Make the enclosing method "static" or remove this set.(“¥¡½8º®«ÐÛ-
+Usquid:S2696í"6Make the enclosing method "static" or remove this set.(ÁÔßÄ8ì‡®ÐÛ-
+Usquid:S2696Ï"6Make the enclosing method "static" or remove this set.(°µÅÓ8œ¿í¨Û-
 Zsquid:S2696ã"6Make the enclosing method "static" or remove this set.(âžÙùÿÿÿÿ8œ¿í¨Û-
-Zsquid:S2696Þ"6Make the enclosing method "static" or remove this set.(æžøÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696œ"6Make the enclosing method "static" or remove this set.(ÀÃ…€8œ¿í¨Û-
-ksquid:S2095¦"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ö­éüÿÿÿÿÿ8ÞÎë©Û-
-Zsquid:S2696ï"6Make the enclosing method "static" or remove this set.(Ãúèøÿÿÿÿ8œ¿í¨Û-
+}squid:S00116"^Rename this field "ÑancellationReason" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×É›š8«ˆÁØ-
+Usquid:S2696¹"6Make the enclosing method "static" or remove this set.(â„‡•8œ¿í¨Û-
+Zsquid:S2696ð"6Make the enclosing method "static" or remove this set.( Î¯ÿÿÿÿÿ8œ¿í¨Û-
+Usquid:S2696ó"6Make the enclosing method "static" or remove this set.(»ÈÇ›8œ¿í¨Û-
+Usquid:S2696Ú"6Make the enclosing method "static" or remove this set.(èÆç8œ¿í¨Û-
+ksquid:S2095¾"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ö­éüÿÿÿÿÿ8ì‡®ÐÛ-
 ‡"squid:ClassVariableVisibilityCheck"YMake missedContest a static final constant or non-public and provide accessors if needed.(ÒÉ
+nsquid:S00100—"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éì¿¾8ì‡®ÐÛ-
+nsquid:S2095¬"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ùŸþ8ì‡®ÐÛ-
+Zsquid:S2696¶"6Make the enclosing method "static" or remove this set.(õéïÓøÿÿÿÿ8œ¿í¨Û-
+Usquid:S2696œ"6Make the enclosing method "static" or remove this set.(ÀÃ…€8œ¿í¨Û-
+Usquid:S2696¼"6Make the enclosing method "static" or remove this set.(¨€ÝÑ8œ¿í¨Û-
+ˆ"squid:ClassVariableVisibilityCheck"ZMake createDateTime a static final constant or non-public and provide accessors if needed.(àžŠÉ
+†"squid:ClassVariableVisibilityCheck("XMake purchaseInfo a static final constant or non-public and provide accessors if needed.(Æ¢áÛ
+Tsquid:S2696¦"6Make the enclosing method "static" or remove this set.(ª×Åm8º®«ÐÛ-
+ssquid:S2095‚"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(×øÖ×øÿÿÿÿ8ì‡®ÐÛ-
+Usquid:S2696é"6Make the enclosing method "static" or remove this set.(†¶’¥8œ¿í¨Û-
+Usquid:S2696ì"6Make the enclosing method "static" or remove this set.(ýüÐÑ8œ¿í¨Û-
+Usquid:S2696Ý"6Make the enclosing method "static" or remove this set.(‹Áø8œ¿í¨Û-
+osquid:CommentedOutCodeLine´"<This block of commented-out lines of code should be removed.(ðæ²—úÿÿÿÿ8ì‡®ÐÛ-
+nsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(‘ò÷œþÿÿÿÿ8«™üÑÚ-
+Usquid:S2696ò"6Make the enclosing method "static" or remove this set.(Ÿ’Äª8œ¿í¨Û-
+Usquid:S2696ÿ"6Make the enclosing method "static" or remove this set.(ÃÎÇ“8œ¿í¨Û-
+Usquid:S2696‹"6Make the enclosing method "static" or remove this set.(Øê°8œ¿í¨Û-
+Usquid:S2696ç"6Make the enclosing method "static" or remove this set.(Œàéð8œ¿í¨Û-
+qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘‡¸<
+Zsquid:S2696À"6Make the enclosing method "static" or remove this set.(Œªøÿÿÿÿ8œ¿í¨Û-
+jsquid:S001128"FDefine and throw a dedicated exception instead of using a generic one.(‡…¹øÿÿÿÿ8«™üÑÚ-
+Usquid:S2696«"6Make the enclosing method "static" or remove this set.(ûÇéý8º®«ÐÛ-
 Zsquid:S2696Â"6Make the enclosing method "static" or remove this set.(áÚéŸûÿÿÿÿ8œ¿í¨Û-
-Usquid:S2696”"6Make the enclosing method "static" or remove this set.(Äòñ¼8€þ›©Û-
+Zsquid:S2696È"6Make the enclosing method "static" or remove this set.(Ý©­Ìûÿÿÿÿ8œ¿í¨Û-
+msquid:S2095b"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“êãÑ8«™üÑÚ-
+msquid:S2095å"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(øË¶08÷–ˆÐÛ-
+Zsquid:S2696¥"6Make the enclosing method "static" or remove this set.(þ×Ñ‹ùÿÿÿÿ8œ¿í¨Û-
+Zsquid:S2696×"6Make the enclosing method "static" or remove this set.(Ë½Éíøÿÿÿÿ8œ¿í¨Û-
+Usquid:S2696"6Make the enclosing method "static" or remove this set.(è”æÒ8Ö¸ˆÏÛ-
+Zsquid:S2696Ø"6Make the enclosing method "static" or remove this set.(ª­ûÿÿÿÿ8œ¿í¨Û-
+ "squid:ClassVariableVisibilityCheck"fMake purchaseCancellationReason a static final constant or non-public and provide accessors if needed.(œ¾ØŽýÿÿÿÿ8«™üÑÚ-
+jsquid:S2095["GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ö­éüÿÿÿÿÿ8«™üÑÚ-
+Usquid:S2696ä"6Make the enclosing method "static" or remove this set.(ñÓÙ8œ¿í¨Û-
+Usquid:S2696Ñ"6Make the enclosing method "static" or remove this set.(¾—ù—8œ¿í¨Û-
+Zsquid:S2696û"6Make the enclosing method "static" or remove this set.(ÜýŒ¢ýÿÿÿÿ8œ¿í¨Û-
+Usquid:S2696ª"6Make the enclosing method "static" or remove this set.(ëñÇæ8œ¿í¨Û-
+˜"squid:ClassVariableVisibilityCheck"^Make cancellationReason a static final constant or non-public and provide accessors if needed.(ßª´Šúÿÿÿÿ8«ˆÁØ-
+Usquid:S2696Ò"6Make the enclosing method "static" or remove this set.(íãÌ8œ¿í¨Û-
+Usquid:S2696¸"6Make the enclosing method "static" or remove this set.(‹¬·¥8œ¿í¨Û-
+Zsquid:S2696„"6Make the enclosing method "static" or remove this set.(‰Çžãÿÿÿÿÿ8œ¿í¨Û-
+…"squid:ClassVariableVisibilityCheck"RMake urlEIS a static final constant or non-public and provide accessors if needed.(Â²©øÿÿÿÿ
 Zsquid:S2696­"6Make the enclosing method "static" or remove this set.(‚Ï¶þýÿÿÿÿ8œ¿í¨Û-
+Usquid:S2696»"6Make the enclosing method "static" or remove this set.(Ú»ßÃ8º®«ÐÛ-
+Usquid:S2696"6Make the enclosing method "static" or remove this set.(„½óó8œ¿í¨Û-
+Usquid:S2696Î"6Make the enclosing method "static" or remove this set.(Å„·ª8œ¿í¨Û-
+nsquid:S2095Å"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(º—“²8ì‡®ÐÛ-
+Zsquid:S2696õ"6Make the enclosing method "static" or remove this set.(»žŠ›ùÿÿÿÿ8œ¿í¨Û-
+fsquid:S2095÷"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¯ð¨Ã8ì‡®ÐÛ-
+Zsquid:S2696þ"6Make the enclosing method "static" or remove this set.(–Û³“øÿÿÿÿ8œ¿í¨Û-
+msquid:S00100ß"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Ùè8ì‡®ÐÛ-
+Usquid:S2696“"6Make the enclosing method "static" or remove this set.(äŠ¼Ü8Ö¸ˆÏÛ-
+Zsquid:S2696ê"6Make the enclosing method "static" or remove this set.(æžøÿÿÿÿ8œ¿í¨Û-
+Zsquid:S2696ù"6Make the enclosing method "static" or remove this set.(áÚËŒüÿÿÿÿ8œ¿í¨Û-
+Zsquid:S2696ö"6Make the enclosing method "static" or remove this set.(“ö‘àùÿÿÿÿ8œ¿í¨Û-
+msquid:S2095J"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(÷Üó’8«™üÑÚ-
+Zsquid:S2696à"6Make the enclosing method "static" or remove this set.(€ŽáŒüÿÿÿÿ8œ¿í¨Û-
+Zsquid:S2696æ"6Make the enclosing method "static" or remove this set.(‰îÀþùÿÿÿÿ8œ¿í¨Û-
+Zsquid:S2696ü"6Make the enclosing method "static" or remove this set.(»†é¼ùÿÿÿÿ8œ¿í¨Û-
+isquid:CommentedOutCodeLine`"<This block of commented-out lines of code should be removed.(éÅ»­8«™üÑÚ-
+Usquid:S2696²"6Make the enclosing method "static" or remove this set.(‰ƒºË8œ¿í¨Û-
+‹"squid:ClassVariableVisibilityCheck*"XMake protocolInfo a static final constant or non-public and provide accessors if needed.(êÌõîûÿÿÿÿ
+Zsquid:S2696¦"6Make the enclosing method "static" or remove this set.(°‹ìÚþÿÿÿÿ8Ö¸ˆÏÛ-
+osquid:CommentedOutCodeLineª"<This block of commented-out lines of code should be removed.(‘ò÷œþÿÿÿÿ8ì‡®ÐÛ-
+Usquid:S2696Ë"6Make the enclosing method "static" or remove this set.(Â¥Ýò8œ¿í¨Û-
+’"squid:ClassVariableVisibilityCheck'"_Make lotApplicationsList a static final constant or non-public and provide accessors if needed.(Î«šÙûÿÿÿÿ
+usquid:S37768"RRefactor this method to reduce its Cognitive Complexity from 59 to the 15 allowed.(‡…¹øÿÿÿÿ8«™üÑÚ-
+Usquid:S2696"6Make the enclosing method "static" or remove this set.(¹ÑŽÆ8œ¿í¨Û-
+qsquid:S3776—"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(éì¿¾8ì‡®ÐÛ-
+Š"squid:ClassVariableVisibilityCheck)"WMake attachments a static final constant or non-public and provide accessors if needed.(ï¯»Èüÿÿÿÿ
+Usquid:S2696Þ"6Make the enclosing method "static" or remove this set.(„Ð“ÿ8œ¿í¨Û-
+Zsquid:S2696…"6Make the enclosing method "static" or remove this set.(Ô…ÍÓùÿÿÿÿ8œ¿í¨Û-
+fsquid:S00112—"FDefine and throw a dedicated exception instead of using a generic one.(éì¿¾8ì‡®ÐÛ-
+Zsquid:S2696á"6Make the enclosing method "static" or remove this set.(àžÇ«úÿÿÿÿ8œ¿í¨Û-
+¡"squid:ClassVariableVisibilityCheck+"gMake protocolEvasionDecisionInfo a static final constant or non-public and provide accessors if needed.(òÍ÷Œýÿÿÿÿ8«™üÑÚ-
+Usquid:S2696 "6Make the enclosing method "static" or remove this set.(Äòñ¼8€þ›©Û-
+psquid:S00117¥"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ð¯´Q8ì‡®ÐÛ-
+Usquid:S2696©"6Make the enclosing method "static" or remove this set.(Ä¯ˆö8º®«ÐÛ-
+Usquid:S2696"6Make the enclosing method "static" or remove this set.(Æœ©ï8ÚÊ©Û-
+Usquid:S2696Ÿ"6Make the enclosing method "static" or remove this set.(ø‡Á8œ¿í¨Û-
+Zsquid:S2696Š"6Make the enclosing method "static" or remove this set.(‘žÚÄúÿÿÿÿ8û°š©Û-
+…"squid:ClassVariableVisibilityCheck"RMake urlOOS a static final constant or non-public and provide accessors if needed.(ê¼²øüÿÿÿÿ
+Tsquid:S2696¢"6Make the enclosing method "static" or remove this set.(Å‡ù8œ¿í¨Û-
+nsquid:S2095»"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(®µÒÄ8÷–ˆÐÛ-
+Zsquid:S2696Ì"6Make the enclosing method "static" or remove this set.(Ã¸´èùÿÿÿÿ8œ¿í¨Û-
+Zsquid:S2696‚"6Make the enclosing method "static" or remove this set.(°Ã¬Šúÿÿÿÿ8œ¿í¨Û-
+nsquid:S2095ð"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ê›ÿâ8ì‡®ÐÛ-
+Usquid:S2696‡"6Make the enclosing method "static" or remove this set.(à¿ÀÓ8œ¿í¨Û-
+Zsquid:S2696”"6Make the enclosing method "static" or remove this set.( …Öòøÿÿÿÿ8œ¿í¨Û-
+Zsquid:S2696š"6Make the enclosing method "static" or remove this set.(öß¼Ìùÿÿÿÿ8œ¿í¨Û-
+†"squid:ClassVariableVisibilityCheck"XMake missedReason a static final constant or non-public and provide accessors if needed.(âõü°
+"squid:ClassVariableVisibilityCheck"_Make ÑancellationReason a static final constant or non-public and provide accessors if needed.(×É›š
+nsquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(ðæ²—úÿÿÿÿ8«™üÑÚ-
+Zsquid:S2696¿"6Make the enclosing method "static" or remove this set.(ïÝÖÓùÿÿÿÿ8œ¿í¨Û-
+~"squid:ClassVariableVisibilityCheck"PMake guid a static final constant or non-public and provide accessors if needed.(…´©Ù
+Usquid:S2696Ž"6Make the enclosing method "static" or remove this set.(ßÝ©‹8œ¿í¨Û-
+ksquid:S2095è"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÍÜ¯ýøÿÿÿÿ8ì‡®ÐÛ-
+rsquid:S2095Y"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½ÇœÖþÿÿÿÿ8«™üÑÚ-
+‡"squid:ClassVariableVisibilityCheck"TMake typeName a static final constant or non-public and provide accessors if needed.(Ý±¨Œùÿÿÿÿ
+Usquid:S2696Å"6Make the enclosing method "static" or remove this set.(œðÕ‚8œ¿í¨Û-
+Usquid:S2696Õ"6Make the enclosing method "static" or remove this set.(½Ãœê8œ¿í¨Û-
+Usquid:S2696Û"6Make the enclosing method "static" or remove this set.(Ç‡áò8œ¿í¨Û-
+Usquid:S2696£"6Make the enclosing method "static" or remove this set.(ý¤è¤8’Ëê©Û-
+Ÿsquid:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ìè¾È8«™üÑÚ-
+ssquid:S2095õ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ßóä·þÿÿÿÿ8ì‡®ÐÛ-
+Zsquid:S2696µ"6Make the enclosing method "static" or remove this set.(á˜®ýÿÿÿÿ8º®«ÐÛ-
+psquid:S3776ß"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(²Ùè8ì‡®ÐÛ-
+Zsquid:S2696ï"6Make the enclosing method "static" or remove this set.(Ãúèøÿÿÿÿ8œ¿í¨Û-
+Usquid:S2696í"6Make the enclosing method "static" or remove this set.(€«ˆ‹8œ¿í¨Û-
+Usquid:S2696•"6Make the enclosing method "static" or remove this set.( ü—ô8œ¿í¨Û-
+Usquid:S2696ˆ"6Make the enclosing method "static" or remove this set.(âÿé®8œ¿í¨Û-
+"squid:SwitchLastCaseIsDefaultCheckŽ"YComplete cases by adding the missing enum constants or add a default case to this switch.(îùßÝ8ÁõÄÐÛ-
+Zsquid:S2696–"6Make the enclosing method "static" or remove this set.(„óØ¸úÿÿÿÿ8ÁõÄÐÛ-
+Zsquid:S2696™"6Make the enclosing method "static" or remove this set.(£×¤ùÿÿÿÿ8ÁõÄÐÛ-
+Usquid:S2696œ"6Make the enclosing method "static" or remove this set.(¤Á­8ÁõÄÐÛ-
+Zsquid:S2696Ÿ"6Make the enclosing method "static" or remove this set.(˜Ìö“ûÿÿÿÿ8ÁõÄÐÛ-
+"squid:SwitchLastCaseIsDefaultCheck¤"YComplete cases by adding the missing enum constants or add a default case to this switch.(îùßÝ8ÁõÄÐÛ-
+Zsquid:S2696¬"6Make the enclosing method "static" or remove this set.(»ö¤úÿÿÿÿ8ÁõÄÐÛ-
+Zsquid:S2696¯"6Make the enclosing method "static" or remove this set.(œ¾õ¹ûÿÿÿÿ8ÁõÄÐÛ-
+Usquid:S2696²"6Make the enclosing method "static" or remove this set.(éï‰ã8ÁõÄÐÛ-
+Usquid:S2696µ"6Make the enclosing method "static" or remove this set.(æ§°å8ÁõÄÐÛ-
