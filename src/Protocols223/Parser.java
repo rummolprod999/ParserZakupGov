@@ -200,7 +200,7 @@ public class Parser implements IParser {
         return s;
     }
 
-    public String GetArch(String arch, String PathParse, String login, String pass) {
+    public String GetArchThreaded(String arch, String PathParse, String login, String pass) {
         String file = "";
         int count = 1;
         while (true) {
@@ -240,6 +240,41 @@ public class Parser implements IParser {
         return file;
     }
 
+    public String GetArch(String arch, String PathParse, String login, String pass) {
+        String file = "";
+        int count = 1;
+        while (true) {
+            try {
+                file = String.format("%s%s%s", Main.tempDirProtocols, File.separator, arch);
+                try {
+                    Object result = GetArchWait(arch, PathParse, login, pass, file);
+                } catch (Exception ex) {
+
+                    throw ex;
+                }
+                if (count > 1) {
+                    Log.Logger("Удалось скачать архив после попытки", count, PathParse);
+                }
+                break;
+
+            } catch (Exception e) {
+
+                if (count > 100) {
+                    Log.Logger("Не удалось скачать файл после попытки ", count, arch, e.getStackTrace());
+                    break;
+                }
+
+                count++;
+                try {
+                    sleep(5000);
+                } catch (InterruptedException ignored) {
+
+                }
+            }
+        }
+        return file;
+    }
+
     private Object GetArchWait(String arch, String PathParse, String login, String pass, String file) throws Exception {
         FTPClient ftpClient = new FTPClient();
         ftpClient.setConnectTimeout(160000);
@@ -251,6 +286,8 @@ public class Parser implements IParser {
         ftpClient.setConnectTimeout(30000);
         ftpClient.setDefaultTimeout(30000);
         ftpClient.changeWorkingDirectory(PathParse);
+        ftpClient.setControlKeepAliveReplyTimeout(160000);
+        ftpClient.setDataTimeout(300000);
         OutputStream outputStream1 = new BufferedOutputStream(new FileOutputStream(file));
         boolean success = ftpClient.retrieveFile(arch, outputStream1);
         outputStream1.close();
