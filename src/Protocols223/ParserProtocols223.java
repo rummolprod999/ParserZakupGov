@@ -36,6 +36,33 @@ public class ParserProtocols223 extends Parser {
 
 
         }
+        ParsingAst();
+    }
+
+    public void ParsingAst() {
+        ArrayList<Region> reg = new ArrayList<>();
+        try {
+            reg = GetRegions();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        for (Region r : reg) {
+            String pathParse = "";
+            for (String prot : protocols223Dir) {
+                switch (Main.arg) {
+                    case Last223:
+                        pathParse = String.format("/out/published/ast/%s/%s/", r.Path223, prot);
+                        ParsingLast223(pathParse, prot, r);
+                        break;
+                    case Daily223:
+                        pathParse = String.format("/out/published/ast/%s/%s/daily/", r.Path223, prot);
+                        ParsingDaily223(pathParse, prot, r);
+                        break;
+                }
+            }
+
+
+        }
     }
 
     public Boolean GetListFileArch(String pathParse, String prot, Region region, String file) {
