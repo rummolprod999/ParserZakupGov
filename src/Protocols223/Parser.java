@@ -191,6 +191,8 @@ public class Parser implements IParser {
         FTPClient ftpClient = new FTPClient();
         ftpClient.setDefaultTimeout(30000);
         ftpClient.setConnectTimeout(30000);
+        ftpClient.setDataTimeout(30000);
+        ftpClient.setControlKeepAliveReplyTimeout(30000);
         ftpClient.connect("ftp.zakupki.gov.ru", 21);
         ftpClient.login(login, pass);
         ftpClient.enterLocalPassiveMode();
