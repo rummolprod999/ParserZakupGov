@@ -28,7 +28,7 @@ public class Parser implements IParser {
 
     static final String Ftp223Login = "fz223free";
     static final String Ftp223Pass = "fz223free";
-    private static final int BUFFER_SIZE = 4096;
+    private static final int BUFFER_SIZE = 4_096;
     public static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
     public String[] __protocols223Dir = {"purchaseProtocol", "purchaseProtocolIP", "purchaseProtocolOSZ", "purchaseProtocolPA_AE", "purchaseProtocolPA_OA", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRKZ", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZ_AE", "purchaseProtocolRZ_OA", "purchaseProtocolRZ_OK", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolVK", "purchaseProtocolZK"};
     public String[] protocols223Dir = {"purchaseProtocolCancellation", "purchaseProtocolVK", "purchaseProtocol", "purchaseProtocolOSZ", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolZK", "purchaseProtocolCCAESMBO", "purchaseProtocolCCKESMBO", "purchaseProtocolCCZKESMBO", "purchaseProtocolCCZPESMBO", "purchaseProtocolCollationAESMBO", "purchaseProtocolEvasionAESMBO", "purchaseProtocolEvasionKESMBO", "purchaseProtocolEvasionZKESMBO", "purchaseProtocolEvasionZPESMBO", "purchaseProtocolFCDKESMBO", "purchaseProtocolFCODKESMBO", "purchaseProtocolFKVOKESMBO", "purchaseProtocolRejectionAESMBO", "purchaseProtocolRejectionKESMBO", "purchaseProtocolRejectionZKESMBO", "purchaseProtocolRejectionZPESMBO", "purchaseProtocolRZ1AESMBO", "purchaseProtocolRZ1KESMBO", "purchaseProtocolRZ1ZPESMBO", "purchaseProtocolRZ2AESMBO", "purchaseProtocolRZ2KESMBO", "purchaseProtocolRZ2ZPESMBO", "purchaseProtocolRZZKESMBO", "purchaseProtocolSummingupAESMBO", "purchaseProtocolSummingupKESMBO", "purchaseProtocolSummingupZKESMBO", "purchaseProtocolSummingupZPESMBO", "purchaseProtocolZRPZAESMBO", "purchaseProtocolZRPZKESMBO", "purchaseProtocolZRPZZKESMBO", "purchaseProtocolZRPZZPESMBO"};
@@ -176,7 +176,7 @@ public class Parser implements IParser {
                 }
                 count++;
                 try {
-                    sleep(5000);
+                    sleep(5_000);
                 } catch (InterruptedException ignored) {
 
                 }
@@ -189,10 +189,10 @@ public class Parser implements IParser {
     private ArrayList<String> FtpLst(String pathParse, String login, String pass) throws IOException {
         ArrayList<String> s = new ArrayList<>();
         FTPClient ftpClient = new FTPClient();
-        ftpClient.setDefaultTimeout(30000);
-        ftpClient.setConnectTimeout(30000);
-        ftpClient.setDataTimeout(30000);
-        ftpClient.setControlKeepAliveReplyTimeout(30000);
+        ftpClient.setDefaultTimeout(30_000);
+        ftpClient.setConnectTimeout(30_000);
+        ftpClient.setDataTimeout(30_000);
+        ftpClient.setControlKeepAliveReplyTimeout(30_000);
         ftpClient.connect("ftp.zakupki.gov.ru", 21);
         ftpClient.login(login, pass);
         ftpClient.enterLocalPassiveMode();
@@ -233,7 +233,7 @@ public class Parser implements IParser {
 
                 count++;
                 try {
-                    sleep(5000);
+                    sleep(5_000);
                 } catch (InterruptedException ignored) {
 
                 }
@@ -268,7 +268,7 @@ public class Parser implements IParser {
 
                 count++;
                 try {
-                    sleep(5000);
+                    sleep(5_000);
                 } catch (InterruptedException ignored) {
 
                 }
@@ -279,20 +279,23 @@ public class Parser implements IParser {
 
     private Object GetArchWait(String arch, String PathParse, String login, String pass, String file) throws Exception {
         FTPClient ftpClient = new FTPClient();
-        ftpClient.setConnectTimeout(160000);
+        ftpClient.setConnectTimeout(160_000);
         ftpClient.connect("ftp.zakupki.gov.ru", 21);
         ftpClient.login(login, pass);
         ftpClient.enterLocalPassiveMode();
         ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
-        ftpClient.setDataTimeout(150000);
-        ftpClient.setConnectTimeout(30000);
-        ftpClient.setDefaultTimeout(30000);
+        ftpClient.setDataTimeout(150_000);
+        ftpClient.setConnectTimeout(30_000);
+        ftpClient.setDefaultTimeout(30_000);
         ftpClient.changeWorkingDirectory(PathParse);
-        ftpClient.setControlKeepAliveReplyTimeout(160000);
-        ftpClient.setDataTimeout(300000);
-        OutputStream outputStream1 = new BufferedOutputStream(new FileOutputStream(file));
-        boolean success = ftpClient.retrieveFile(arch, outputStream1);
-        outputStream1.close();
+        ftpClient.setControlKeepAliveReplyTimeout(160_000);
+        ftpClient.setDataTimeout(300_000);
+        ftpClient.setControlKeepAliveTimeout(30_000);
+        ftpClient.setSoTimeout(30_000);
+        boolean success;
+        try (OutputStream outputStream1 = new BufferedOutputStream(new FileOutputStream(file))) {
+            success = ftpClient.retrieveFile(arch, outputStream1);
+        }
         ftpClient.logout();
         if (!success) {
             throw new Exception("errrrrrrrrrrrrrrr");

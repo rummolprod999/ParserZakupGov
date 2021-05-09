@@ -1,28 +1,0 @@
-
-?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-nsquid:S00100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æéœì8ÿ¡è–….
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
-ssquid:S00100«"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¬êÄøÿÿÿÿ8ÿ¡è–….
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(öÅƒÜøÿÿÿÿ
-gsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ô¿“ªùÿÿÿÿ
-Nsquid:S00108÷")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ8ÿ¡è–….
-ssquid:S00100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô’´¾ùÿÿÿÿ8ÿ¡è–….
-msquid:S2095ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¿äÚ)8ü¡è–….
-ssquid:S00100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÖŸ£úÿÿÿÿ8ÿ¡è–….
-jsquid:S1301Ž"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8ü¡è–….
-usquid:S3776D"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‰‡‘ïýÿÿÿÿ8ü¡è–….
-`squid:S1479R"BReduce the number of non-empty switch cases from 52 to at most 30.(›Ï—ú8ÿ¡è–….
-ssquid:S2095Í"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨»ÂÄþÿÿÿÿ8ü¡è–….
-Nsquid:S5411µ"*Use the primitive boolean expression here.(™ÒÑ üÿÿÿÿ8ü¡è–….
-Fsquid:S1148/"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8üÆë–….
-”squid:S1319À"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Î¬ËÇýÿÿÿÿ8ü¡è–….
-”squid:S1319È"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8ü¡è–….
-ssquid:S00100À"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¬ËÇýÿÿÿÿ8ÿ¡è–….
-ssquid:S00100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥áä±ýÿÿÿÿ8ÿ¡è–….
-rsquid:S00100D"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰‡‘ïýÿÿÿÿ8ü¡è–….
-msquid:S00100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¸´¸8õƒå–….
-W"squid:SwitchLastCaseIsDefaultCheckR""Add a default case to this switch.(›Ï—ú8ÿ¡è–….
-ksquid:S2095Ï"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(àäœ»ýÿÿÿÿ8ùºÒÒÚ-
-nsquid:S13014"KReplace this "switch" statement by "if" statements to increase readability.(ô¿“ªùÿÿÿÿ8ü¡è–….
-squid:S1319È"lThe type of the "s" object should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8ü¡è–….
-ssquid:S00100È"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó´´æùÿÿÿÿ8ÿ¡è–….

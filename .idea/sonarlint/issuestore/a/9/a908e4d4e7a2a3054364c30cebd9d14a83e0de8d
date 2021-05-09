@@ -1,62 +1,0 @@
-
-fsquid:S001003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ±÷È
-Gsquid:S00108ë")Either remove or fill this block of code.(®ûºöÿÿÿÿÿ
-Ysquid:S1141ù"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8»ãí—ú-
-Fsquid:S1444 "/Make this "public static formatter" field final(ÛÑæô
-qsquid:S00117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ëÅá8»ãí—ú-
-lsquid:S00100ˆ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€˜±±ıÿÿÿÿ
-Gsquid:S00108´")Either remove or fill this block of code.(®ûºöÿÿÿÿÿ
-=squid:S2885 "&Make "formatter" an instance variable.(ÛÑæô
-fsquid:S00112¨"FDefine and throw a dedicated exception instead of using a generic one.(úØ¹¥8»ãí—ú-
-osquid:CommentedOutCodeLine½"<This block of commented-out lines of code should be removed.(Æ‘Ğ°ÿÿÿÿÿ8»ãí—ú-
-u
-squid:S135§"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
-ysquid:S00116!"\Rename this field "__protocols223Dir" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óú»Òüÿÿÿÿ
-Fsquid:S001087")Either remove or fill this block of code.(½ÊûÛıÿÿÿÿ
-^squid:S1854ú":Remove this useless assignment to local variable "result".(îÈŞ‰ıÿÿÿÿ8»ãí—ú-
-jsquid:S00117ó"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÃì“
-ƒ"squid:ClassVariableVisibilityCheck "UMake formatter a static final constant or non-public and provide accessors if needed.(ÛÑæô
-‰"squid:ClassVariableVisibilityCheck""[Make protocols223Dir a static final constant or non-public and provide accessors if needed.(†ëŞ›
-qsquid:S00117Ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¦Ü¸8ÛÊİ—ú-
-‡squid:S1319V"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ˆ‘ÿ¡
-nsquid:S00100ó"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÃì“8ÛÊİ—ú-
-osquid:CommentedOutCodeLine¶"<This block of commented-out lines of code should be removed.(Æ‘Ğ°ÿÿÿÿÿ8»ãí—ú-
-csquid:S2142´"FEither re-interrupt this method or rethrow the "InterruptedException".(®ûºöÿÿÿÿÿ
-{squid:S2737ı"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(¤­—Îşÿÿÿÿ8»ãí—ú-
-vsquid:S2095Ğ"RUse try-with-resources or close this "BufferedOutputStream" in a "finally" clause.(‹¯øÑüÿÿÿÿ8»ãí—ú-
-squid:S1319ˆ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(€˜±±ıÿÿÿÿ
-u
-squid:S135Î"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
-fsquid:S00112–"FDefine and throw a dedicated exception instead of using a generic one.(§ëÅá8»ãí—ú-
-csquid:S2142ë"FEither re-interrupt this method or rethrow the "InterruptedException".(®ûºöÿÿÿÿÿ
-Fsquid:S00108,")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ
-fsquid:S00100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ‘ÿ¡
-ksquid:S00100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÈğ´øÿÿÿÿ
-lsquid:S00100½"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï“ªÅıÿÿÿÿ
-ksquid:S1192Ğ"GDefine a constant instead of duplicating this literal "%s%s%s" 3 times.(Çƒ©İıÿÿÿÿ8ÛÊİ—ú-
-ksquid:S00100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û‰—üÿÿÿÿ
-Œsquid:S1319o"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(äˆÍÓıÿÿÿÿ
-Rsquid:S1141Õ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
-lsquid:S00100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌèÁ§ùÿÿÿÿ
-jsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(®ûºöÿÿÿÿÿ8»ãí—ú-
-"squid:ClassVariableVisibilityCheck!"]Make __protocols223Dir a static final constant or non-public and provide accessors if needed.(Óú»Òüÿÿÿÿ
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ãĞØ¤ùÿÿÿÿ
-nsquid:S00100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ëÅá8»ãí—ú-
-msquid:S4042Ê"IUse "java.nio.Files#delete" here for better messages on error conditions.(é‘‚©úÿÿÿÿ8»ãí—ú-
-^
-squid:S899Ê";Do something with the "boolean" value returned by "delete".(é‘‚©úÿÿÿÿ8»ãí—ú-
-Hsquid:S1481Ö"+Remove this unused "result" local variable.(”“øùÿÿÿÿ
-Rsquid:S1854¾"5Remove this useless assignment to local variable "s".(’ µéşÿÿÿÿ
-gsquid:S00100Ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¦Ü¸
-ssquid:S00100­"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ–ñ¾øÿÿÿÿ8»ãí—ú-
-Osquid:S1481ú"+Remove this unused "result" local variable.(îÈŞ‰ıÿÿÿÿ8»ãí—ú-
-™squid:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğÂ§™
-asquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(ÁÙD
-Œsquid:S1319>"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÁÈğ´øÿÿÿÿ
-|
-squid:S135ö"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ÛÊİ—ú-
-rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(°†ôè
-ksquid:S00100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äˆÍÓıÿÿÿÿ
-tsquid:S2737Ø"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(¤­—Îşÿÿÿÿ
-Nsquid:S00108")Either remove or fill this block of code.(®ûºöÿÿÿÿÿ8»ãí—ú-

@@ -8,20 +8,12 @@ O
 test_js.js,a/5/a5e2cc40468fe842cae6d5610d28ffce7ba5da38
 9
 	test.json,0/8/0866e153dfcc6bd976c2117b14bbaec292d57f78
-L
-src/Protocols223/Parser.java,a/9/a908e4d4e7a2a3054364c30cebd9d14a83e0de8d
 U
 %src/Protocols223/ProtocolType223.java,c/0/c0afad4ac635f93ad058455798e8bf14b098abe1
-B
-ParserZakupGov.iml,e/d/ed2ddd92c55890ec88758a04bab4b3b3359e30dc
-J
-src/Protocols223/Main.java,f/a/fac3ed820d6d5737b1236b92843091c562a7bcdf
 S
 #src/PurchaseProtocols/ProtBody.java,d/1/d1a0e4e6b990a085cea9287c42a22d9fe3bb2c3c
 S
 #src/PurchaseProtocols/Protocol.java,1/f/1f056b2b46cfeefe8b6a4c356cbfabdcfd72475a
-X
-(src/Protocols223/ParserProtocols223.java,c/b/cbf2e26b2eef53835b1ca9e52d45a920777d6a11
 Q
 !src/Protocols223/TypeProt223.java,8/d/8d6362ad59ea1c7f1ed6ec04efa0af7a04955886
 S
@@ -30,8 +22,6 @@ T
 $.idea/codeStyles/codeStyleConfig.xml,d/d/dd7b3350c29c49497756c7f32c69a3bed18b1cba
 L
 .idea/codeStyles/Project.xml,6/e/6ecd6000a7b6f4a2884412ff19f74193ed089648
-S
-#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 [
 +src/PurchaseProtocols/ProtocolCCAESMBO.java,2/3/23ad6a77ca64943be9953cf982e7665e2ef6287f
 c
