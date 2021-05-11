@@ -20,8 +20,6 @@ S
 #src/PurchaseProtocols/ProtItem.java,1/f/1f847b8d5d9eed85bac59446e20c03bf9e4d95b8
 T
 $.idea/codeStyles/codeStyleConfig.xml,d/d/dd7b3350c29c49497756c7f32c69a3bed18b1cba
-L
-.idea/codeStyles/Project.xml,6/e/6ecd6000a7b6f4a2884412ff19f74193ed089648
 [
 +src/PurchaseProtocols/ProtocolCCAESMBO.java,2/3/23ad6a77ca64943be9953cf982e7665e2ef6287f
 c
@@ -248,3 +246,5 @@ I
 src/Protocols223/Log.java,b/5/b5eac6756b8ab26f671f5b4dd026e8d5c336de0f
 j
 :.idea/dataSources/fbadef42-3f13-4637-a5ec-5e0c07102abe.xml,7/5/75be1c4ed80e90fca9f1d87b9d344d28279616c8
+B
+ParserZakupGov.iml,e/d/ed2ddd92c55890ec88758a04bab4b3b3359e30dc
