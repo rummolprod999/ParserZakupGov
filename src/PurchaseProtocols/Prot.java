@@ -16,11 +16,14 @@ public class Prot {
     public String urlOOS;
     public String urlEIS;
     public String typeName;
+    public String cancelNoticeRegistrationNumber;
     public String missedContest;
     public String missedReason;
     public String сancellationReason;
+    public String purchaseCodeName;
     public String cancellationReason;
     public String purchaseCancellationReason;
+    public String causeForRejection;
 
     public LotApplicationsList getLotAppList() {
         if (lotApplicationsList instanceof String) {
@@ -59,6 +62,8 @@ public class Prot {
         if (purchaseInfo != null && purchaseInfo.purchaseNoticeNumber != null) {
             purchaseNumber = purchaseInfo.purchaseNoticeNumber;
         }
+        if (purchaseNumber.equals(""))
+            purchaseNumber = cancelNoticeRegistrationNumber;
         if (Objects.equals(purchaseNumber, "")) {
             Log.Logger("У протокола нет purchaseNumber", set.F);
             return;
@@ -107,6 +112,9 @@ public class Prot {
         ps2.close();
         int idProt = 0;
         String typeProtocol = (typeName != null) ? typeName : "";
+        if (typeProtocol.equals("")) {
+            typeProtocol = purchaseCodeName;
+        }
         String missedR = (missedReason != null) ? missedReason : "";
         if (missedR.equals("")) {
             if (protocolEvasionDecisionInfo != null && protocolEvasionDecisionInfo.confirmingDocsRequisites != null) {
@@ -119,6 +127,9 @@ public class Prot {
         }
         if (missedR.isEmpty() && (purchaseCancellationReason != null)) {
             missedR = purchaseCancellationReason;
+        }
+        if (missedR.isEmpty() && (causeForRejection != null)) {
+            missedR = causeForRejection;
         }
         PreparedStatement ps4 = con.prepareStatement(String.format("INSERT INTO %sprotocols223 SET guid = ?, protocol_date = ?, url = ?, purchase_number = ?, type_protocol = ?, cancel = ?, missed_contest = ?, missed_reason = ?, xml = ?, type_ftp = ?", Main.Prefix), Statement.RETURN_GENERATED_KEYS);
         ps4.setString(1, idProtocol);
@@ -231,6 +242,9 @@ public class Prot {
                     break;
                 case purchaseProtocolRejectionAESMBO:
                     Main.UpCountPurchaseProtocolRejectionAESMBO++;
+                    break;
+                case purchaseRejection:
+                    Main.UpCountPurchaseRejection++;
                     break;
                 case purchaseProtocolRejectionKESMBO:
                     Main.UpCountPurchaseProtocolRejectionKESMBO++;
@@ -381,6 +395,9 @@ public class Prot {
                     break;
                 case purchaseProtocolRejectionAESMBO:
                     Main.CountPurchaseProtocolRejectionAESMBO++;
+                    break;
+                case purchaseRejection:
+                    Main.CountPurchaseRejection++;
                     break;
                 case purchaseProtocolRejectionKESMBO:
                     Main.CountPurchaseProtocolRejectionKESMBO++;

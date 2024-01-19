@@ -1,20 +1,102 @@
 
-bsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(ï¦å•
-nsquid:S00116="QRename this field "Region" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İïìÃıÿÿÿÿ
-Zsquid:HiddenFieldCheck."8Rename "prot" which hides the field declared at line 16.(¥çÌò
-isquid:S00116>"LRename this field "F" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï€ÃÙøÿÿÿÿ
-~"squid:ClassVariableVisibilityCheckA"PMake Type a static final constant or non-public and provide accessors if needed.(—‹ƒ’
-ƒ"squid:ClassVariableVisibilityCheck?"UMake PathParse a static final constant or non-public and provide accessors if needed.(»¨¹Œ
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿá–±üÿÿÿÿ
-…"squid:ClassVariableVisibilityCheck="RMake Region a static final constant or non-public and provide accessors if needed.(İïìÃıÿÿÿÿ
-ƒ"squid:ClassVariableVisibilityCheck@"PMake Prot a static final constant or non-public and provide accessors if needed.(¦¸™øúÿÿÿÿ
-gsquid:S00116A"ORename this field "Type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‹ƒ’
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•
-~"squid:ClassVariableVisibilityCheckB"QMake Ftext a static final constant or non-public and provide accessors if needed.(óİ¼
-lsquid:S00116@"ORename this field "Prot" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¸™øúÿÿÿÿ
-lsquid:S00116?"TRename this field "PathParse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¨¹Œ
-bsquid:S1301*"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•
-nsquid:S00117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô©ˆÅüÿÿÿÿ
-€"squid:ClassVariableVisibilityCheck>"MMake F a static final constant or non-public and provide accessors if needed.(Ï€ÃÙøÿÿÿÿ
-gsquid:S00116B"PRename this field "Ftext" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óİ¼
-‡"squid:SwitchLastCaseIsDefaultCheck*"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÜŸ•
+™
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(øØ¨×üÿÿÿÿ8™Ã¡“Ò1
+”
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¥¹°’8£Ã¡“Ò1
+™
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Ñ‚Ğ‰ıÿÿÿÿ8¥Ã¡“Ò1
+•
+java:S1120""xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¬Àë÷8¦Ã¡“Ò1
+•
+java:S1120&"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(úÒ·…8§Ã¡“Ò1
+š
+java:S1120,"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(¡»¢üùÿÿÿÿ8©Ã¡“Ò1
+›
+java:S1120-"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(¯—®ùÿÿÿÿ8ªÃ¡“Ò1
+›
+java:S11200"yMake this line start after 12 spaces instead of 24 in order to indent the code consistently. (Indentation level is at 2.)(Ğ†ƒ³øÿÿÿÿ8«Ã¡“Ò1
+•
+java:S11203"yMake this line start after 12 spaces instead of 24 in order to indent the code consistently. (Indentation level is at 2.)(·‘üN8­Ã¡“Ò1
+–
+java:S11206"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(«é¶Ö8­Ã¡“Ò1
+™
+java:S1120<"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(ì½ğÿÿÿÿÿ8­Ã¡“Ò1
+™
+java:S1120="wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(İïìÃıÿÿÿÿ8­Ã¡“Ò1
+•
+java:S1120E"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(ôˆ²8®Ã¡“Ò1
+r	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô©ˆÅüÿÿÿÿ8²Ã¡“Ò1
+h
+java:S1301*"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8²Ã¡“Ò1
+t
+java:S1104="RMake Region a static final constant or non-public and provide accessors if needed.(İïìÃıÿÿÿÿ8²Ã¡“Ò1
+o
+java:S1104>"MMake F a static final constant or non-public and provide accessors if needed.(Ï€ÃÙøÿÿÿÿ8²Ã¡“Ò1
+r
+java:S1104?"UMake PathParse a static final constant or non-public and provide accessors if needed.(»¨¹Œ8³Ã¡“Ò1
+r
+java:S1104@"PMake Prot a static final constant or non-public and provide accessors if needed.(¦¸™øúÿÿÿÿ8³Ã¡“Ò1
+m
+java:S1104A"PMake Type a static final constant or non-public and provide accessors if needed.(—‹ƒ’8³Ã¡“Ò1
+m
+java:S1104B"QMake Ftext a static final constant or non-public and provide accessors if needed.(óİ¼8³Ã¡“Ò1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•8´Ã¡“Ò1
+c
+java:S1106"AMove this left curly brace to the beginning of next line of code.(®©·œıÿÿÿÿ8¶Ã¡“Ò1
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(Œğéê8¶Ã¡“Ò1
+c
+java:S1106"AMove this left curly brace to the beginning of next line of code.(Ÿá–±üÿÿÿÿ8¶Ã¡“Ò1
+c
+java:S1106!"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8¶Ã¡“Ò1
+^
+java:S1106%"AMove this left curly brace to the beginning of next line of code.(”ı¾8¶Ã¡“Ò1
+^
+java:S1106*"AMove this left curly brace to the beginning of next line of code.(ÜŸ•8¶Ã¡“Ò1
+c
+java:S1106,"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8·Ã¡“Ò1
+c
+java:S1106/"AMove this left curly brace to the beginning of next line of code.(“‘ôğùÿÿÿÿ8·Ã¡“Ò1
+^
+java:S11062"AMove this left curly brace to the beginning of next line of code.(å¥‡8·Ã¡“Ò1
+^
+java:S11065"AMove this left curly brace to the beginning of next line of code.(”ı¾8·Ã¡“Ò1
+c
+java:S1106<"AMove this left curly brace to the beginning of next line of code.(ì½ğÿÿÿÿÿ8·Ã¡“Ò1
+^
+java:S1106D"AMove this left curly brace to the beginning of next line of code.(€¬ÅÊ8·Ã¡“Ò1
+;
+java:S1451"&Add or update the header of this file.8ÁÃ¡“Ò1
+Q
+java:S2039"/Explicitly declare the visibility for "region".(øØ¨×üÿÿÿÿ8ÂÃ¡“Ò1
+L
+java:S2039"*Explicitly declare the visibility for "f".(„Ü°şÿÿÿÿ8ÂÃ¡“Ò1
+O
+java:S2039"2Explicitly declare the visibility for "pathParse".(ÀÖ”†8ÃÃ¡“Ò1
+O
+java:S2039"-Explicitly declare the visibility for "prot".(ˆèßïşÿÿÿÿ8ÃÃ¡“Ò1
+O
+java:S2039"-Explicitly declare the visibility for "type".(£Í»Ôùÿÿÿÿ8ÃÃ¡“Ò1
+J
+java:S2039".Explicitly declare the visibility for "ftext".(û¬:8ÃÃ¡“Ò1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿá–±üÿÿÿÿ8ÊÃ¡“Ò1
+Q
+java:S2221%"4Catch a list of specific exception subtypes instead.(”ı¾8ËÃ¡“Ò1
+O
+java:S1108%"2Move this "catch" keyword to a new dedicated line.(”ı¾8ÌÃ¡“Ò1
+X	java:S125$"<This block of commented-out lines of code should be removed.(ï¦å•8ÍÃ¡“Ò1
+‡
+java:S1151+"jReduce this switch case number of lines from 12 to at most 5, for example by extracting code into methods.(¡Ù’°8ĞÃ¡“Ò1
+u	java:S131*"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÜŸ•8ÒÃ¡“Ò1
+O
+java:S11085"2Move this "catch" keyword to a new dedicated line.(”ı¾8ÓÃ¡“Ò1
+U
+java:S1117."8Rename "prot" which hides the field declared at line 16.(¥çÌò8ÓÃ¡“Ò1
+N
+java:S11082"1Move this "else" keyword to a new dedicated line.(å¥‡8ÓÃ¡“Ò1
+r	java:S116="QRename this field "Region" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İïìÃıÿÿÿÿ8İÃ¡“Ò1
+m	java:S116>"LRename this field "F" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï€ÃÙøÿÿÿÿ8ŞÃ¡“Ò1
+p	java:S116?"TRename this field "PathParse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¨¹Œ8àÃ¡“Ò1
+p	java:S116@"ORename this field "Prot" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¸™øúÿÿÿÿ8áÃ¡“Ò1
+k	java:S116A"ORename this field "Type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‹ƒ’8âÃ¡“Ò1
+k	java:S116B"PRename this field "Ftext" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óİ¼8ãÃ¡“Ò1

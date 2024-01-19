@@ -47,6 +47,7 @@ public class ProtItem {
     public PurchaseProtocolZRPZKESMBOData purchaseProtocolZRPZKESMBOData;
     public PurchaseProtocolZRPZZKESMBOData purchaseProtocolZRPZZKESMBOData;
     public PurchaseProtocolZRPZZPESMBOData purchaseProtocolZRPZZPESMBOData;
+    public PurchaseRejectionData purchaseRejectionData;
     public ProtItem() {
     }
 }

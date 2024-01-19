@@ -449,6 +449,20 @@ public class ProtocolType223 {
                     Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseProtocolRejectionKESMBO");
                 }
                 break;
+            case purchaseRejection:
+                try {
+                    ProtocolRejection p = gson.fromJson(JsonString, ProtocolRejection.class);
+                    Prot prot = p.purchaseRejection.body.item.purchaseRejectionData;
+                    if (prot != null) {
+                        prot.Parsing(new Settings(), con);
+
+                    } else {
+                        Log.Logger("Не смогли создать объект", f.getAbsolutePath());
+                    }
+                } catch (Exception e) {
+                    Log.Logger(e, e.getStackTrace(), f.getAbsolutePath(), "Error get gson object purchaseRejection");
+                }
+                break;
             case purchaseProtocolRejectionZKESMBO:
                 try {
                     ProtocolRejectionZKESMBO p = gson.fromJson(JsonString, ProtocolRejectionZKESMBO.class);

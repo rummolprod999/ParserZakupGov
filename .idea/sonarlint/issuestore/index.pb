@@ -244,8 +244,6 @@ j
 :src/PurchaseProtocols/PurchaseProtocolZRPZZPESMBOData.java,f/1/f172cb7f0effe00a03de1943a7cb38ef0638758d
 I
 src/Protocols223/Log.java,b/5/b5eac6756b8ab26f671f5b4dd026e8d5c336de0f
-j
-:.idea/dataSources/fbadef42-3f13-4637-a5ec-5e0c07102abe.xml,7/5/75be1c4ed80e90fca9f1d87b9d344d28279616c8
 B
 ParserZakupGov.iml,e/d/ed2ddd92c55890ec88758a04bab4b3b3359e30dc
 J
@@ -302,3 +300,11 @@ Q.idea/sonarlint/securityhotspotstore/9/8/989c462e5772a4637e337f7934d267bdf59d25
 Q.idea/sonarlint/securityhotspotstore/8/d/8d6362ad59ea1c7f1ed6ec04efa0af7a04955886,3/e/3ef63f537596236083c474a9852bab322e13d365
 I
 .idea/JetClient/state.xml,4/e/4e6e58e82ecfa92cb3dbfc711b374423ae3639d2
+^
+.src/Protocols223/ProtocolType223Rejection.java,e/e/ee6b3864908ed8a6334220d908b009a2ee540fd4
+\
+,src/PurchaseProtocols/ProtocolRejection.java,f/2/f24eb375c9a35b17877cbf3e0820a773a0a9e697
+\
+,src/PurchaseProtocols/PurchaseRejection.java,6/c/6c75da6ead77a44287d80889a0e0a86a7b992270
+`
+0src/PurchaseProtocols/PurchaseRejectionData.java,f/0/f0bf9b64f7e9a7e26c71c88a046db34aebe13aee

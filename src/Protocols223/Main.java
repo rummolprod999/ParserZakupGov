@@ -119,6 +119,8 @@ public class Main {
     public static int UpCountPurchaseProtocolZRPZZPESMBO;
     public static int CountPurchaseProtocolCancel;
     public static int UpCountPurchaseProtocolCancel;
+    public static int CountPurchaseRejection;
+    public static int UpCountPurchaseRejection;
 
     public static void main(String[] args) {
         if (args.length == 0) {
@@ -288,6 +290,8 @@ public class Main {
             Log.Logger(String.format("Обновлено PurchaseProtocolZRPZZPESMBO  %d", UpCountPurchaseProtocolZRPZZPESMBO ));
             Log.Logger(String.format("Добавлено ProtocolCancellation %d", CountPurchaseProtocolCancel));
             Log.Logger(String.format("Обновлено ProtocolCancellation %d", UpCountPurchaseProtocolCancel));
+            Log.Logger(String.format("Добавлено PurchaseRejection %d", CountPurchaseRejection));
+            Log.Logger(String.format("Обновлено PurchaseRejection %d", UpCountPurchaseRejection));
 
         }
 

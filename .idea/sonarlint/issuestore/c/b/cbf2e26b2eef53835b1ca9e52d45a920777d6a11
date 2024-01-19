@@ -145,96 +145,98 @@ java:S1120ç"yMake this line start after 16 spaces instead of 32 in order to in
 java:S1120ê"yMake this line start after 16 spaces instead of 32 in order to indent the code consistently. (Indentation level is at 2.)(°´½³8§¹õû”/
 œ
 java:S1120í"yMake this line start after 16 spaces instead of 32 in order to indent the code consistently. (Indentation level is at 2.)(É¤÷Ğùÿÿÿÿ8§¹õû”/
+—
+java:S1120ğ"yMake this line start after 16 spaces instead of 32 in order to indent the code consistently. (Indentation level is at 2.)(³“˜ï8ËöÎ“Ò1
 œ
-java:S1120ó"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(”šÔ¸úÿÿÿÿ8¨¹õû”/
+java:S1120ö"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(”šÔ¸úÿÿÿÿ8¨¹õû”/
 —
-java:S1120ö"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(½éşú8¨¹õû”/
+java:S1120ù"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(½éşú8¨¹õû”/
 •
-java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Œ²öé8¨¹õû”/
+java:S1120„"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Œ²öé8¨¹õû”/
 –
-java:S1120‚"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(ûÁİ…8©¹õû”/
+java:S1120…"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(ûÁİ…8©¹õû”/
 ›
-java:S1120…"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)( òç¥ÿÿÿÿÿ8©¹õû”/
+java:S1120ˆ"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)( òç¥ÿÿÿÿÿ8©¹õû”/
 –
-java:S1120‡"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(Ï«ƒÑ8©¹õû”/
+java:S1120Š"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(Ï«ƒÑ8©¹õû”/
 •
-java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(’Ä¥Ò8ª¹õû”/
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(’Ä¥Ò8ª¹õû”/
 ›
-java:S1120"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(ÏØ„Ùüÿÿÿÿ8ª¹õû”/
+java:S1120“"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(ÏØ„Ùüÿÿÿÿ8ª¹õû”/
 ›
-java:S1120”"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(ûş¦şÿÿÿÿ8ª¹õû”/
+java:S1120—"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(ûş¦şÿÿÿÿ8ª¹õû”/
 š
-java:S1120œ"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Ì°€‰üÿÿÿÿ8ª¹õû”/
+java:S1120Ÿ"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Ì°€‰üÿÿÿÿ8ª¹õû”/
 –
-java:S1120"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(®â¡³8«¹õû”/
+java:S1120¡"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(®â¡³8«¹õû”/
 ›
-java:S1120¢"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¡»¢üùÿÿÿÿ8«¹õû”/
+java:S1120¥"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¡»¢üùÿÿÿÿ8«¹õû”/
 ›
-java:S1120£"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(¡ëõ¡ÿÿÿÿÿ8«¹õû”/
+java:S1120¦"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(¡ëõ¡ÿÿÿÿÿ8«¹õû”/
 ›
-java:S1120¥"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(›÷±£ûÿÿÿÿ8¬¹õû”/
+java:S1120¨"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(›÷±£ûÿÿÿÿ8¬¹õû”/
 š
-java:S1120¬"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Ì°€‰üÿÿÿÿ8¬¹õû”/
+java:S1120¯"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(Ì°€‰üÿÿÿÿ8¬¹õû”/
 –
-java:S1120¯"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(®â¡³8¬¹õû”/
+java:S1120²"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(®â¡³8¬¹õû”/
 ›
-java:S1120³"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¡»¢üùÿÿÿÿ8­¹õû”/
+java:S1120¶"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¡»¢üùÿÿÿÿ8­¹õû”/
 ›
-java:S1120´"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(åØÍæúÿÿÿÿ8­¹õû”/
+java:S1120·"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(åØÍæúÿÿÿÿ8­¹õû”/
 —
-java:S1120¶"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(ÉŠ©ƒ8­¹õû”/
+java:S1120¹"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(ÉŠ©ƒ8­¹õû”/
 ›
-java:S1120º"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(›÷±£ûÿÿÿÿ8®¹õû”/
+java:S1120½"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(›÷±£ûÿÿÿÿ8®¹õû”/
 •
-java:S1120Á"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(öÖÿŠ8®¹õû”/
+java:S1120Ä"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(öÖÿŠ8®¹õû”/
 š
-java:S1120É"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(§²úÿÿÿÿ8®¹õû”/
+java:S1120Ì"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(§²úÿÿÿÿ8®¹õû”/
 ›
-java:S1120Ë"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(”æóûÿÿÿÿ8®¹õû”/
+java:S1120Î"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(”æóûÿÿÿÿ8®¹õû”/
 ›
-java:S1120Ì"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(ÎÎç–üÿÿÿÿ8¯¹õû”/
+java:S1120Ï"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(ÎÎç–üÿÿÿÿ8¯¹õû”/
 œ
-java:S1120Í"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(¨»ÂÄşÿÿÿÿ8¯¹õû”/
+java:S1120Ğ"yMake this line start after 10 spaces instead of 20 in order to indent the code consistently. (Indentation level is at 2.)(¨»ÂÄşÿÿÿÿ8¯¹õû”/
 —
-java:S1120Ñ"yMake this line start after 12 spaces instead of 24 in order to indent the code consistently. (Indentation level is at 2.)(­èâ«8¯¹õû”/
+java:S1120Ô"yMake this line start after 12 spaces instead of 24 in order to indent the code consistently. (Indentation level is at 2.)(­èâ«8¯¹õû”/
 ›
-java:S1120Û"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(´ó´ûÿÿÿÿ8°¹õû”/
+java:S1120Ş"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(´ó´ûÿÿÿÿ8°¹õû”/
 š
-java:S1120â"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(”æóûÿÿÿÿ8°¹õû”/
+java:S1120å"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(”æóûÿÿÿÿ8°¹õû”/
 •
-java:S1120ã"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¿äÚ)8°¹õû”/
+java:S1120æ"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¿äÚ)8°¹õû”/
 –
-java:S1120è"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(Ş³†æ8±¹õû”/
+java:S1120ë"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(Ş³†æ8±¹õû”/
 j	java:S134Q"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(”¼İÔ8Ç¸õû”/
-p	java:S134Ğ"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(³÷¬âúÿÿÿÿ8È¸õû”/
+p	java:S134Ó"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(³÷¬âúÿÿÿÿ8È¸õû”/
 B
 java:S1166"%Either log or rethrow this exception.(É®£8Ù¸õû”/
 B
 java:S1166."%Either log or rethrow this exception.(É®£8Ú¸õû”/
 C
-java:S1166ò"%Either log or rethrow this exception.(”ı¾8Û¸õû”/
+java:S1166õ"%Either log or rethrow this exception.(”ı¾8Û¸õû”/
 H
-java:S1166÷"%Either log or rethrow this exception.(Æ¸Û‚øÿÿÿÿ8Û¸õû”/
+java:S1166ú"%Either log or rethrow this exception.(Æ¸Û‚øÿÿÿÿ8Û¸õû”/
 C
-java:S1166†"%Either log or rethrow this exception.(”ı¾8Ü¸õû”/
+java:S1166‰"%Either log or rethrow this exception.(”ı¾8Ü¸õû”/
 C
-java:S1166Ú"%Either log or rethrow this exception.(”ı¾8İ¸õû”/
+java:S1166İ"%Either log or rethrow this exception.(”ı¾8İ¸õû”/
 C
-java:S1166ç"%Either log or rethrow this exception.(”ı¾8Ş¸õû”/
+java:S1166ê"%Either log or rethrow this exception.(”ı¾8Ş¸õû”/
 “
-java:S1319À"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Î¬ËÇıÿÿÿÿ8“¸»ÍØ.
+java:S1319Ã"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Î¬ËÇıÿÿÿÿ8“¸»ÍØ.
 “
-java:S1319È"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8“¸»ÍØ.
+java:S1319Ë"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8“¸»ÍØ.
 „
-java:S1319È"aThe type of "s" should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8“¸»ÍØ.
+java:S1319Ë"aThe type of "s" should be an interface such as "List" rather than the implementation "ArrayList".(Ó´´æùÿÿÿÿ8“¸»ÍØ.
 m
 java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ô¿“ªùÿÿÿÿ8“¸»ÍØ.
 m
 java:S13014"KReplace this "switch" statement by "if" statements to increase readability.(ô¿“ªùÿÿÿÿ8“¸»ÍØ.
 i
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8“¸»ÍØ.
+java:S1301‘"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8“¸»ÍØ.
 K
-java:S5411µ"(Use a primitive boolean expression here.(™ÒÑ üÿÿÿÿ8“¸»ÍØ.
+java:S5411¸"(Use a primitive boolean expression here.(™ÒÑ üÿÿÿÿ8“¸»ÍØ.
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•8“¸»ÍØ.
 ^
 java:S1106"AMove this left curly brace to the beginning of next line of code.(¼€õù8ü¸õû”/
@@ -277,75 +279,75 @@ java:S1106Q"AMove this left curly brace to the beginning of next line of code.(
 ^
 java:S1106R"AMove this left curly brace to the beginning of next line of code.(›Ï—ú8‚¹õû”/
 _
-java:S1106ò"AMove this left curly brace to the beginning of next line of code.(”ı¾8‚¹õû”/
+java:S1106õ"AMove this left curly brace to the beginning of next line of code.(”ı¾8‚¹õû”/
 d
-java:S1106õ"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8‚¹õû”/
+java:S1106ø"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8‚¹õû”/
 d
-java:S1106÷"AMove this left curly brace to the beginning of next line of code.(Æ¸Û‚øÿÿÿÿ8‚¹õû”/
+java:S1106ú"AMove this left curly brace to the beginning of next line of code.(Æ¸Û‚øÿÿÿÿ8‚¹õû”/
 _
-java:S1106€"AMove this left curly brace to the beginning of next line of code.(æéœì8ƒ¹õû”/
+java:S1106ƒ"AMove this left curly brace to the beginning of next line of code.(æéœì8ƒ¹õû”/
 _
-java:S1106"AMove this left curly brace to the beginning of next line of code.(Œ²öé8ƒ¹õû”/
+java:S1106„"AMove this left curly brace to the beginning of next line of code.(Œ²öé8ƒ¹õû”/
 d
-java:S1106„"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8„¹õû”/
+java:S1106‡"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8„¹õû”/
 _
-java:S1106†"AMove this left curly brace to the beginning of next line of code.(”ı¾8„¹õû”/
+java:S1106‰"AMove this left curly brace to the beginning of next line of code.(”ı¾8„¹õû”/
 d
-java:S1106Œ"AMove this left curly brace to the beginning of next line of code.(ÇÖŸ£úÿÿÿÿ8„¹õû”/
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ÇÖŸ£úÿÿÿÿ8„¹õû”/
 _
-java:S1106"AMove this left curly brace to the beginning of next line of code.(ÜŸ•8„¹õû”/
+java:S1106‘"AMove this left curly brace to the beginning of next line of code.(ÜŸ•8„¹õû”/
 d
-java:S1106›"AMove this left curly brace to the beginning of next line of code.(ô’´¾ùÿÿÿÿ8…¹õû”/
+java:S1106"AMove this left curly brace to the beginning of next line of code.(ô’´¾ùÿÿÿÿ8…¹õû”/
 _
-java:S1106"AMove this left curly brace to the beginning of next line of code.(éÌîõ8…¹õû”/
+java:S1106 "AMove this left curly brace to the beginning of next line of code.(éÌîõ8…¹õû”/
 d
-java:S1106¡"AMove this left curly brace to the beginning of next line of code.(ÎÎç–üÿÿÿÿ8…¹õû”/
+java:S1106¤"AMove this left curly brace to the beginning of next line of code.(ÎÎç–üÿÿÿÿ8…¹õû”/
 d
-java:S1106¢"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8…¹õû”/
+java:S1106¥"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8…¹õû”/
 _
-java:S1106¤"AMove this left curly brace to the beginning of next line of code.(”ı¾8†¹õû”/
+java:S1106§"AMove this left curly brace to the beginning of next line of code.(”ı¾8†¹õû”/
 d
-java:S1106«"AMove this left curly brace to the beginning of next line of code.(€¬êÄøÿÿÿÿ8†¹õû”/
+java:S1106®"AMove this left curly brace to the beginning of next line of code.(€¬êÄøÿÿÿÿ8†¹õû”/
 _
-java:S1106®"AMove this left curly brace to the beginning of next line of code.(éÌîõ8†¹õû”/
+java:S1106±"AMove this left curly brace to the beginning of next line of code.(éÌîõ8†¹õû”/
 d
-java:S1106²"AMove this left curly brace to the beginning of next line of code.(ÎÎç–üÿÿÿÿ8‡¹õû”/
+java:S1106µ"AMove this left curly brace to the beginning of next line of code.(ÎÎç–üÿÿÿÿ8‡¹õû”/
 d
-java:S1106³"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8‡¹õû”/
+java:S1106¶"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8‡¹õû”/
 d
-java:S1106µ"AMove this left curly brace to the beginning of next line of code.(™ÒÑ üÿÿÿÿ8‡¹õû”/
+java:S1106¸"AMove this left curly brace to the beginning of next line of code.(™ÒÑ üÿÿÿÿ8‡¹õû”/
 _
-java:S1106¹"AMove this left curly brace to the beginning of next line of code.(”ı¾8ˆ¹õû”/
+java:S1106¼"AMove this left curly brace to the beginning of next line of code.(”ı¾8ˆ¹õû”/
 d
-java:S1106À"AMove this left curly brace to the beginning of next line of code.(Î¬ËÇıÿÿÿÿ8ˆ¹õû”/
+java:S1106Ã"AMove this left curly brace to the beginning of next line of code.(Î¬ËÇıÿÿÿÿ8ˆ¹õû”/
 d
-java:S1106È"AMove this left curly brace to the beginning of next line of code.(Ó´´æùÿÿÿÿ8ˆ¹õû”/
+java:S1106Ë"AMove this left curly brace to the beginning of next line of code.(Ó´´æùÿÿÿÿ8ˆ¹õû”/
 _
-java:S1106Ê"AMove this left curly brace to the beginning of next line of code.(Ûš¶¢8ˆ¹õû”/
+java:S1106Í"AMove this left curly brace to the beginning of next line of code.(Ûš¶¢8ˆ¹õû”/
 d
-java:S1106Ë"AMove this left curly brace to the beginning of next line of code.(”æóûÿÿÿÿ8ˆ¹õû”/
+java:S1106Î"AMove this left curly brace to the beginning of next line of code.(”æóûÿÿÿÿ8ˆ¹õû”/
 d
-java:S1106Ì"AMove this left curly brace to the beginning of next line of code.(ÎÎç–üÿÿÿÿ8‰¹õû”/
+java:S1106Ï"AMove this left curly brace to the beginning of next line of code.(ÎÎç–üÿÿÿÿ8‰¹õû”/
 d
-java:S1106Ğ"AMove this left curly brace to the beginning of next line of code.(³÷¬âúÿÿÿÿ8‰¹õû”/
+java:S1106Ó"AMove this left curly brace to the beginning of next line of code.(³÷¬âúÿÿÿÿ8‰¹õû”/
 _
-java:S1106Ú"AMove this left curly brace to the beginning of next line of code.(”ı¾8‰¹õû”/
+java:S1106İ"AMove this left curly brace to the beginning of next line of code.(”ı¾8‰¹õû”/
 d
-java:S1106á"AMove this left curly brace to the beginning of next line of code.(¥áä±ıÿÿÿÿ8Š¹õû”/
+java:S1106ä"AMove this left curly brace to the beginning of next line of code.(¥áä±ıÿÿÿÿ8Š¹õû”/
 d
-java:S1106â"AMove this left curly brace to the beginning of next line of code.(”æóûÿÿÿÿ8Š¹õû”/
+java:S1106å"AMove this left curly brace to the beginning of next line of code.(”æóûÿÿÿÿ8Š¹õû”/
 _
-java:S1106ç"AMove this left curly brace to the beginning of next line of code.(”ı¾8Š¹õû”/
+java:S1106ê"AMove this left curly brace to the beginning of next line of code.(”ı¾8Š¹õû”/
 l
-java:S2095ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¿äÚ)8“¸»ÍØ.
+java:S2095æ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¿äÚ)8“¸»ÍØ.
 r
-java:S2095Í"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨»ÂÄşÿÿÿÿ8“¸»ÍØ.
+java:S2095Ğ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨»ÂÄşÿÿÿÿ8“¸»ÍØ.
 ;
 java:S1451"&Add or update the header of this file.8¾¹õû”/
-h	java:S103Â"KSplit this 176 characters long line (which is greater than 120 authorized).(ê»»«8º¹õû”/
-g	java:S103Ä"KSplit this 130 characters long line (which is greater than 120 authorized).(†€«>8»¹õû”/
-m	java:S103Í"KSplit this 150 characters long line (which is greater than 120 authorized).(¨»ÂÄşÿÿÿÿ8»¹õû”/
-g	java:S103ã"KSplit this 139 characters long line (which is greater than 120 authorized).(¿äÚ)8»¹õû”/
+h	java:S103Å"KSplit this 176 characters long line (which is greater than 120 authorized).(ê»»«8º¹õû”/
+g	java:S103Ç"KSplit this 130 characters long line (which is greater than 120 authorized).(†€«>8»¹õû”/
+m	java:S103Ğ"KSplit this 150 characters long line (which is greater than 120 authorized).(¨»ÂÄşÿÿÿÿ8»¹õû”/
+g	java:S103æ"KSplit this 139 characters long line (which is greater than 120 authorized).(¿äÚ)8»¹õû”/
 K
 java:S2208".Explicitly import the specific classes needed.(´İ…Å8À¹õû”/
 O
@@ -358,48 +360,48 @@ o	java:S100D"NRename this method name to match the regular expression '^[a-z][
 t
 java:S3776D"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(‰‡‘ïıÿÿÿÿ8“¸»ÍØ.
 ‡
-java:S1541D"eThe Cyclomatic Complexity of this method "GetListFileArch" is 58 which is greater than 10 authorized.(‰‡‘ïıÿÿÿÿ8ö¹õû”/
-‰	java:S138D"hThis method has 184 lines, which is greater than the 75 lines authorized. Split it into smaller methods.(‰‡‘ïıÿÿÿÿ8ó¹õû”/
+java:S1541D"eThe Cyclomatic Complexity of this method "GetListFileArch" is 59 which is greater than 10 authorized.(‰‡‘ïıÿÿÿÿ8ö¹õû”/
+‰	java:S138D"hThis method has 187 lines, which is greater than the 75 lines authorized. Split it into smaller methods.(‰‡‘ïıÿÿÿÿ8ó¹õû”/
 f
 java:S1941F"DMove the declaration of "pathUnzip" closer to the code that uses it.(Æ¯¡Ìüÿÿÿÿ8ü¹õû”/
 P
-java:S1108ò"2Move this "catch" keyword to a new dedicated line.(”ı¾8ºõû”/
+java:S1108õ"2Move this "catch" keyword to a new dedicated line.(”ı¾8ºõû”/
 d
 java:S1774Q"GConvert this usage of the ternary operator to an "if"/"else" structure.(”¼İÔ8ƒºõû”/
 >	java:S131R""Add a default case to this switch.(›Ï—ú8“¸»ÍØ.
 _
-java:S1479R"BReduce the number of non-empty switch cases from 52 to at most 30.(›Ï—ú8“¸»ÍØ.
+java:S1479R"BReduce the number of non-empty switch cases from 53 to at most 30.(›Ï—ú8“¸»ÍØ.
 W
-java:S2221÷"4Catch a list of specific exception subtypes instead.(Æ¸Û‚øÿÿÿÿ8—»õû”/
+java:S2221ú"4Catch a list of specific exception subtypes instead.(Æ¸Û‚øÿÿÿÿ8—»õû”/
 U
-java:S1108÷"2Move this "catch" keyword to a new dedicated line.(Æ¸Û‚øÿÿÿÿ8–»õû”/
-K	java:S108÷")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ8“¸»ÍØ.
-k	java:S100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æéœì8“¸»ÍØ.
+java:S1108ú"2Move this "catch" keyword to a new dedicated line.(Æ¸Û‚øÿÿÿÿ8–»õû”/
+K	java:S108ú")Either remove or fill this block of code.(Æ¸Û‚øÿÿÿÿ8“¸»ÍØ.
+k	java:S100ƒ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æéœì8“¸»ÍØ.
 T
-java:S1449"6Define the locale to be used in this String operation.(Œ²öé8»õû”/
+java:S1449„"6Define the locale to be used in this String operation.(Œ²öé8»õû”/
 R
-java:S2221†"4Catch a list of specific exception subtypes instead.(”ı¾8»õû”/
+java:S2221‰"4Catch a list of specific exception subtypes instead.(”ı¾8»õû”/
 P
-java:S1108†"2Move this "catch" keyword to a new dedicated line.(”ı¾8»õû”/
-p	java:S100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÖŸ£úÿÿÿÿ8“¸»ÍØ.
-p	java:S100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô’´¾ùÿÿÿÿ8“¸»ÍØ.
+java:S1108‰"2Move this "catch" keyword to a new dedicated line.(”ı¾8»õû”/
+p	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÖŸ£úÿÿÿÿ8“¸»ÍØ.
+p	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô’´¾ùÿÿÿÿ8“¸»ÍØ.
 R
-java:S2221¤"4Catch a list of specific exception subtypes instead.(”ı¾8Í»õû”/
+java:S2221§"4Catch a list of specific exception subtypes instead.(”ı¾8Í»õû”/
 P
-java:S1108¤"2Move this "catch" keyword to a new dedicated line.(”ı¾8Ì»õû”/
-p	java:S100«"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¬êÄøÿÿÿÿ8“¸»ÍØ.
+java:S1108§"2Move this "catch" keyword to a new dedicated line.(”ı¾8Ì»õû”/
+p	java:S100®"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¬êÄøÿÿÿÿ8“¸»ÍØ.
 R
-java:S2221¹"4Catch a list of specific exception subtypes instead.(”ı¾8Ø»õû”/
+java:S2221¼"4Catch a list of specific exception subtypes instead.(”ı¾8Ø»õû”/
 P
-java:S1108¹"2Move this "catch" keyword to a new dedicated line.(”ı¾8Ø»õû”/
-p	java:S100À"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¬ËÇıÿÿÿÿ8“¸»ÍØ.
-p	java:S100È"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó´´æùÿÿÿÿ8“¸»ÍØ.
+java:S1108¼"2Move this "catch" keyword to a new dedicated line.(”ı¾8Ø»õû”/
+p	java:S100Ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¬ËÇıÿÿÿÿ8“¸»ÍØ.
+p	java:S100Ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó´´æùÿÿÿÿ8“¸»ÍØ.
 o
-java:S3242È"LUse 'java.util.Collection' here; it is a more general type than 'ArrayList'.(Ó´´æùÿÿÿÿ8ì»õû”/
+java:S3242Ë"LUse 'java.util.Collection' here; it is a more general type than 'ArrayList'.(Ó´´æùÿÿÿÿ8ì»õû”/
 P
-java:S1108Ú"2Move this "catch" keyword to a new dedicated line.(”ı¾8ï»õû”/
-p	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥áä±ıÿÿÿÿ8“¸»ÍØ.
+java:S1108İ"2Move this "catch" keyword to a new dedicated line.(”ı¾8ï»õû”/
+p	java:S100ä"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥áä±ıÿÿÿÿ8“¸»ÍØ.
 P
-java:S1108ç"2Move this "catch" keyword to a new dedicated line.(”ı¾8ú»õû”/
+java:S1108ê"2Move this "catch" keyword to a new dedicated line.(”ı¾8ú»õû”/
 é
-java:S6541D"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 184 to 64, Complexity from 58 to 14, Nesting Level from 5 to 2, Number of Variables from 12 to 6.(‰‡‘ïıÿÿÿÿ8¿ª’Ò1
+java:S6541D"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 187 to 64, Complexity from 59 to 14, Nesting Level from 5 to 2, Number of Variables from 12 to 6.(‰‡‘ïıÿÿÿÿ8¿ª’Ò1

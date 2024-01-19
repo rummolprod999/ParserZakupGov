@@ -236,6 +236,9 @@ public class ParserProtocols223 extends Parser {
                             case "purchaseProtocolCancellation":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolCancellation, con);
                                 break;
+                            case "purchaseRejection":
+                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseRejection, con);
+                                break;
                         }
 
                     }

@@ -1,50 +1,113 @@
 
-—"squid:ClassVariableVisibilityCheck"dMake purchaseProtocolRZAEData a static final constant or non-public and provide accessors if needed.(ÚÕ±µþÿÿÿÿ
-—"squid:ClassVariableVisibilityCheck	"dMake purchaseProtocolPAOAData a static final constant or non-public and provide accessors if needed.(ÔšÍïýÿÿÿÿ
-—"squid:ClassVariableVisibilityCheck"dMake purchaseProtocolPAAEData a static final constant or non-public and provide accessors if needed.(¾ ˆ€üÿÿÿÿ
-ª"squid:ClassVariableVisibilityCheck,"pMake purchaseProtocolSummingupZKESMBOData a static final constant or non-public and provide accessors if needed.(§ÆÅœûÿÿÿÿ8ð£Â©Û-
-©"squid:ClassVariableVisibilityCheck"oMake purchaseProtocolCollationAESMBOData a static final constant or non-public and provide accessors if needed.(ø¤¥Ùÿÿÿÿÿ8ä¼ÉŽ×-
-¤"squid:ClassVariableVisibilityCheck."jMake purchaseProtocolZRPZAESMBOData a static final constant or non-public and provide accessors if needed.(³”¾ñûÿÿÿÿ8ì½°ÏÛ-
-¤"squid:ClassVariableVisibilityCheck!"pMake purchaseProtocolRejectionZPESMBOData a static final constant or non-public and provide accessors if needed.(ð‡ú8úÔ²ÑÚ-
-˜"squid:ClassVariableVisibilityCheck"eMake purchaseProtocolRZ2AEData a static final constant or non-public and provide accessors if needed.(ÿÕõ­ÿÿÿÿÿ
-ª"squid:ClassVariableVisibilityCheck "pMake purchaseProtocolRejectionZKESMBOData a static final constant or non-public and provide accessors if needed.(Çõ´²ûÿÿÿÿ8¡î¡ªÚ-
-£"squid:ClassVariableVisibilityCheck)"iMake purchaseProtocolRZZKESMBOData a static final constant or non-public and provide accessors if needed.(€âä’ùÿÿÿÿ8çœžüÚ-
-qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘‡¸<
-£"squid:ClassVariableVisibilityCheck"nMake purchaseProtocolEvasionZPESMBOData a static final constant or non-public and provide accessors if needed.(Óë»ñ8•©ïÞØ-
-Ž"squid:ClassVariableVisibilityCheck"`Make purchaseProtocolData a static final constant or non-public and provide accessors if needed.(¥™–Ò
-Ÿ"squid:ClassVariableVisibilityCheck"jMake purchaseProtocolFCODKESMBOData a static final constant or non-public and provide accessors if needed.(–ŠÁ¥8ûÖÔ‚Ù-
-¤"squid:ClassVariableVisibilityCheck%"oMake purchaseProtocolRejectionAESMBOData a static final constant or non-public and provide accessors if needed.(Òå“³8ÅâžúÚ-
-¤"squid:ClassVariableVisibilityCheck*"oMake purchaseProtocolSummingupAESMBOData a static final constant or non-public and provide accessors if needed.(ÍùËý8«ÿÙ¨Û-
-—"squid:ClassVariableVisibilityCheck"dMake protocolCancellationData a static final constant or non-public and provide accessors if needed.(²ß£´üÿÿÿÿ
-£"squid:ClassVariableVisibilityCheck#"iMake purchaseProtocolRZ1KESMBOData a static final constant or non-public and provide accessors if needed.(¬¢ÀÀùÿÿÿÿ8€ýÏÒÚ-
-¢"squid:ClassVariableVisibilityCheck"mMake purchaseProtocolEvasionAESMBOData a static final constant or non-public and provide accessors if needed.(Ç¾Ø‚8¾ø²‰Ø-
- "squid:ClassVariableVisibilityCheck0"kMake purchaseProtocolZRPZZKESMBOData a static final constant or non-public and provide accessors if needed.(õæàÓ8ÑŠýÏÛ-
-"squid:ClassVariableVisibilityCheck"bMake purchaseProtocolVKData a static final constant or non-public and provide accessors if needed.(‰ÕÙð
-£"squid:ClassVariableVisibilityCheck"iMake purchaseProtocolCCZPESMBOData a static final constant or non-public and provide accessors if needed.(ü®ÊÐþÿÿÿÿ8¾´ØŒ×-
-£"squid:ClassVariableVisibilityCheck&"iMake purchaseProtocolRZ2AESMBOData a static final constant or non-public and provide accessors if needed.(üîÆƒûÿÿÿÿ8øÜúÚ-
-ž"squid:ClassVariableVisibilityCheck$"jMake purchaseProtocolRZ1ZPESMBOData a static final constant or non-public and provide accessors if needed.(£‡£#8áÆúÒÚ-
-ž"squid:ClassVariableVisibilityCheck"iMake purchaseProtocolCCKESMBOOData a static final constant or non-public and provide accessors if needed.(¥¨ø8ÓùœíÖ-
-¥"squid:ClassVariableVisibilityCheck-"pMake purchaseProtocolSummingupZPESMBOData a static final constant or non-public and provide accessors if needed.(ÃÜ˜Í8Åýæ©Û-
-¤"squid:ClassVariableVisibilityCheck"jMake purchaseProtocolFKVOKESMBOData a static final constant or non-public and provide accessors if needed.(¤£® øÿÿÿÿ8åÖƒÙ-
-•"squid:ClassVariableVisibilityCheck"bMake purchaseProtocolZKData a static final constant or non-public and provide accessors if needed.(ž™´üÿÿÿÿ
-£"squid:ClassVariableVisibilityCheck'"iMake purchaseProtocolRZ2KESMBOData a static final constant or non-public and provide accessors if needed.(Ê¨ƒÏúÿÿÿÿ8§Ÿ„ûÚ-
-£"squid:ClassVariableVisibilityCheck"iMake purchaseProtocolFCDKESMBOData a static final constant or non-public and provide accessors if needed.(ÛäôÅýÿÿÿÿ8×¦ÄßØ-
-"squid:ClassVariableVisibilityCheck"hMake purchaseProtocolCCKESMBOData a static final constant or non-public and provide accessors if needed.(–÷†ô8Î¼÷çÖ-
-˜"squid:ClassVariableVisibilityCheck
-"eMake purchaseProtocolRZ1AEData a static final constant or non-public and provide accessors if needed.(¤È’¹ûÿÿÿÿ
-ž"squid:ClassVariableVisibilityCheck""iMake purchaseProtocolRZ1AESMBOData a static final constant or non-public and provide accessors if needed.(µ×ÁÍ8„Í›ÒÚ-
-¤"squid:ClassVariableVisibilityCheck("jMake purchaseProtocolRZ2ZPESMBOData a static final constant or non-public and provide accessors if needed.(¬ùŽÿúÿÿÿÿ8ˆ£áûÚ-
-¢"squid:ClassVariableVisibilityCheck"mMake purchaseProtocolEvasionKESMBOData a static final constant or non-public and provide accessors if needed.(×ÜÌ8ªàŠØ-
-–"squid:ClassVariableVisibilityCheck"cMake purchaseProtocolOSZData a static final constant or non-public and provide accessors if needed.(ïˆÂ«ûÿÿÿÿ
-—"squid:ClassVariableVisibilityCheck"dMake purchaseProtocolPAEPData a static final constant or non-public and provide accessors if needed.(…’îÈøÿÿÿÿ
-˜squid:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÅÍÿÿ
-©"squid:ClassVariableVisibilityCheck+"oMake purchaseProtocolSummingupKESMBOData a static final constant or non-public and provide accessors if needed.(ÏÆÉûøÿÿÿÿ8›Ã‡©Û-
-©"squid:ClassVariableVisibilityCheck"oMake purchaseProtocolRejectionKESMBOData a static final constant or non-public and provide accessors if needed.(÷„Ñ“ýÿÿÿÿ8÷àÇ©Ú-
-—"squid:ClassVariableVisibilityCheck"dMake purchaseProtocolRZOAData a static final constant or non-public and provide accessors if needed.(¤ÞÊïüÿÿÿÿ
-¤"squid:ClassVariableVisibilityCheck/"jMake purchaseProtocolZRPZKESMBOData a static final constant or non-public and provide accessors if needed.(öÙÏäøÿÿÿÿ8õ…ÐÏÛ-
-—"squid:ClassVariableVisibilityCheck"dMake purchaseProtocolRZOKData a static final constant or non-public and provide accessors if needed.(¢úÕûÿÿÿÿ
-›"squid:ClassVariableVisibilityCheck"hMake purchaseProtocolPAAE94FZData a static final constant or non-public and provide accessors if needed.(ë¦¼ëúÿÿÿÿ
-£"squid:ClassVariableVisibilityCheck"iMake purchaseProtocolCCZKESMBOData a static final constant or non-public and provide accessors if needed.(¹í¹ûÿÿÿÿ8ùÁâëÖ-
-Ÿ"squid:ClassVariableVisibilityCheck1"kMake purchaseProtocolZRPZZPESMBOData a static final constant or non-public and provide accessors if needed.(¾„îd8ÐÓ ÐÛ-
-¢"squid:ClassVariableVisibilityCheck"hMake purchaseProtocolCCAESMBOData a static final constant or non-public and provide accessors if needed.(ñ¿›Ìùÿÿÿÿ8´éŸæÖ-
-£"squid:ClassVariableVisibilityCheck"nMake purchaseProtocolEvasionZKESMBOData a static final constant or non-public and provide accessors if needed.(·…‘þ8»ê†ŒØ-
+”
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(¥™–Ò8½œ’”Ò1
+½
+java:S6539"ŸSplit this â€œMonster Classâ€ into smaller and more specialized ones to reduce its dependencies on other classes from 46 to the maximum authorized 20 or less.(¾ÂŠÚ8¿œ’”Ò1
+¯
+java:S1200"‘Split this class into smaller and more specialized ones to reduce its dependencies on other classes from 46 to the maximum authorized 20 or less.(¾ÂŠÚ8¿œ’”Ò1
+}
+java:S1104"`Make purchaseProtocolData a static final constant or non-public and provide accessors if needed.(¥™–Ò8Àœ’”Ò1
+…
+java:S1104"cMake purchaseProtocolOSZData a static final constant or non-public and provide accessors if needed.(ïˆÂ«ûÿÿÿÿ8Àœ’”Ò1
+†
+java:S1104"dMake purchaseProtocolPAAEData a static final constant or non-public and provide accessors if needed.(¾ ˆ€üÿÿÿÿ8Àœ’”Ò1
+Š
+java:S1104"hMake purchaseProtocolPAAE94FZData a static final constant or non-public and provide accessors if needed.(ë¦¼ëúÿÿÿÿ8Àœ’”Ò1
+†
+java:S1104"dMake purchaseProtocolPAEPData a static final constant or non-public and provide accessors if needed.(…’îÈøÿÿÿÿ8Àœ’”Ò1
+†
+java:S1104	"dMake purchaseProtocolPAOAData a static final constant or non-public and provide accessors if needed.(ÔšÍïýÿÿÿÿ8Àœ’”Ò1
+‡
+java:S1104
+"eMake purchaseProtocolRZ1AEData a static final constant or non-public and provide accessors if needed.(¤È’¹ûÿÿÿÿ8Àœ’”Ò1
+‡
+java:S1104"eMake purchaseProtocolRZ2AEData a static final constant or non-public and provide accessors if needed.(ÿÕõ­ÿÿÿÿÿ8Àœ’”Ò1
+†
+java:S1104"dMake purchaseProtocolRZAEData a static final constant or non-public and provide accessors if needed.(ÚÕ±µþÿÿÿÿ8Àœ’”Ò1
+†
+java:S1104"dMake purchaseProtocolRZOAData a static final constant or non-public and provide accessors if needed.(¤ÞÊïüÿÿÿÿ8Àœ’”Ò1
+†
+java:S1104"dMake purchaseProtocolRZOKData a static final constant or non-public and provide accessors if needed.(¢úÕûÿÿÿÿ8Àœ’”Ò1
+
+java:S1104"bMake purchaseProtocolVKData a static final constant or non-public and provide accessors if needed.(‰ÕÙð8Àœ’”Ò1
+„
+java:S1104"bMake purchaseProtocolZKData a static final constant or non-public and provide accessors if needed.(ž™´üÿÿÿÿ8Àœ’”Ò1
+Š
+java:S1104"hMake purchaseProtocolCCAESMBOData a static final constant or non-public and provide accessors if needed.(ñ¿›Ìùÿÿÿÿ8Àœ’”Ò1
+…
+java:S1104"hMake purchaseProtocolCCKESMBOData a static final constant or non-public and provide accessors if needed.(–÷†ô8Àœ’”Ò1
+‹
+java:S1104"iMake purchaseProtocolCCZKESMBOData a static final constant or non-public and provide accessors if needed.(¹í¹ûÿÿÿÿ8Àœ’”Ò1
+†
+java:S1104"iMake purchaseProtocolCCKESMBOOData a static final constant or non-public and provide accessors if needed.(¥¨ø8Àœ’”Ò1
+‹
+java:S1104"iMake purchaseProtocolCCZPESMBOData a static final constant or non-public and provide accessors if needed.(ü®ÊÐþÿÿÿÿ8Àœ’”Ò1
+‘
+java:S1104"oMake purchaseProtocolCollationAESMBOData a static final constant or non-public and provide accessors if needed.(ø¤¥Ùÿÿÿÿÿ8Àœ’”Ò1
+†
+java:S1104"dMake protocolCancellationData a static final constant or non-public and provide accessors if needed.(²ß£´üÿÿÿÿ8Àœ’”Ò1
+Š
+java:S1104"mMake purchaseProtocolEvasionAESMBOData a static final constant or non-public and provide accessors if needed.(Ç¾Ø‚8Àœ’”Ò1
+Š
+java:S1104"mMake purchaseProtocolEvasionKESMBOData a static final constant or non-public and provide accessors if needed.(×ÜÌ8Àœ’”Ò1
+‹
+java:S1104"nMake purchaseProtocolEvasionZKESMBOData a static final constant or non-public and provide accessors if needed.(·…‘þ8Àœ’”Ò1
+‹
+java:S1104"nMake purchaseProtocolEvasionZPESMBOData a static final constant or non-public and provide accessors if needed.(Óë»ñ8Àœ’”Ò1
+‹
+java:S1104"iMake purchaseProtocolFCDKESMBOData a static final constant or non-public and provide accessors if needed.(ÛäôÅýÿÿÿÿ8Àœ’”Ò1
+‡
+java:S1104"jMake purchaseProtocolFCODKESMBOData a static final constant or non-public and provide accessors if needed.(–ŠÁ¥8Àœ’”Ò1
+Œ
+java:S1104"jMake purchaseProtocolFKVOKESMBOData a static final constant or non-public and provide accessors if needed.(¤£® øÿÿÿÿ8Àœ’”Ò1
+‘
+java:S1104"oMake purchaseProtocolRejectionKESMBOData a static final constant or non-public and provide accessors if needed.(÷„Ñ“ýÿÿÿÿ8Àœ’”Ò1
+’
+java:S1104 "pMake purchaseProtocolRejectionZKESMBOData a static final constant or non-public and provide accessors if needed.(Çõ´²ûÿÿÿÿ8Àœ’”Ò1
+Œ
+java:S1104!"pMake purchaseProtocolRejectionZPESMBOData a static final constant or non-public and provide accessors if needed.(ð‡ú8Àœ’”Ò1
+†
+java:S1104""iMake purchaseProtocolRZ1AESMBOData a static final constant or non-public and provide accessors if needed.(µ×ÁÍ8Àœ’”Ò1
+‹
+java:S1104#"iMake purchaseProtocolRZ1KESMBOData a static final constant or non-public and provide accessors if needed.(¬¢ÀÀùÿÿÿÿ8Àœ’”Ò1
+†
+java:S1104$"jMake purchaseProtocolRZ1ZPESMBOData a static final constant or non-public and provide accessors if needed.(£‡£#8Àœ’”Ò1
+Œ
+java:S1104%"oMake purchaseProtocolRejectionAESMBOData a static final constant or non-public and provide accessors if needed.(Òå“³8Àœ’”Ò1
+‹
+java:S1104&"iMake purchaseProtocolRZ2AESMBOData a static final constant or non-public and provide accessors if needed.(üîÆƒûÿÿÿÿ8Àœ’”Ò1
+‹
+java:S1104'"iMake purchaseProtocolRZ2KESMBOData a static final constant or non-public and provide accessors if needed.(Ê¨ƒÏúÿÿÿÿ8Áœ’”Ò1
+Œ
+java:S1104("jMake purchaseProtocolRZ2ZPESMBOData a static final constant or non-public and provide accessors if needed.(¬ùŽÿúÿÿÿÿ8Áœ’”Ò1
+‹
+java:S1104)"iMake purchaseProtocolRZZKESMBOData a static final constant or non-public and provide accessors if needed.(€âä’ùÿÿÿÿ8Áœ’”Ò1
+Œ
+java:S1104*"oMake purchaseProtocolSummingupAESMBOData a static final constant or non-public and provide accessors if needed.(ÍùËý8Áœ’”Ò1
+‘
+java:S1104+"oMake purchaseProtocolSummingupKESMBOData a static final constant or non-public and provide accessors if needed.(ÏÆÉûøÿÿÿÿ8Áœ’”Ò1
+’
+java:S1104,"pMake purchaseProtocolSummingupZKESMBOData a static final constant or non-public and provide accessors if needed.(§ÆÅœûÿÿÿÿ8Áœ’”Ò1
+
+java:S1104-"pMake purchaseProtocolSummingupZPESMBOData a static final constant or non-public and provide accessors if needed.(ÃÜ˜Í8Áœ’”Ò1
+Œ
+java:S1104."jMake purchaseProtocolZRPZAESMBOData a static final constant or non-public and provide accessors if needed.(³”¾ñûÿÿÿÿ8Áœ’”Ò1
+Œ
+java:S1104/"jMake purchaseProtocolZRPZKESMBOData a static final constant or non-public and provide accessors if needed.(öÙÏäøÿÿÿÿ8Áœ’”Ò1
+ˆ
+java:S11040"kMake purchaseProtocolZRPZZKESMBOData a static final constant or non-public and provide accessors if needed.(õæàÓ8Áœ’”Ò1
+‡
+java:S11041"kMake purchaseProtocolZRPZZPESMBOData a static final constant or non-public and provide accessors if needed.(¾„îd8Áœ’”Ò1
+ƒ
+java:S11042"aMake purchaseRejectionData a static final constant or non-public and provide accessors if needed.(ýúÙãþÿÿÿÿ8Áœ’”Ò1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘‡¸<8Âœ’”Ò1
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(¾ÂŠÚ8Âœ’”Ò1
+^
+java:S11063"AMove this left curly brace to the beginning of next line of code.(ÅÍÿÿ8Âœ’”Ò1
+;
+java:S1451"&Add or update the header of this file.8Ãœ’”Ò1
+w
+java:S1820"ZRefactor this class so it has no more than 20 fields, rather than the 47 it currently has.(¾ÂŠÚ8Äœ’”Ò1
+ž
+java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÅÍÿÿ8Äœ’”Ò1

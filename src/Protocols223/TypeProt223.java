@@ -52,5 +52,6 @@ public enum TypeProt223 {
     purchaseProtocolZRPZAESMBO,
     purchaseProtocolZRPZKESMBO,
     purchaseProtocolZRPZZKESMBO,
-    purchaseProtocolZRPZZPESMBO
+    purchaseProtocolZRPZZPESMBO,
+    purchaseRejection,
 }
