@@ -1,0 +1,750 @@
+
+™
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(Ç‹Ãıÿÿÿÿ8­ÿò’Ò1
+™
+java:S1120|"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(óÕ·ßÿÿÿÿÿ8®ÿò’Ò1
+š
+java:S1120}"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(é·ÕĞşÿÿÿÿ8®ÿò’Ò1
+–
+java:S1120ƒ"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(µòÜ™8®ÿò’Ò1
+›
+java:S1120†"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(ÉóŸİùÿÿÿÿ8®ÿò’Ò1
+–
+java:S1120‰"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(çšéã8®ÿò’Ò1
+š
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(‡ÌíŒøÿÿÿÿ8®ÿò’Ò1
+›
+java:S1120"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¼¢½şÿÿÿÿ8®ÿò’Ò1
+›
+java:S1120¡"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(Å‚–€şÿÿÿÿ8®ÿò’Ò1
+›
+java:S1120¦"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¡»¢üùÿÿÿÿ8®ÿò’Ò1
+›
+java:S1120§"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(ûÚ”…ıÿÿÿÿ8®ÿò’Ò1
+›
+java:S1120©"xMake this line start after 8 spaces instead of 16 in order to indent the code consistently. (Indentation level is at 2.)(€ÉÔ…ıÿÿÿÿ8®ÿò’Ò1
+›
+java:S1120­"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(†ïæ‹øÿÿÿÿ8®ÿò’Ò1
+›
+java:S1120±"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(¹§öÂıÿÿÿÿ8®ÿò’Ò1
+•
+java:S1120º"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(çÔ8®ÿò’Ò1
+–
+java:S1120¼"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(Òñ¬Ò8®ÿò’Ò1
+›
+java:S1120È"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(³ÆË×ÿÿÿÿÿ8®ÿò’Ò1
+›
+java:S1120Ê"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(®‡‡úÿÿÿÿ8®ÿò’Ò1
+C
+java:S1166¨"%Either log or rethrow this exception.(ï­£Ä8±ÿò’Ò1
+‡
+java:S1319"eThe type of "Years" should be an interface such as "List" rather than the implementation "ArrayList".(ƒÌ¹¤ûÿÿÿÿ8²ÿò’Ò1
+s	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ƒ•…úÿÿÿÿ8²ÿò’Ò1
+v
+java:S1104"TMake Database a static final constant or non-public and provide accessors if needed.(‰ôÚùÿÿÿÿ8´ÿò’Ò1
+~
+java:S1104"\Make tempDirProtocols a static final constant or non-public and provide accessors if needed.(áãæ¸üÿÿÿÿ8´ÿò’Ò1
+}
+java:S1104"[Make logDirProtocols a static final constant or non-public and provide accessors if needed.(ú€¼ªûÿÿÿÿ8´ÿò’Ò1
+o
+java:S1104"RMake Prefix a static final constant or non-public and provide accessors if needed.(ÌÜ »8´ÿò’Ò1
+t
+java:S1104"RMake UserDb a static final constant or non-public and provide accessors if needed.(ë¢Œïûÿÿÿÿ8´ÿò’Ò1
+o
+java:S1104"RMake PassDb a static final constant or non-public and provide accessors if needed.(ˆŒ¢ç8´ÿò’Ò1
+t
+java:S1104"RMake Server a static final constant or non-public and provide accessors if needed.(¢¯×Ïøÿÿÿÿ8´ÿò’Ò1
+r
+java:S1104"PMake Port a static final constant or non-public and provide accessors if needed.(«ó†Äÿÿÿÿÿ8´ÿò’Ò1
+p
+java:S1104"SMake logPath a static final constant or non-public and provide accessors if needed.(éø¯å8´ÿò’Ò1
+u
+java:S1104"SMake DateNow a static final constant or non-public and provide accessors if needed.(Ââ‡åşÿÿÿÿ8´ÿò’Ò1
+s
+java:S1104"VMake UrlConnect a static final constant or non-public and provide accessors if needed.(Î´‰8´ÿò’Ò1
+l
+java:S1104"OMake arg a static final constant or non-public and provide accessors if needed.(Ùøº€8´ÿò’Ò1
+s
+java:S1104"QMake Years a static final constant or non-public and provide accessors if needed.(ƒÌ¹¤ûÿÿÿÿ8´ÿò’Ò1
+~
+java:S1104 "aMake CountPurchaseProtocol a static final constant or non-public and provide accessors if needed.(Ş´üÌ8´ÿò’Ò1
+…
+java:S1104!"cMake UpCountPurchaseProtocol a static final constant or non-public and provide accessors if needed.(–Öå÷ûÿÿÿÿ8´ÿò’Ò1
+†
+java:S1104""dMake CountPurchaseProtocolOSZ a static final constant or non-public and provide accessors if needed.(ÀÑé›ÿÿÿÿÿ8´ÿò’Ò1
+ˆ
+java:S1104#"fMake UpCountPurchaseProtocolOSZ a static final constant or non-public and provide accessors if needed.(²£·àøÿÿÿÿ8´ÿò’Ò1
+‚
+java:S1104$"eMake CountPurchaseProtocolPAAE a static final constant or non-public and provide accessors if needed.(†·Ê…8´ÿò’Ò1
+„
+java:S1104%"gMake UpCountPurchaseProtocolPAAE a static final constant or non-public and provide accessors if needed.(Ö±™Ÿ8´ÿò’Ò1
+„
+java:S1104&"gMake CountPurchaseProtocolPAAE94 a static final constant or non-public and provide accessors if needed.(à„Ó8´ÿò’Ò1
+†
+java:S1104'"iMake UpCountPurchaseProtocolPAAE94 a static final constant or non-public and provide accessors if needed.(á«›ˆ8´ÿò’Ò1
+‡
+java:S1104("eMake CountPurchaseProtocolPAEP a static final constant or non-public and provide accessors if needed.(¾¯ˆìüÿÿÿÿ8´ÿò’Ò1
+„
+java:S1104)"gMake UpCountPurchaseProtocolPAEP a static final constant or non-public and provide accessors if needed.(†…Şö8´ÿò’Ò1
+‚
+java:S1104*"eMake CountPurchaseProtocolPAOA a static final constant or non-public and provide accessors if needed.(²¡Î›8´ÿò’Ò1
+‰
+java:S1104+"gMake UpCountPurchaseProtocolPAOA a static final constant or non-public and provide accessors if needed.(´º×Ìúÿÿÿÿ8´ÿò’Ò1
+ƒ
+java:S1104,"fMake CountPurchaseProtocolRZ1AE a static final constant or non-public and provide accessors if needed.(‹®…Ô8´ÿò’Ò1
+…
+java:S1104-"hMake UpCountPurchaseProtocolRZ1AE a static final constant or non-public and provide accessors if needed.(‚öİı8´ÿò’Ò1
+ˆ
+java:S1104."fMake CountPurchaseProtocolRZ2AE a static final constant or non-public and provide accessors if needed.(Ü¶Áıÿÿÿÿ8´ÿò’Ò1
+Š
+java:S1104/"hMake UpCountPurchaseProtocolRZ2AE a static final constant or non-public and provide accessors if needed.(‰Í‘Åıÿÿÿÿ8´ÿò’Ò1
+‚
+java:S11040"eMake CountPurchaseProtocolRZAE a static final constant or non-public and provide accessors if needed.(Ù¢Ä8´ÿò’Ò1
+„
+java:S11041"gMake UpCountPurchaseProtocolRZAE a static final constant or non-public and provide accessors if needed.(Ÿ±±8´ÿò’Ò1
+‚
+java:S11042"eMake CountPurchaseProtocolRZOA a static final constant or non-public and provide accessors if needed.(ÑÄŒô8´ÿò’Ò1
+„
+java:S11043"gMake UpCountPurchaseProtocolRZOA a static final constant or non-public and provide accessors if needed.(ÇÚÍã8´ÿò’Ò1
+‡
+java:S11044"eMake CountPurchaseProtocolRZOK a static final constant or non-public and provide accessors if needed.(ıĞÂëüÿÿÿÿ8´ÿò’Ò1
+ƒ
+java:S11045"gMake UpCountPurchaseProtocolRZOK a static final constant or non-public and provide accessors if needed.(¯ÑŒj8´ÿò’Ò1
+…
+java:S11046"cMake CountPurchaseProtocolVK a static final constant or non-public and provide accessors if needed.(•€ò¡şÿÿÿÿ8´ÿò’Ò1
+‡
+java:S11047"eMake UpCountPurchaseProtocolVK a static final constant or non-public and provide accessors if needed.(Şˆò´úÿÿÿÿ8´ÿò’Ò1
+€
+java:S11048"cMake CountPurchaseProtocolZK a static final constant or non-public and provide accessors if needed.(å¬é£8´ÿò’Ò1
+‚
+java:S11049"eMake UpCountPurchaseProtocolZK a static final constant or non-public and provide accessors if needed.(îœÃü8´ÿò’Ò1
+‹
+java:S1104:"iMake CountPurchaseProtocolCCAESMBO a static final constant or non-public and provide accessors if needed.(Ìé¦ƒùÿÿÿÿ8´ÿò’Ò1
+ˆ
+java:S1104;"kMake UpCountPurchaseProtocolCCAESMBO a static final constant or non-public and provide accessors if needed.(Ú­…ƒ8´ÿò’Ò1
+†
+java:S1104<"iMake CountPurchaseProtocolCCKESMBO a static final constant or non-public and provide accessors if needed.(ÅòÀŒ8´ÿò’Ò1
+ˆ
+java:S1104="kMake UpCountPurchaseProtocolCCKESMBO a static final constant or non-public and provide accessors if needed.(Œ˜Ûè8´ÿò’Ò1
+†
+java:S1104>"jMake CountPurchaseProtocolCCZKESMBO a static final constant or non-public and provide accessors if needed.(¥‚¨o8µÿò’Ò1
+‰
+java:S1104?"lMake UpCountPurchaseProtocolCCZKESMBO a static final constant or non-public and provide accessors if needed.(œâøŸ8µÿò’Ò1
+‰
+java:S1104@"lMake UpCountPurchaseProtocolCCZPESMBO a static final constant or non-public and provide accessors if needed.(—ñé°8µÿò’Ò1
+‡
+java:S1104A"jMake CountPurchaseProtocolCCZPESMBO a static final constant or non-public and provide accessors if needed.(ñíş8µÿò’Ò1
+”
+java:S1104B"rMake UpCountPurchaseProtocolCollationAESMBO a static final constant or non-public and provide accessors if needed.(¼£‚Ïøÿÿÿÿ8µÿò’Ò1
+
+java:S1104C"pMake CountPurchaseProtocolCollationAESMBO a static final constant or non-public and provide accessors if needed.(Ğ”´­8µÿò’Ò1
+’
+java:S1104D"pMake UpCountPurchaseProtocolEvasionAESMBO a static final constant or non-public and provide accessors if needed.(Í½œßùÿÿÿÿ8µÿò’Ò1
+
+java:S1104E"nMake CountPurchaseProtocolEvasionAESMBO a static final constant or non-public and provide accessors if needed.(Á¢×øûÿÿÿÿ8µÿò’Ò1
+’
+java:S1104F"pMake UpCountPurchaseProtocolEvasionKESMBO a static final constant or non-public and provide accessors if needed.(¸œö÷üÿÿÿÿ8µÿò’Ò1
+‹
+java:S1104G"nMake CountPurchaseProtocolEvasionKESMBO a static final constant or non-public and provide accessors if needed.(œ¸˜¬8µÿò’Ò1
+“
+java:S1104H"qMake UpCountPurchaseProtocolEvasionZKESMBO a static final constant or non-public and provide accessors if needed.(œ°ÿ¢ıÿÿÿÿ8µÿò’Ò1
+Œ
+java:S1104I"oMake CountPurchaseProtocolEvasionZKESMBO a static final constant or non-public and provide accessors if needed.(İÆ·ˆ8µÿò’Ò1
+“
+java:S1104J"qMake UpCountPurchaseProtocolEvasionZPESMBO a static final constant or non-public and provide accessors if needed.(ï¶ÿúıÿÿÿÿ8µÿò’Ò1
+‘
+java:S1104K"oMake CountPurchaseProtocolEvasionZPESMBO a static final constant or non-public and provide accessors if needed.(ƒîÙåıÿÿÿÿ8µÿò’Ò1
+‰
+java:S1104L"lMake UpCountPurchaseProtocolFCDKESMBO a static final constant or non-public and provide accessors if needed.(Â¾ƒ¿8µÿò’Ò1
+Œ
+java:S1104M"jMake CountPurchaseProtocolFCDKESMBO a static final constant or non-public and provide accessors if needed.(”øÖşÿÿÿÿ8µÿò’Ò1
+‰
+java:S1104N"mMake UpCountPurchaseProtocolFCODKESMBO a static final constant or non-public and provide accessors if needed.(ÔßäZ8µÿò’Ò1
+ˆ
+java:S1104O"kMake CountPurchaseProtocolFCODKESMBO a static final constant or non-public and provide accessors if needed.(¶Ùš—8µÿò’Ò1
+Š
+java:S1104P"mMake UpCountPurchaseProtocolFKVOKESMBO a static final constant or non-public and provide accessors if needed.(•¨äˆ8µÿò’Ò1
+
+java:S1104Q"kMake CountPurchaseProtocolFKVOKESMBO a static final constant or non-public and provide accessors if needed.(­Ì—µøÿÿÿÿ8µÿò’Ò1
+”
+java:S1104R"rMake UpCountPurchaseProtocolRejectionAESMBO a static final constant or non-public and provide accessors if needed.(ÀˆÅıÿÿÿÿ8µÿò’Ò1
+’
+java:S1104S"pMake CountPurchaseProtocolRejectionAESMBO a static final constant or non-public and provide accessors if needed.(š’…–şÿÿÿÿ8µÿò’Ò1
+
+java:S1104T"rMake UpCountPurchaseProtocolRejectionKESMBO a static final constant or non-public and provide accessors if needed.(Ãÿ¨8µÿò’Ò1
+
+java:S1104U"pMake CountPurchaseProtocolRejectionKESMBO a static final constant or non-public and provide accessors if needed.(Ù¥àî8µÿò’Ò1
+
+java:S1104V"sMake UpCountPurchaseProtocolRejectionZKESMBO a static final constant or non-public and provide accessors if needed.(×®êÃ8µÿò’Ò1
+
+java:S1104W"qMake CountPurchaseProtocolRejectionZKESMBO a static final constant or non-public and provide accessors if needed.(ÕàŸƒ8µÿò’Ò1
+
+java:S1104X"sMake UpCountPurchaseProtocolRejectionZPESMBO a static final constant or non-public and provide accessors if needed.(ß–8µÿò’Ò1
+
+java:S1104Y"qMake CountPurchaseProtocolRejectionZPESMBO a static final constant or non-public and provide accessors if needed.(²èÉ“8µÿò’Ò1
+
+java:S1104Z"lMake UpCountPurchaseProtocolRZ1AESMBO a static final constant or non-public and provide accessors if needed.(ÜÍèüÿÿÿÿ8µÿò’Ò1
+‡
+java:S1104["jMake CountPurchaseProtocolRZ1AESMBO a static final constant or non-public and provide accessors if needed.(Û¯µ8µÿò’Ò1
+ˆ
+java:S1104\"lMake UpCountPurchaseProtocolRZ1KESMBO a static final constant or non-public and provide accessors if needed.(«®û18µÿò’Ò1
+Œ
+java:S1104]"jMake CountPurchaseProtocolRZ1KESMBO a static final constant or non-public and provide accessors if needed.( éşÆøÿÿÿÿ8µÿò’Ò1
+Š
+java:S1104^"mMake UpCountPurchaseProtocolRZ1ZPESMBO a static final constant or non-public and provide accessors if needed.(šš¬8µÿò’Ò1
+
+java:S1104_"kMake CountPurchaseProtocolRZ1ZPESMBO a static final constant or non-public and provide accessors if needed.(œ®Ïşÿÿÿÿ8µÿò’Ò1
+
+java:S1104`"lMake UpCountPurchaseProtocolRZ2AESMBO a static final constant or non-public and provide accessors if needed.(íÜàŞúÿÿÿÿ8µÿò’Ò1
+‡
+java:S1104a"jMake CountPurchaseProtocolRZ2AESMBO a static final constant or non-public and provide accessors if needed.(ĞøÑ8µÿò’Ò1
+
+java:S1104b"lMake UpCountPurchaseProtocolRZ2KESMBO a static final constant or non-public and provide accessors if needed.(è­àâıÿÿÿÿ8µÿò’Ò1
+‡
+java:S1104c"jMake CountPurchaseProtocolRZ2KESMBO a static final constant or non-public and provide accessors if needed.(ûëÄ8µÿò’Ò1
+ˆ
+java:S1104d"kMake CountPurchaseProtocolRZ2ZPESMBO a static final constant or non-public and provide accessors if needed.(ù¼‡8µÿò’Ò1
+
+java:S1104e"mMake UpCountPurchaseProtocolRZ2ZPESMBO a static final constant or non-public and provide accessors if needed.(Âîô±şÿÿÿÿ8µÿò’Ò1
+Œ
+java:S1104f"jMake CountPurchaseProtocolRZZKESMBO a static final constant or non-public and provide accessors if needed.(Éã¾®ÿÿÿÿÿ8µÿò’Ò1
+‰
+java:S1104g"lMake UpCountPurchaseProtocolRZZKESMBO a static final constant or non-public and provide accessors if needed.(§¿ñÈ8µÿò’Ò1
+
+java:S1104h"pMake CountPurchaseProtocolSummingupAESMBO a static final constant or non-public and provide accessors if needed.(Ğëâ¿8µÿò’Ò1
+
+java:S1104i"rMake UpCountPurchaseProtocolSummingupAESMBO a static final constant or non-public and provide accessors if needed.(ê±´†8µÿò’Ò1
+
+java:S1104j"pMake CountPurchaseProtocolSummingupKESMBO a static final constant or non-public and provide accessors if needed.(‚·‰‚8µÿò’Ò1
+
+java:S1104k"rMake UpCountPurchaseProtocolSummingupKESMBO a static final constant or non-public and provide accessors if needed.(®‘©ö8µÿò’Ò1
+
+java:S1104l"qMake CountPurchaseProtocolSummingupZKESMBO a static final constant or non-public and provide accessors if needed.(ª¸ÄÅ8µÿò’Ò1
+
+java:S1104m"sMake UpCountPurchaseProtocolSummingupZKESMBO a static final constant or non-public and provide accessors if needed.(òëĞ™8µÿò’Ò1
+
+java:S1104n"qMake CountPurchaseProtocolSummingupZPESMBO a static final constant or non-public and provide accessors if needed.(úîè¿8µÿò’Ò1
+•
+java:S1104o"sMake UpCountPurchaseProtocolSummingupZPESMBO a static final constant or non-public and provide accessors if needed.(ÄéÔ§üÿÿÿÿ8µÿò’Ò1
+
+java:S1104p"kMake CountPurchaseProtocolZRPZAESMBO a static final constant or non-public and provide accessors if needed.(˜¤ª¹úÿÿÿÿ8µÿò’Ò1
+Š
+java:S1104q"mMake UpCountPurchaseProtocolZRPZAESMBO a static final constant or non-public and provide accessors if needed.(îâ·8µÿò’Ò1
+ˆ
+java:S1104r"kMake CountPurchaseProtocolZRPZKESMBO a static final constant or non-public and provide accessors if needed.(ÿƒ„Ù8µÿò’Ò1
+‰
+java:S1104s"mMake UpCountPurchaseProtocolZRPZKESMBO a static final constant or non-public and provide accessors if needed.(ø‘èb8µÿò’Ò1
+‰
+java:S1104t"lMake CountPurchaseProtocolZRPZZKESMBO a static final constant or non-public and provide accessors if needed.(€òğ¥8µÿò’Ò1
+‹
+java:S1104u"nMake UpCountPurchaseProtocolZRPZZKESMBO a static final constant or non-public and provide accessors if needed.(…²¼8µÿò’Ò1
+
+java:S1104v"lMake CountPurchaseProtocolZRPZZPESMBO a static final constant or non-public and provide accessors if needed.(±ÛÌÇùÿÿÿÿ8µÿò’Ò1
+‹
+java:S1104w"nMake UpCountPurchaseProtocolZRPZZPESMBO a static final constant or non-public and provide accessors if needed.(ÄµÑñ8µÿò’Ò1
+„
+java:S1104x"gMake CountPurchaseProtocolCancel a static final constant or non-public and provide accessors if needed.(÷Ì©ã8µÿò’Ò1
+‹
+java:S1104y"iMake UpCountPurchaseProtocolCancel a static final constant or non-public and provide accessors if needed.(À¦äÑıÿÿÿÿ8µÿò’Ò1
+P
+java:S1444".Make this "public static Database" field final(‰ôÚùÿÿÿÿ8¶ÿò’Ò1
+X
+java:S1444"6Make this "public static tempDirProtocols" field final(áãæ¸üÿÿÿÿ8¶ÿò’Ò1
+W
+java:S1444"5Make this "public static logDirProtocols" field final(ú€¼ªûÿÿÿÿ8¶ÿò’Ò1
+I
+java:S1444",Make this "public static Prefix" field final(ÌÜ »8¶ÿò’Ò1
+N
+java:S1444",Make this "public static UserDb" field final(ë¢Œïûÿÿÿÿ8¶ÿò’Ò1
+I
+java:S1444",Make this "public static PassDb" field final(ˆŒ¢ç8¶ÿò’Ò1
+N
+java:S1444",Make this "public static Server" field final(¢¯×Ïøÿÿÿÿ8¶ÿò’Ò1
+L
+java:S1444"*Make this "public static Port" field final(«ó†Äÿÿÿÿÿ8¶ÿò’Ò1
+J
+java:S1444"-Make this "public static logPath" field final(éø¯å8¶ÿò’Ò1
+O
+java:S1444"-Make this "public static DateNow" field final(Ââ‡åşÿÿÿÿ8¶ÿò’Ò1
+M
+java:S1444"0Make this "public static UrlConnect" field final(Î´‰8¶ÿò’Ò1
+F
+java:S1444")Make this "public static arg" field final(Ùøº€8¶ÿò’Ò1
+M
+java:S1444"+Make this "public static Years" field final(ƒÌ¹¤ûÿÿÿÿ8¶ÿò’Ò1
+X
+java:S1444 ";Make this "public static CountPurchaseProtocol" field final(Ş´üÌ8¶ÿò’Ò1
+_
+java:S1444!"=Make this "public static UpCountPurchaseProtocol" field final(–Öå÷ûÿÿÿÿ8¶ÿò’Ò1
+`
+java:S1444"">Make this "public static CountPurchaseProtocolOSZ" field final(ÀÑé›ÿÿÿÿÿ8¶ÿò’Ò1
+b
+java:S1444#"@Make this "public static UpCountPurchaseProtocolOSZ" field final(²£·àøÿÿÿÿ8¶ÿò’Ò1
+\
+java:S1444$"?Make this "public static CountPurchaseProtocolPAAE" field final(†·Ê…8¶ÿò’Ò1
+^
+java:S1444%"AMake this "public static UpCountPurchaseProtocolPAAE" field final(Ö±™Ÿ8¶ÿò’Ò1
+^
+java:S1444&"AMake this "public static CountPurchaseProtocolPAAE94" field final(à„Ó8¶ÿò’Ò1
+`
+java:S1444'"CMake this "public static UpCountPurchaseProtocolPAAE94" field final(á«›ˆ8¶ÿò’Ò1
+a
+java:S1444("?Make this "public static CountPurchaseProtocolPAEP" field final(¾¯ˆìüÿÿÿÿ8¶ÿò’Ò1
+^
+java:S1444)"AMake this "public static UpCountPurchaseProtocolPAEP" field final(†…Şö8¶ÿò’Ò1
+\
+java:S1444*"?Make this "public static CountPurchaseProtocolPAOA" field final(²¡Î›8¶ÿò’Ò1
+c
+java:S1444+"AMake this "public static UpCountPurchaseProtocolPAOA" field final(´º×Ìúÿÿÿÿ8¶ÿò’Ò1
+]
+java:S1444,"@Make this "public static CountPurchaseProtocolRZ1AE" field final(‹®…Ô8¶ÿò’Ò1
+_
+java:S1444-"BMake this "public static UpCountPurchaseProtocolRZ1AE" field final(‚öİı8¶ÿò’Ò1
+b
+java:S1444."@Make this "public static CountPurchaseProtocolRZ2AE" field final(Ü¶Áıÿÿÿÿ8¶ÿò’Ò1
+d
+java:S1444/"BMake this "public static UpCountPurchaseProtocolRZ2AE" field final(‰Í‘Åıÿÿÿÿ8¶ÿò’Ò1
+\
+java:S14440"?Make this "public static CountPurchaseProtocolRZAE" field final(Ù¢Ä8¶ÿò’Ò1
+^
+java:S14441"AMake this "public static UpCountPurchaseProtocolRZAE" field final(Ÿ±±8¶ÿò’Ò1
+\
+java:S14442"?Make this "public static CountPurchaseProtocolRZOA" field final(ÑÄŒô8¶ÿò’Ò1
+^
+java:S14443"AMake this "public static UpCountPurchaseProtocolRZOA" field final(ÇÚÍã8¶ÿò’Ò1
+a
+java:S14444"?Make this "public static CountPurchaseProtocolRZOK" field final(ıĞÂëüÿÿÿÿ8¶ÿò’Ò1
+]
+java:S14445"AMake this "public static UpCountPurchaseProtocolRZOK" field final(¯ÑŒj8¶ÿò’Ò1
+_
+java:S14446"=Make this "public static CountPurchaseProtocolVK" field final(•€ò¡şÿÿÿÿ8¶ÿò’Ò1
+a
+java:S14447"?Make this "public static UpCountPurchaseProtocolVK" field final(Şˆò´úÿÿÿÿ8¶ÿò’Ò1
+Z
+java:S14448"=Make this "public static CountPurchaseProtocolZK" field final(å¬é£8¶ÿò’Ò1
+\
+java:S14449"?Make this "public static UpCountPurchaseProtocolZK" field final(îœÃü8¶ÿò’Ò1
+e
+java:S1444:"CMake this "public static CountPurchaseProtocolCCAESMBO" field final(Ìé¦ƒùÿÿÿÿ8¶ÿò’Ò1
+b
+java:S1444;"EMake this "public static UpCountPurchaseProtocolCCAESMBO" field final(Ú­…ƒ8¶ÿò’Ò1
+`
+java:S1444<"CMake this "public static CountPurchaseProtocolCCKESMBO" field final(ÅòÀŒ8¶ÿò’Ò1
+b
+java:S1444="EMake this "public static UpCountPurchaseProtocolCCKESMBO" field final(Œ˜Ûè8¶ÿò’Ò1
+`
+java:S1444>"DMake this "public static CountPurchaseProtocolCCZKESMBO" field final(¥‚¨o8¶ÿò’Ò1
+c
+java:S1444?"FMake this "public static UpCountPurchaseProtocolCCZKESMBO" field final(œâøŸ8¶ÿò’Ò1
+c
+java:S1444@"FMake this "public static UpCountPurchaseProtocolCCZPESMBO" field final(—ñé°8¶ÿò’Ò1
+a
+java:S1444A"DMake this "public static CountPurchaseProtocolCCZPESMBO" field final(ñíş8¶ÿò’Ò1
+n
+java:S1444B"LMake this "public static UpCountPurchaseProtocolCollationAESMBO" field final(¼£‚Ïøÿÿÿÿ8¶ÿò’Ò1
+g
+java:S1444C"JMake this "public static CountPurchaseProtocolCollationAESMBO" field final(Ğ”´­8¶ÿò’Ò1
+l
+java:S1444D"JMake this "public static UpCountPurchaseProtocolEvasionAESMBO" field final(Í½œßùÿÿÿÿ8¶ÿò’Ò1
+j
+java:S1444E"HMake this "public static CountPurchaseProtocolEvasionAESMBO" field final(Á¢×øûÿÿÿÿ8¶ÿò’Ò1
+l
+java:S1444F"JMake this "public static UpCountPurchaseProtocolEvasionKESMBO" field final(¸œö÷üÿÿÿÿ8¶ÿò’Ò1
+e
+java:S1444G"HMake this "public static CountPurchaseProtocolEvasionKESMBO" field final(œ¸˜¬8¶ÿò’Ò1
+m
+java:S1444H"KMake this "public static UpCountPurchaseProtocolEvasionZKESMBO" field final(œ°ÿ¢ıÿÿÿÿ8¶ÿò’Ò1
+f
+java:S1444I"IMake this "public static CountPurchaseProtocolEvasionZKESMBO" field final(İÆ·ˆ8¶ÿò’Ò1
+m
+java:S1444J"KMake this "public static UpCountPurchaseProtocolEvasionZPESMBO" field final(ï¶ÿúıÿÿÿÿ8¶ÿò’Ò1
+k
+java:S1444K"IMake this "public static CountPurchaseProtocolEvasionZPESMBO" field final(ƒîÙåıÿÿÿÿ8¶ÿò’Ò1
+c
+java:S1444L"FMake this "public static UpCountPurchaseProtocolFCDKESMBO" field final(Â¾ƒ¿8¶ÿò’Ò1
+f
+java:S1444M"DMake this "public static CountPurchaseProtocolFCDKESMBO" field final(”øÖşÿÿÿÿ8¶ÿò’Ò1
+c
+java:S1444N"GMake this "public static UpCountPurchaseProtocolFCODKESMBO" field final(ÔßäZ8¶ÿò’Ò1
+b
+java:S1444O"EMake this "public static CountPurchaseProtocolFCODKESMBO" field final(¶Ùš—8¶ÿò’Ò1
+d
+java:S1444P"GMake this "public static UpCountPurchaseProtocolFKVOKESMBO" field final(•¨äˆ8·ÿò’Ò1
+g
+java:S1444Q"EMake this "public static CountPurchaseProtocolFKVOKESMBO" field final(­Ì—µøÿÿÿÿ8·ÿò’Ò1
+n
+java:S1444R"LMake this "public static UpCountPurchaseProtocolRejectionAESMBO" field final(ÀˆÅıÿÿÿÿ8·ÿò’Ò1
+l
+java:S1444S"JMake this "public static CountPurchaseProtocolRejectionAESMBO" field final(š’…–şÿÿÿÿ8·ÿò’Ò1
+h
+java:S1444T"LMake this "public static UpCountPurchaseProtocolRejectionKESMBO" field final(Ãÿ¨8·ÿò’Ò1
+g
+java:S1444U"JMake this "public static CountPurchaseProtocolRejectionKESMBO" field final(Ù¥àî8·ÿò’Ò1
+j
+java:S1444V"MMake this "public static UpCountPurchaseProtocolRejectionZKESMBO" field final(×®êÃ8·ÿò’Ò1
+h
+java:S1444W"KMake this "public static CountPurchaseProtocolRejectionZKESMBO" field final(ÕàŸƒ8·ÿò’Ò1
+j
+java:S1444X"MMake this "public static UpCountPurchaseProtocolRejectionZPESMBO" field final(ß–8·ÿò’Ò1
+h
+java:S1444Y"KMake this "public static CountPurchaseProtocolRejectionZPESMBO" field final(²èÉ“8·ÿò’Ò1
+h
+java:S1444Z"FMake this "public static UpCountPurchaseProtocolRZ1AESMBO" field final(ÜÍèüÿÿÿÿ8·ÿò’Ò1
+a
+java:S1444["DMake this "public static CountPurchaseProtocolRZ1AESMBO" field final(Û¯µ8·ÿò’Ò1
+b
+java:S1444\"FMake this "public static UpCountPurchaseProtocolRZ1KESMBO" field final(«®û18·ÿò’Ò1
+f
+java:S1444]"DMake this "public static CountPurchaseProtocolRZ1KESMBO" field final( éşÆøÿÿÿÿ8·ÿò’Ò1
+d
+java:S1444^"GMake this "public static UpCountPurchaseProtocolRZ1ZPESMBO" field final(šš¬8·ÿò’Ò1
+g
+java:S1444_"EMake this "public static CountPurchaseProtocolRZ1ZPESMBO" field final(œ®Ïşÿÿÿÿ8·ÿò’Ò1
+h
+java:S1444`"FMake this "public static UpCountPurchaseProtocolRZ2AESMBO" field final(íÜàŞúÿÿÿÿ8·ÿò’Ò1
+a
+java:S1444a"DMake this "public static CountPurchaseProtocolRZ2AESMBO" field final(ĞøÑ8·ÿò’Ò1
+h
+java:S1444b"FMake this "public static UpCountPurchaseProtocolRZ2KESMBO" field final(è­àâıÿÿÿÿ8·ÿò’Ò1
+a
+java:S1444c"DMake this "public static CountPurchaseProtocolRZ2KESMBO" field final(ûëÄ8·ÿò’Ò1
+b
+java:S1444d"EMake this "public static CountPurchaseProtocolRZ2ZPESMBO" field final(ù¼‡8·ÿò’Ò1
+i
+java:S1444e"GMake this "public static UpCountPurchaseProtocolRZ2ZPESMBO" field final(Âîô±şÿÿÿÿ8·ÿò’Ò1
+f
+java:S1444f"DMake this "public static CountPurchaseProtocolRZZKESMBO" field final(Éã¾®ÿÿÿÿÿ8·ÿò’Ò1
+c
+java:S1444g"FMake this "public static UpCountPurchaseProtocolRZZKESMBO" field final(§¿ñÈ8·ÿò’Ò1
+g
+java:S1444h"JMake this "public static CountPurchaseProtocolSummingupAESMBO" field final(Ğëâ¿8·ÿò’Ò1
+i
+java:S1444i"LMake this "public static UpCountPurchaseProtocolSummingupAESMBO" field final(ê±´†8·ÿò’Ò1
+g
+java:S1444j"JMake this "public static CountPurchaseProtocolSummingupKESMBO" field final(‚·‰‚8·ÿò’Ò1
+i
+java:S1444k"LMake this "public static UpCountPurchaseProtocolSummingupKESMBO" field final(®‘©ö8·ÿò’Ò1
+h
+java:S1444l"KMake this "public static CountPurchaseProtocolSummingupZKESMBO" field final(ª¸ÄÅ8·ÿò’Ò1
+j
+java:S1444m"MMake this "public static UpCountPurchaseProtocolSummingupZKESMBO" field final(òëĞ™8·ÿò’Ò1
+h
+java:S1444n"KMake this "public static CountPurchaseProtocolSummingupZPESMBO" field final(úîè¿8·ÿò’Ò1
+o
+java:S1444o"MMake this "public static UpCountPurchaseProtocolSummingupZPESMBO" field final(ÄéÔ§üÿÿÿÿ8·ÿò’Ò1
+g
+java:S1444p"EMake this "public static CountPurchaseProtocolZRPZAESMBO" field final(˜¤ª¹úÿÿÿÿ8·ÿò’Ò1
+d
+java:S1444q"GMake this "public static UpCountPurchaseProtocolZRPZAESMBO" field final(îâ·8·ÿò’Ò1
+b
+java:S1444r"EMake this "public static CountPurchaseProtocolZRPZKESMBO" field final(ÿƒ„Ù8·ÿò’Ò1
+c
+java:S1444s"GMake this "public static UpCountPurchaseProtocolZRPZKESMBO" field final(ø‘èb8·ÿò’Ò1
+c
+java:S1444t"FMake this "public static CountPurchaseProtocolZRPZZKESMBO" field final(€òğ¥8·ÿò’Ò1
+e
+java:S1444u"HMake this "public static UpCountPurchaseProtocolZRPZZKESMBO" field final(…²¼8·ÿò’Ò1
+h
+java:S1444v"FMake this "public static CountPurchaseProtocolZRPZZPESMBO" field final(±ÛÌÇùÿÿÿÿ8·ÿò’Ò1
+e
+java:S1444w"HMake this "public static UpCountPurchaseProtocolZRPZZPESMBO" field final(ÄµÑñ8·ÿò’Ò1
+^
+java:S1444x"AMake this "public static CountPurchaseProtocolCancel" field final(÷Ì©ã8·ÿò’Ò1
+e
+java:S1444y"CMake this "public static UpCountPurchaseProtocolCancel" field final(À¦äÑıÿÿÿÿ8·ÿò’Ò1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§©„•8»ÿò’Ò1
+^
+java:S1106"AMove this left curly brace to the beginning of next line of code.(àªÅö8½ÿò’Ò1
+^
+java:S1106{"AMove this left curly brace to the beginning of next line of code.(Çµí‘8½ÿò’Ò1
+c
+java:S1106|"AMove this left curly brace to the beginning of next line of code.(óÕ·ßÿÿÿÿÿ8½ÿò’Ò1
+_
+java:S1106"AMove this left curly brace to the beginning of next line of code.(¦£¿ª8½ÿò’Ò1
+d
+java:S1106"AMove this left curly brace to the beginning of next line of code.(û¦Ô§ûÿÿÿÿ8½ÿò’Ò1
+_
+java:S1106œ"AMove this left curly brace to the beginning of next line of code.(ôú¨8½ÿò’Ò1
+_
+java:S1106 "AMove this left curly brace to the beginning of next line of code.(ç¹Ğ¥8½ÿò’Ò1
+d
+java:S1106¥"AMove this left curly brace to the beginning of next line of code.(”‘İÒüÿÿÿÿ8½ÿò’Ò1
+_
+java:S1106¬"AMove this left curly brace to the beginning of next line of code.(å¥‡8½ÿò’Ò1
+d
+java:S1106¦"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8½ÿò’Ò1
+_
+java:S1106¨"AMove this left curly brace to the beginning of next line of code.(ï­£Ä8½ÿò’Ò1
+_
+java:S1106°"AMove this left curly brace to the beginning of next line of code.(¹ŒÚƒ8½ÿò’Ò1
+_
+java:S1106¹"AMove this left curly brace to the beginning of next line of code.(’¿èù8½ÿò’Ò1
+d
+java:S1106»"AMove this left curly brace to the beginning of next line of code.(¡»¢üùÿÿÿÿ8½ÿò’Ò1
+_
+java:S1106É"AMove this left curly brace to the beginning of next line of code.(Úîø›8½ÿò’Ò1
+_
+java:S1106Ç"AMove this left curly brace to the beginning of next line of code.(”ı¾8½ÿò’Ò1
+;
+java:S1451"&Add or update the header of this file.8ˆ€ó’Ò1
+l	java:S103"KSplit this 142 characters long line (which is greater than 120 authorized).(Ç‹Ãıÿÿÿÿ8‰€ó’Ò1
+h	java:S103š"KSplit this 154 characters long line (which is greater than 120 authorized).(âÒìÖ8Âû’Ò1
+h	java:S103´"KSplit this 121 characters long line (which is greater than 120 authorized).(©ËÿÉ8‰€ó’Ò1
+g	java:S103µ"KSplit this 251 characters long line (which is greater than 120 authorized).(­™¸E8‰€ó’Ò1
+h	java:S103¿"KSplit this 148 characters long line (which is greater than 120 authorized).(ıÛ¸š8‰€ó’Ò1
+h	java:S103Á"KSplit this 152 characters long line (which is greater than 120 authorized).(±æü¹8‰€ó’Ò1
+m	java:S103ë"KSplit this 124 characters long line (which is greater than 120 authorized).(şÚúÿÿÿÿÿ8‰€ó’Ò1
+h	java:S103ì"KSplit this 126 characters long line (which is greater than 120 authorized).(™ÈÊ«8‰€ó’Ò1
+m	java:S103î"KSplit this 122 characters long line (which is greater than 120 authorized).(¸éøÿÿÿÿ8‰€ó’Ò1
+h	java:S103ğ"KSplit this 122 characters long line (which is greater than 120 authorized).(àş¿ß8‰€ó’Ò1
+h	java:S103ñ"KSplit this 122 characters long line (which is greater than 120 authorized).(òúšÔ8‰€ó’Ò1
+h	java:S103ò"KSplit this 124 characters long line (which is greater than 120 authorized).(ìƒá°8‰€ó’Ò1
+h	java:S103ó"KSplit this 122 characters long line (which is greater than 120 authorized).(Ç÷÷Š8‰€ó’Ò1
+m	java:S103ô"KSplit this 124 characters long line (which is greater than 120 authorized).(é¯›øÿÿÿÿ8‰€ó’Ò1
+h	java:S103û"KSplit this 124 characters long line (which is greater than 120 authorized).(®×÷„8‰€ó’Ò1
+g	java:S103ü"KSplit this 126 characters long line (which is greater than 120 authorized).(‰ÆË	8‰€ó’Ò1
+m	java:S103ı"KSplit this 124 characters long line (which is greater than 120 authorized).(ÂÎöØıÿÿÿÿ8‰€ó’Ò1
+h	java:S103ş"KSplit this 126 characters long line (which is greater than 120 authorized).(‹êÏ£8‰€ó’Ò1
+m	java:S103ÿ"KSplit this 126 characters long line (which is greater than 120 authorized).(‹ÃğÂÿÿÿÿÿ8‰€ó’Ò1
+h	java:S103€"KSplit this 128 characters long line (which is greater than 120 authorized).(ñéâÍ8‰€ó’Ò1
+m	java:S103"KSplit this 126 characters long line (which is greater than 120 authorized).(¼«ê‹ûÿÿÿÿ8‰€ó’Ò1
+m	java:S103‚"KSplit this 128 characters long line (which is greater than 120 authorized).(‘çæûÿÿÿÿ8‰€ó’Ò1
+m	java:S103‘"KSplit this 124 characters long line (which is greater than 120 authorized).(úÕ¾Úûÿÿÿÿ8‰€ó’Ò1
+m	java:S103’"KSplit this 126 characters long line (which is greater than 120 authorized).(ÚÍŞ®ıÿÿÿÿ8‰€ó’Ò1
+h	java:S103“"KSplit this 124 characters long line (which is greater than 120 authorized).(Ë–Ÿ¯8‰€ó’Ò1
+h	java:S103”"KSplit this 126 characters long line (which is greater than 120 authorized).(³Ã˜½8‰€ó’Ò1
+m	java:S103•"KSplit this 126 characters long line (which is greater than 120 authorized).(ÈÏ£øÿÿÿÿ8‰€ó’Ò1
+m	java:S103–"KSplit this 128 characters long line (which is greater than 120 authorized).(ü¶«©ıÿÿÿÿ8‰€ó’Ò1
+m	java:S103—"KSplit this 126 characters long line (which is greater than 120 authorized).(®ê¶•üÿÿÿÿ8‰€ó’Ò1
+h	java:S103˜"KSplit this 128 characters long line (which is greater than 120 authorized).(»ÔÇ¥8Š€ó’Ò1
+L	java:S106"+Replace this use of System.out by a logger.(“×·ôşÿÿÿÿ8‹€ó’Ò1
+u
+java:S3008"SRename this field "Database" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ôÚùÿÿÿÿ8‹€ó’Ò1
+n
+java:S3008"QRename this field "Prefix" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÜ »8‹€ó’Ò1
+s
+java:S3008"QRename this field "UserDb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë¢Œïûÿÿÿÿ8‹€ó’Ò1
+n
+java:S3008"QRename this field "PassDb" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆŒ¢ç8‹€ó’Ò1
+s
+java:S3008"QRename this field "Server" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¯×Ïøÿÿÿÿ8‹€ó’Ò1
+q
+java:S3008"ORename this field "Port" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ó†Äÿÿÿÿÿ8‹€ó’Ò1
+t
+java:S3008"RRename this field "DateNow" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ââ‡åşÿÿÿÿ8‹€ó’Ò1
+r
+java:S3008"URename this field "UrlConnect" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î´‰8‹€ó’Ò1
+r
+java:S3008"PRename this field "Years" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒÌ¹¤ûÿÿÿÿ8‹€ó’Ò1
+}
+java:S3008 "`Rename this field "CountPurchaseProtocol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş´üÌ8‹€ó’Ò1
+„
+java:S3008!"bRename this field "UpCountPurchaseProtocol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Öå÷ûÿÿÿÿ8‹€ó’Ò1
+…
+java:S3008""cRename this field "CountPurchaseProtocolOSZ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÑé›ÿÿÿÿÿ8‹€ó’Ò1
+‡
+java:S3008#"eRename this field "UpCountPurchaseProtocolOSZ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²£·àøÿÿÿÿ8‹€ó’Ò1
+
+java:S3008$"dRename this field "CountPurchaseProtocolPAAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†·Ê…8‹€ó’Ò1
+ƒ
+java:S3008%"fRename this field "UpCountPurchaseProtocolPAAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö±™Ÿ8‹€ó’Ò1
+ƒ
+java:S3008&"fRename this field "CountPurchaseProtocolPAAE94" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à„Ó8‹€ó’Ò1
+…
+java:S3008'"hRename this field "UpCountPurchaseProtocolPAAE94" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á«›ˆ8‹€ó’Ò1
+†
+java:S3008("dRename this field "CountPurchaseProtocolPAEP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¯ˆìüÿÿÿÿ8‹€ó’Ò1
+ƒ
+java:S3008)"fRename this field "UpCountPurchaseProtocolPAEP" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†…Şö8‹€ó’Ò1
+
+java:S3008*"dRename this field "CountPurchaseProtocolPAOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²¡Î›8‹€ó’Ò1
+ˆ
+java:S3008+"fRename this field "UpCountPurchaseProtocolPAOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´º×Ìúÿÿÿÿ8‹€ó’Ò1
+‚
+java:S3008,"eRename this field "CountPurchaseProtocolRZ1AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹®…Ô8‹€ó’Ò1
+„
+java:S3008-"gRename this field "UpCountPurchaseProtocolRZ1AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚öİı8‹€ó’Ò1
+‡
+java:S3008."eRename this field "CountPurchaseProtocolRZ2AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü¶Áıÿÿÿÿ8‹€ó’Ò1
+‰
+java:S3008/"gRename this field "UpCountPurchaseProtocolRZ2AE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰Í‘Åıÿÿÿÿ8‹€ó’Ò1
+
+java:S30080"dRename this field "CountPurchaseProtocolRZAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¢Ä8‹€ó’Ò1
+ƒ
+java:S30081"fRename this field "UpCountPurchaseProtocolRZAE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ±±8‹€ó’Ò1
+
+java:S30082"dRename this field "CountPurchaseProtocolRZOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÄŒô8‹€ó’Ò1
+ƒ
+java:S30083"fRename this field "UpCountPurchaseProtocolRZOA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÚÍã8‹€ó’Ò1
+†
+java:S30084"dRename this field "CountPurchaseProtocolRZOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıĞÂëüÿÿÿÿ8‹€ó’Ò1
+‚
+java:S30085"fRename this field "UpCountPurchaseProtocolRZOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÑŒj8Œ€ó’Ò1
+„
+java:S30086"bRename this field "CountPurchaseProtocolVK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•€ò¡şÿÿÿÿ8Œ€ó’Ò1
+†
+java:S30087"dRename this field "UpCountPurchaseProtocolVK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şˆò´úÿÿÿÿ8Œ€ó’Ò1
+
+java:S30088"bRename this field "CountPurchaseProtocolZK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¬é£8Œ€ó’Ò1
+
+java:S30089"dRename this field "UpCountPurchaseProtocolZK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îœÃü8Œ€ó’Ò1
+Š
+java:S3008:"hRename this field "CountPurchaseProtocolCCAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìé¦ƒùÿÿÿÿ8Œ€ó’Ò1
+‡
+java:S3008;"jRename this field "UpCountPurchaseProtocolCCAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú­…ƒ8Œ€ó’Ò1
+…
+java:S3008<"hRename this field "CountPurchaseProtocolCCKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅòÀŒ8Œ€ó’Ò1
+‡
+java:S3008="jRename this field "UpCountPurchaseProtocolCCKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ˜Ûè8Œ€ó’Ò1
+…
+java:S3008>"iRename this field "CountPurchaseProtocolCCZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥‚¨o8Œ€ó’Ò1
+ˆ
+java:S3008?"kRename this field "UpCountPurchaseProtocolCCZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œâøŸ8Œ€ó’Ò1
+ˆ
+java:S3008@"kRename this field "UpCountPurchaseProtocolCCZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ñé°8Œ€ó’Ò1
+†
+java:S3008A"iRename this field "CountPurchaseProtocolCCZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñíş8Œ€ó’Ò1
+“
+java:S3008B"qRename this field "UpCountPurchaseProtocolCollationAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼£‚Ïøÿÿÿÿ8Œ€ó’Ò1
+Œ
+java:S3008C"oRename this field "CountPurchaseProtocolCollationAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ”´­8Œ€ó’Ò1
+‘
+java:S3008D"oRename this field "UpCountPurchaseProtocolEvasionAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í½œßùÿÿÿÿ8Œ€ó’Ò1
+
+java:S3008E"mRename this field "CountPurchaseProtocolEvasionAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á¢×øûÿÿÿÿ8Œ€ó’Ò1
+‘
+java:S3008F"oRename this field "UpCountPurchaseProtocolEvasionKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸œö÷üÿÿÿÿ8Œ€ó’Ò1
+Š
+java:S3008G"mRename this field "CountPurchaseProtocolEvasionKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ¸˜¬8Œ€ó’Ò1
+’
+java:S3008H"pRename this field "UpCountPurchaseProtocolEvasionZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ°ÿ¢ıÿÿÿÿ8Œ€ó’Ò1
+‹
+java:S3008I"nRename this field "CountPurchaseProtocolEvasionZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÆ·ˆ8Œ€ó’Ò1
+’
+java:S3008J"pRename this field "UpCountPurchaseProtocolEvasionZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¶ÿúıÿÿÿÿ8Œ€ó’Ò1
+
+java:S3008K"nRename this field "CountPurchaseProtocolEvasionZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒîÙåıÿÿÿÿ8Œ€ó’Ò1
+ˆ
+java:S3008L"kRename this field "UpCountPurchaseProtocolFCDKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â¾ƒ¿8Œ€ó’Ò1
+‹
+java:S3008M"iRename this field "CountPurchaseProtocolFCDKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”øÖşÿÿÿÿ8Œ€ó’Ò1
+ˆ
+java:S3008N"lRename this field "UpCountPurchaseProtocolFCODKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔßäZ8Œ€ó’Ò1
+‡
+java:S3008O"jRename this field "CountPurchaseProtocolFCODKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Ùš—8Œ€ó’Ò1
+‰
+java:S3008P"lRename this field "UpCountPurchaseProtocolFKVOKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•¨äˆ8Œ€ó’Ò1
+Œ
+java:S3008Q"jRename this field "CountPurchaseProtocolFKVOKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Ì—µøÿÿÿÿ8Œ€ó’Ò1
+“
+java:S3008R"qRename this field "UpCountPurchaseProtocolRejectionAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀˆÅıÿÿÿÿ8Œ€ó’Ò1
+‘
+java:S3008S"oRename this field "CountPurchaseProtocolRejectionAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š’…–şÿÿÿÿ8Œ€ó’Ò1
+
+java:S3008T"qRename this field "UpCountPurchaseProtocolRejectionKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãÿ¨8Œ€ó’Ò1
+Œ
+java:S3008U"oRename this field "CountPurchaseProtocolRejectionKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¥àî8Œ€ó’Ò1
+
+java:S3008V"rRename this field "UpCountPurchaseProtocolRejectionZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×®êÃ8Œ€ó’Ò1
+
+java:S3008W"pRename this field "CountPurchaseProtocolRejectionZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕàŸƒ8Œ€ó’Ò1
+
+java:S3008X"rRename this field "UpCountPurchaseProtocolRejectionZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß–8Œ€ó’Ò1
+
+java:S3008Y"pRename this field "CountPurchaseProtocolRejectionZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²èÉ“8Œ€ó’Ò1
+
+java:S3008Z"kRename this field "UpCountPurchaseProtocolRZ1AESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÍèüÿÿÿÿ8Œ€ó’Ò1
+†
+java:S3008["iRename this field "CountPurchaseProtocolRZ1AESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¯µ8Œ€ó’Ò1
+‡
+java:S3008\"kRename this field "UpCountPurchaseProtocolRZ1KESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«®û18Œ€ó’Ò1
+‹
+java:S3008]"iRename this field "CountPurchaseProtocolRZ1KESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( éşÆøÿÿÿÿ8Œ€ó’Ò1
+‰
+java:S3008^"lRename this field "UpCountPurchaseProtocolRZ1ZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šš¬8Œ€ó’Ò1
+Œ
+java:S3008_"jRename this field "CountPurchaseProtocolRZ1ZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ®Ïşÿÿÿÿ8Œ€ó’Ò1
+
+java:S3008`"kRename this field "UpCountPurchaseProtocolRZ2AESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÜàŞúÿÿÿÿ8Œ€ó’Ò1
+†
+java:S3008a"iRename this field "CountPurchaseProtocolRZ2AESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞøÑ8Œ€ó’Ò1
+
+java:S3008b"kRename this field "UpCountPurchaseProtocolRZ2KESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è­àâıÿÿÿÿ8Œ€ó’Ò1
+†
+java:S3008c"iRename this field "CountPurchaseProtocolRZ2KESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûëÄ8Œ€ó’Ò1
+‡
+java:S3008d"jRename this field "CountPurchaseProtocolRZ2ZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù¼‡8Œ€ó’Ò1
+
+java:S3008e"lRename this field "UpCountPurchaseProtocolRZ2ZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âîô±şÿÿÿÿ8Œ€ó’Ò1
+‹
+java:S3008f"iRename this field "CountPurchaseProtocolRZZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éã¾®ÿÿÿÿÿ8Œ€ó’Ò1
+ˆ
+java:S3008g"kRename this field "UpCountPurchaseProtocolRZZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¿ñÈ8Œ€ó’Ò1
+Œ
+java:S3008h"oRename this field "CountPurchaseProtocolSummingupAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğëâ¿8Œ€ó’Ò1
+
+java:S3008i"qRename this field "UpCountPurchaseProtocolSummingupAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê±´†8Œ€ó’Ò1
+Œ
+java:S3008j"oRename this field "CountPurchaseProtocolSummingupKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚·‰‚8Œ€ó’Ò1
+
+java:S3008k"qRename this field "UpCountPurchaseProtocolSummingupKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®‘©ö8Œ€ó’Ò1
+
+java:S3008l"pRename this field "CountPurchaseProtocolSummingupZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¸ÄÅ8Œ€ó’Ò1
+
+java:S3008m"rRename this field "UpCountPurchaseProtocolSummingupZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òëĞ™8€ó’Ò1
+
+java:S3008n"pRename this field "CountPurchaseProtocolSummingupZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úîè¿8€ó’Ò1
+”
+java:S3008o"rRename this field "UpCountPurchaseProtocolSummingupZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄéÔ§üÿÿÿÿ8€ó’Ò1
+Œ
+java:S3008p"jRename this field "CountPurchaseProtocolZRPZAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜¤ª¹úÿÿÿÿ8€ó’Ò1
+‰
+java:S3008q"lRename this field "UpCountPurchaseProtocolZRPZAESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îâ·8€ó’Ò1
+‡
+java:S3008r"jRename this field "CountPurchaseProtocolZRPZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿƒ„Ù8€ó’Ò1
+ˆ
+java:S3008s"lRename this field "UpCountPurchaseProtocolZRPZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‘èb8€ó’Ò1
+ˆ
+java:S3008t"kRename this field "CountPurchaseProtocolZRPZZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€òğ¥8€ó’Ò1
+Š
+java:S3008u"mRename this field "UpCountPurchaseProtocolZRPZZKESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…²¼8€ó’Ò1
+
+java:S3008v"kRename this field "CountPurchaseProtocolZRPZZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÛÌÇùÿÿÿÿ8€ó’Ò1
+Š
+java:S3008w"mRename this field "UpCountPurchaseProtocolZRPZZPESMBO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄµÑñ8€ó’Ò1
+ƒ
+java:S3008x"fRename this field "CountPurchaseProtocolCancel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Ì©ã8€ó’Ò1
+Š
+java:S3008y"hRename this field "UpCountPurchaseProtocolCancel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¦äÑıÿÿÿÿ8€ó’Ò1
+x
+java:S1820"[Refactor this class so it has no more than 20 fields, rather than the 103 it currently has.(àªÅö8€ó’Ò1
+?
+java:S2386"Make this member "protected".(Ââ‡åşÿÿÿÿ8‘€ó’Ò1
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ç‹Ãıÿÿÿÿ8“€ó’Ò1
+K
+java:S2143")Use the Java 8 Date and Time API instead.(Ââ‡åşÿÿÿÿ8•€ó’Ò1
+p	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¦Ô§ûÿÿÿÿ8˜€ó’Ò1
+Y
+java:S1147";Remove this call to "exit" or ensure it is really required.(¯á8™€ó’Ò1
+Y
+java:S1147¢";Remove this call to "exit" or ensure it is really required.(¯á8™€ó’Ò1
+>
+java:S2386›" Make member "Years" "protected".(øšò­8ÁÁ÷’Ò1
+d
+java:S1132œ"FMove the "" string literal on the left side of this string comparison.(ôú¨8 €ó’Ò1
+d
+java:S1132 "FMove the "" string literal on the left side of this string comparison.(ç¹Ğ¥8 €ó’Ò1
+O
+java:S1108¬"1Move this "else" keyword to a new dedicated line.(å¥‡8¡€ó’Ò1
+P
+java:S1108¨"2Move this "catch" keyword to a new dedicated line.(ï­£Ä8¢€ó’Ò1
+k	java:S100¹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¿èù8¥€ó’Ò1
+„	java:S138¹"gThis method has 99 lines, which is greater than the 75 lines authorized. Split it into smaller methods.(’¿èù8¦€ó’Ò1
+R
+java:S2221Ç"4Catch a list of specific exception subtypes instead.(”ı¾8§€ó’Ò1
+P
+java:S1108Ç"2Move this "catch" keyword to a new dedicated line.(”ı¾8§€ó’Ò1
+R
+java:S1108É"4Move this "finally" keyword to a new dedicated line.(Úîø›8§€ó’Ò1
+^	java:S125¾"<This block of commented-out lines of code should be removed.(½£Öœûÿÿÿÿ8©€ó’Ò1

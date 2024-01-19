@@ -8,6 +8,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 import static java.lang.System.out;
 
@@ -148,7 +151,8 @@ public class Main {
         PassDb = set.PassDb;
         Server = set.Server;
         Port = set.Port;
-        Years = new ArrayList<>(Arrays.asList(set.Years.split(", ")));
+        List<String> list = StreamSupport.stream(Arrays.asList(set.Years.split(",")).spliterator(), false).map(String::trim).collect(Collectors.toList());
+        Years = new ArrayList<>(list);
         if (tempDirProtocols.equals("") || tempDirProtocols.isEmpty()) {
             out.println("Не задана папка для временных файлов, выходим из программы");
             System.exit(0);

@@ -1,4 +1,16 @@
 
-~"squid:ClassVariableVisibilityCheck"PMake item a static final constant or non-public and provide accessors if needed.(û°šı
-squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚Æ¾Éıÿÿÿÿ
-qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘‡¸<
+™
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(‚Æ¾Éıÿÿÿÿ8ö¾¿’Ò1
+U
+java:S1213"8Move this variable to comply with Java Code Conventions.(û°šı8÷¾¿’Ò1
+m
+java:S1104"PMake item a static final constant or non-public and provide accessors if needed.(û°šı8ù¾¿’Ò1
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘‡¸<8ú¾¿’Ò1
+c
+java:S1106"AMove this left curly brace to the beginning of next line of code.(â¥ºüÿÿÿÿ8ú¾¿’Ò1
+c
+java:S1106"AMove this left curly brace to the beginning of next line of code.(‚Æ¾Éıÿÿÿÿ8ú¾¿’Ò1
+;
+java:S1451"&Add or update the header of this file.8ú¾¿’Ò1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚Æ¾Éıÿÿÿÿ8û¾¿’Ò1
