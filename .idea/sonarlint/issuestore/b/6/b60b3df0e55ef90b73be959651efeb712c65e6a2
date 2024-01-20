@@ -456,8 +456,8 @@ java:S1106a"AMove this left curly brace to the beginning of next line of code.(
 java:S1106f"AMove this left curly brace to the beginning of next line of code.(ÿ´ˆÏ8î‘¸”Ò1
 ^
 java:S1106k"AMove this left curly brace to the beginning of next line of code.(å¥‡8î‘¸”Ò1
-^
-java:S1106s"AMove this left curly brace to the beginning of next line of code.(Û¹8î‘¸”Ò1
+c
+java:S1106s"AMove this left curly brace to the beginning of next line of code.(â Âßúÿÿÿÿ8î‘¸”Ò1
 c
 java:S1106w"AMove this left curly brace to the beginning of next line of code.(Óˆï¦ûÿÿÿÿ8î‘¸”Ò1
 ^
@@ -540,26 +540,26 @@ _
 java:S1106€"AMove this left curly brace to the beginning of next line of code.(›„ÌÎ8ï‘¸”Ò1
 d
 java:S1106‚"AMove this left curly brace to the beginning of next line of code.(Äºâöüÿÿÿÿ8îìÔ”Ò1
-l
-java:S2095ö"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(øË¶08°¸”Ò1
-l
-java:S2095g"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“êãÑ8¬ªº”Ò1
-m
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ê›ÿâ8°¸”Ò1
 m
 java:S2095Ì"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(®µÒÄ8°¸”Ò1
+l
+java:S2095ö"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(øË¶08°¸”Ò1
+m
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ê›ÿâ8°¸”Ò1
 r
 java:S2095Ñ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(±åâºøÿÿÿÿ8­ªº”Ò1
 l
 java:S2095O"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(÷Üó’8­ªº”Ò1
-m
-java:S2095½"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ùŸş8°¸”Ò1
 r
 java:S2095†"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ßóä·şÿÿÿÿ8°¸”Ò1
 r
 java:S2095“"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(×øÖ×øÿÿÿÿ8°¸”Ò1
 q
 java:S2095^"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(½ÇœÖşÿÿÿÿ8®ªº”Ò1
+m
+java:S2095½"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ùŸş8°¸”Ò1
+l
+java:S2095g"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“êãÑ8¬ªº”Ò1
 m
 java:S2095Ö"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(º—“²8°¸”Ò1
 ;
@@ -595,9 +595,9 @@ i
 java:S17744"GConvert this usage of the ternary operator to an "if"/"else" structure.(ùŸ…Äşÿÿÿÿ8¾ªº”Ò1
 o	java:S100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡…¹øÿÿÿÿ8Àªº”Ò1
 t
-java:S3776;"RRefactor this method to reduce its Cognitive Complexity from 63 to the 15 allowed.(‡…¹øÿÿÿÿ8Âªº”Ò1
+java:S3776;"RRefactor this method to reduce its Cognitive Complexity from 64 to the 15 allowed.(‡…¹øÿÿÿÿ8Âªº”Ò1
 €
-java:S1541;"^The Cyclomatic Complexity of this method "Parsing" is 146 which is greater than 10 authorized.(‡…¹øÿÿÿÿ8Åªº”Ò1
+java:S1541;"^The Cyclomatic Complexity of this method "Parsing" is 147 which is greater than 10 authorized.(‡…¹øÿÿÿÿ8Åªº”Ò1
 ‰	java:S138;"hThis method has 429 lines, which is greater than the 75 lines authorized. Split it into smaller methods.(‡…¹øÿÿÿÿ8Æªº”Ò1
 0	java:S121A"Missing curly brace.(ú8Èªº”Ò1
 c
@@ -619,8 +619,8 @@ java:S1108k"1Move this "else" keyword to a new dedicated line.(å¥‡8Òªº”Ò1
 X	java:S125e"<This block of commented-out lines of code should be removed.(éÅ»­8Óªº”Ò1
 i
 java:S1774r"GConvert this usage of the ternary operator to an "if"/"else" structure.(¼Ñİ¦şÿÿÿÿ8Õªº”Ò1
-c
-java:S1132s"FMove the "" string literal on the left side of this string comparison.(Û¹8‘«º”Ò1
+h
+java:S1132s"FMove the "" string literal on the left side of this string comparison.(â Âßúÿÿÿÿ8‘«º”Ò1
 d
 java:S1774v"GConvert this usage of the ternary operator to an "if"/"else" structure.(şàâ£8Öªº”Ò1
 h
@@ -869,4 +869,4 @@ java:S1774„"GConvert this usage of the ternary operator to an "if"/"else" stru
 d
 java:S1774…"GConvert this usage of the ternary operator to an "if"/"else" structure.(ŞÔï_8Ó°¸”Ò1
 ê
-java:S6541;"ÇA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 429 to 64, Complexity from 146 to 14, Nesting Level from 3 to 2, Number of Variables from 33 to 6.(‡…¹øÿÿÿÿ8¿«º”Ò1
+java:S6541;"ÇA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 429 to 64, Complexity from 147 to 14, Nesting Level from 3 to 2, Number of Variables from 33 to 6.(‡…¹øÿÿÿÿ8¿«º”Ò1

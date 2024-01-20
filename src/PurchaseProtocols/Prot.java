@@ -112,7 +112,7 @@ public class Prot {
         ps2.close();
         int idProt = 0;
         String typeProtocol = (typeName != null) ? typeName : "";
-        if (typeProtocol.equals("")) {
+        if (typeProtocol.equals("") && purchaseCodeName != null) {
             typeProtocol = purchaseCodeName;
         }
         String missedR = (missedReason != null) ? missedReason : "";

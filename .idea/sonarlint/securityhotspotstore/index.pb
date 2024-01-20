@@ -65,8 +65,6 @@ I
 .idea/JetClient/state.xml,4/e/4e6e58e82ecfa92cb3dbfc711b374423ae3639d2
 [
 +src/Protocols223/ProtocolType223Cancel.java,8/b/8b86dfab4b6b6a0b1b0301fc16dec760435d1028
-^
-.src/Protocols223/ProtocolType223Rejection.java,e/e/ee6b3864908ed8a6334220d908b009a2ee540fd4
 b
 2src/PurchaseProtocols/ProtocolRejectionAESMBO.java,5/f/5fd8450526f72759d6dc810be8a95be1a96d6a4e
 \

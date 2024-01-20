@@ -300,8 +300,6 @@ Q.idea/sonarlint/securityhotspotstore/9/8/989c462e5772a4637e337f7934d267bdf59d25
 Q.idea/sonarlint/securityhotspotstore/8/d/8d6362ad59ea1c7f1ed6ec04efa0af7a04955886,3/e/3ef63f537596236083c474a9852bab322e13d365
 I
 .idea/JetClient/state.xml,4/e/4e6e58e82ecfa92cb3dbfc711b374423ae3639d2
-^
-.src/Protocols223/ProtocolType223Rejection.java,e/e/ee6b3864908ed8a6334220d908b009a2ee540fd4
 \
 ,src/PurchaseProtocols/ProtocolRejection.java,f/2/f24eb375c9a35b17877cbf3e0820a773a0a9e697
 \
