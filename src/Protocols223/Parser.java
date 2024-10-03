@@ -27,7 +27,7 @@ import static java.lang.Thread.sleep;
 public class Parser implements IParser {
 
     static final String Ftp223Login = "fz223free";
-    static final String Ftp223Pass = "fz223free";
+    static final String Ftp223Pass = "otkluchenie_FTP_s_01_01_2025_podrobnee_v_ATFF";
     private static final int BUFFER_SIZE = 4_096;
     public static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
     public String[] __protocols223Dir = {"purchaseProtocol", "purchaseProtocolIP", "purchaseProtocolOSZ", "purchaseProtocolPA_AE", "purchaseProtocolPA_OA", "purchaseProtocolPAAE", "purchaseProtocolPAAE94", "purchaseProtocolPAEP", "purchaseProtocolPAOA", "purchaseProtocolRKZ", "purchaseProtocolRZ1AE", "purchaseProtocolRZ2AE", "purchaseProtocolRZ_AE", "purchaseProtocolRZ_OA", "purchaseProtocolRZ_OK", "purchaseProtocolRZAE", "purchaseProtocolRZOA", "purchaseProtocolRZOK", "purchaseProtocolVK", "purchaseProtocolZK"};
