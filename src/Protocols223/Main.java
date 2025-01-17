@@ -23,7 +23,9 @@ public class Main {
     public static String UserDb;
     public static String PassDb;
     public static String Server;
+    public static String Token;
     public static int Port;
+    public static int Days;
     public static String logPath;
     public static Date DateNow = new Date();
     public static String UrlConnect;
@@ -153,6 +155,8 @@ public class Main {
         PassDb = set.PassDb;
         Server = set.Server;
         Port = set.Port;
+        Token = set.Token;
+        Days = set.Days;
         List<String> list = StreamSupport.stream(Arrays.asList(set.Years.split(",")).spliterator(), false).map(String::trim).collect(Collectors.toList());
         Years = new ArrayList<>(list);
         if (tempDirProtocols.equals("") || tempDirProtocols.isEmpty()) {

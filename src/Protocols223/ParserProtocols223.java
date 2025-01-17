@@ -1,14 +1,32 @@
 package Protocols223;
 
+import org.xml.sax.InputSource;
 import org.apache.commons.io.FileUtils;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
 import java.io.File;
-import java.sql.*;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.StringReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
-public class ParserProtocols223 extends Parser {
+public class ParserProtocols223 extends ParserNew {
 
     @Override
     public void Parsing() {
@@ -18,58 +36,32 @@ public class ParserProtocols223 extends Parser {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        for (Region r : reg) {
-            //out.println(r.Name);
-            String pathParse = "";
-            for (String prot : protocols223Dir) {
-                switch (Main.arg) {
-                    case Last223:
-                        pathParse = String.format("/out/published/%s/%s/", r.Path223, prot);
-                        ParsingLast223(pathParse, prot, r);
-                        break;
-                    case Daily223:
-                        pathParse = String.format("/out/published/%s/%s/daily/", r.Path223, prot);
-                        ParsingDaily223(pathParse, prot, r);
-                        break;
+        for (int i = Main.Days; i >= 0; i--) {
+            for (Region r : reg) {
+                //out.println(r.Name);
+                String pathParse = "";
+                for (String type : types) {
+                    switch (Main.arg) {
+                        case Daily223:
+                            try {
+                                ParsingDaily223(type, r, i);
+                            } catch (Exception e) {
+                                Log.Logger("Ошибка", e, e.getStackTrace(), type);
+                            }
+                            break;
+                    }
                 }
             }
 
-
-        }
-        ParsingAst();
-    }
-
-    public void ParsingAst() {
-        ArrayList<Region> reg = new ArrayList<>();
-        try {
-            reg = GetRegions();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        for (Region r : reg) {
-            String pathParse = "";
-            for (String prot : protocols223Dir) {
-                switch (Main.arg) {
-                    case Last223:
-                        pathParse = String.format("/out/published/ast/%s/%s/", r.Path223, prot);
-                        ParsingLast223(pathParse, prot, r);
-                        break;
-                    case Daily223:
-                        pathParse = String.format("/out/published/ast/%s/%s/daily/", r.Path223, prot);
-                        ParsingDaily223(pathParse, prot, r);
-                        break;
-                }
-            }
-
-
         }
     }
+
 
     public Boolean GetListFileArch(String pathParse, String prot, Region region, String file) {
         String filea = "";
         String pathUnzip = "";
-        filea = GetArch(file, pathParse, Ftp223Login, Ftp223Pass);
-        if(filea.isEmpty()){
+        filea = GetArch(file, pathParse);
+        if (filea.isEmpty()) {
             return false;
         }
         if (!Objects.equals(filea, "")) {
@@ -92,13 +84,10 @@ public class ParserProtocols223 extends Parser {
                             case "purchaseProtocolPA_AE":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPA_AE, con);
                                 break;
-                            case "purchaseProtocolPA_OA":
-                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPA_OA, con);
-                                break;
                             case "purchaseProtocolPAAE":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAAE, con);
                                 break;
-                            case "purchaseProtocolPAAE94":
+                            case "purchaseProtocolPAAE94FZ":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolPAAE94, con);
                                 break;
                             case "purchaseProtocolPAEP":
@@ -110,20 +99,11 @@ public class ParserProtocols223 extends Parser {
                             case "purchaseProtocolRKZ":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRKZ, con);
                                 break;
-                            case "purchaseProtocolRZ1AE":
+                            case "purchaseProtocolRZ1AE94FZ":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ1AE, con);
                                 break;
-                            case "purchaseProtocolRZ2AE":
+                            case "purchaseProtocolRZ2AE94FZ":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ2AE, con);
-                                break;
-                            case "purchaseProtocolRZ_AE":
-                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_AE, con);
-                                break;
-                            case "purchaseProtocolRZ_OA":
-                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_OA, con);
-                                break;
-                            case "purchaseProtocolRZ_OK":
-                                Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZ_OK, con);
                                 break;
                             case "purchaseProtocolRZAE":
                                 Bolter(f, pathParse, prot, region, TypeProt223.purchaseProtocolRZAE, con);
@@ -283,84 +263,114 @@ public class ParserProtocols223 extends Parser {
 
     }
 
-    public void ParsingLast223(String pathParse, String prot, Region region) {
-        ArrayList<String> s = GetListArch(pathParse, prot, region);
+    public void ParsingDaily223(String type, Region region, int i) throws Exception{
+        ArrayList<String> s = GetListArch(type, region.Conf, i);
         if (s.isEmpty()) {
-            Log.Logger("Получен пустой список архивов", pathParse);
+            Log.Logger(String.format("Получен пустой список архивов type %s region %s", type, region.Conf));
             return;
         }
         for (String st : s) {
             try {
-                GetListFileArch(pathParse, prot, region, st);
+                GetListFileArch(type, type, region, st);
             } catch (Exception e) {
-                Log.Logger("Error on parsing list from ftp", e.getStackTrace(), e);
+                Log.Logger("Error on parsing list from api", e.getStackTrace(), e);
             }
         }
 
     }
 
-    public void ParsingDaily223(String pathParse, String prot, Region region) {
-        ArrayList<String> s = GetListArch(pathParse, prot, region);
-        s = FilterListMysql(s);
-        if (s.isEmpty()) {
-            Log.Logger("Получен пустой список архивов", pathParse);
-            return;
+    public ArrayList<String> GetListArch(String type, String region, int i) throws Exception {
+        ArrayList<String> arr = new ArrayList<>();
+        String response = soap44PriceReq(region, type, i);
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        InputSource inputSource = new InputSource(new StringReader(response));
+        Document document = builder.parse(inputSource);
+        XPath xPath = XPathFactory.newInstance().newXPath();
+        String expression = "//dataInfo/archiveUrl";
+        NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(document, XPathConstants.NODESET);
+        for (int k = 0; k < nodeList.getLength(); k++) {
+            String l = nodeList.item(k).getFirstChild().getTextContent();
+            arr.add(l);
         }
-        for (String st : s) {
+        return arr;
+        //return arr.stream().filter(s -> arrYears.stream().anyMatch(s::contains)).collect(Collectors.toCollection(ArrayList::new));
+
+    }
+
+    public static String soap44PriceReq(String regionKladr, String type, int d) {
+        int count = 5;
+        int sleep = 2000;
+        while (true) {
             try {
-                Boolean b = GetListFileArch(pathParse, prot, region, st);
-                if(!b){
-                    continue;
+                String guid = java.util.UUID.randomUUID().toString();
+                String currdate = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").format(Calendar.getInstance().getTime());
+                LocalDate prev =LocalDate.now().minusDays(d);
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                String prevDate = prev.format(formatter);
+                String request = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ws=\"http://zakupki.gov.ru/fz44/get-docs-ip/ws\">\n" +
+                    "<soapenv:Header>\n" +
+                    "<individualPerson_token>"+Main.Token+"</individualPerson_token>\n" +
+                    "</soapenv:Header>\n" +
+                    "<soapenv:Body>\n" +
+                    "<ws:getDocsByOrgRegionRequest>\n" +
+                    "<index>\n" +
+                    "<id>"+ guid +"</id>\n" +
+                    "<createDateTime>"+currdate+"</createDateTime>\n" +
+                    "<mode>PROD</mode>\n" +
+                    "</index>\n" +
+                    "<selectionParams>\n" +
+                    "<orgRegion>"+regionKladr+"</orgRegion>\n" +
+                    "<subsystemType>RI223</subsystemType>\n" +
+                    "<documentType223>"+type+"</documentType223>\n" +
+                    "<periodInfo>\n" +
+                    "<exactDate>"+prevDate+"</exactDate>\n" +
+                    "</periodInfo>\n" +
+                    "</selectionParams>\n" +
+                    "</ws:getDocsByOrgRegionRequest>\n" +
+                    "</soapenv:Body>\n" +
+                    "</soapenv:Envelope>";
+                URL url = new URL("https://int44.zakupki.gov.ru/eis-integration/services/getDocsIP");
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setConnectTimeout(20000);
+                connection.setReadTimeout(20000);
+                connection.setDoOutput(true);
+
+                connection.setUseCaches(true);
+                connection.setRequestMethod("POST");
+                connection.setRequestProperty("Accept", "*/xml");
+                connection.setRequestProperty("Content-Type", "text/xml; charset=utf-8");
+                connection.setRequestProperty("User-Agent", "");
+                connection.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
+                OutputStream outputStream = connection.getOutputStream();
+                byte[] b = request.getBytes("UTF-8");
+                outputStream.write(b);
+                outputStream.flush();
+                outputStream.close();
+                InputStream inputStream = connection.getInputStream();
+                byte[] res = new byte[2048];
+                int i = 0;
+                StringBuilder response = new StringBuilder();
+                while ((i = inputStream.read(res)) != -1) {
+                    response.append(new String(res, 0, i));
                 }
-                InsertArrMysql(st);
+                inputStream.close();
+                String resp = new String(response.toString());
+                return resp;
+
             } catch (Exception e) {
-                Log.Logger("Error on parsing list from ftp", e.getStackTrace(), e);
-            }
-        }
-
-    }
-
-    public ArrayList<String> GetListArch(String pathParse, String prot, Region region) {
-        ArrayList<String> arr = GetListFtp(pathParse, Ftp223Login, Ftp223Pass);
-        ArrayList<String> arrYears = Main.Years.stream().map((String y) -> String.format("%s_%s_%s", prot, region.Path223, y)).collect(Collectors.toCollection(ArrayList::new));
-
-        return arr.stream().filter(s -> arrYears.stream().anyMatch(s::contains)).collect(Collectors.toCollection(ArrayList::new));
-
-    }
-
-    public ArrayList<String> FilterListMysql(ArrayList<String> s) {
-        ArrayList<String> temp = new ArrayList<>();
-        if (!s.isEmpty()) {
-            try (Connection con = DriverManager.getConnection(Main.UrlConnect, Main.UserDb, Main.PassDb)) {
-                for (String st : s) {
-                    PreparedStatement stmt0 = con.prepareStatement(String.format("SELECT id FROM %sarhiv_protocols223 WHERE arhiv = ?", Main.Prefix));
-                    stmt0.setString(1, String.valueOf(st));
-                    ResultSet r = stmt0.executeQuery();
-                    if (r.next()) {
-                        r.close();
-                        stmt0.close();
-                        continue;
-                    }
-                    r.close();
-                    stmt0.close();
-                    temp.add(st);
+                if (count <= 0) {
+                    throw new RuntimeException(e);
                 }
 
-            } catch (Exception e) {
-                Log.Logger("Error Search", e.getStackTrace());
-            }
-        }
-        return temp;
-    }
+                count--;
+                try {
+                    Thread.sleep(sleep);
+                } catch (Exception t) {
 
-    public void InsertArrMysql(String s) {
-        try (Connection con = DriverManager.getConnection(Main.UrlConnect, Main.UserDb, Main.PassDb)) {
-            PreparedStatement stmtins = con.prepareStatement(String.format("INSERT INTO %sarhiv_protocols223 SET arhiv = ?", Main.Prefix));
-            stmtins.setString(1, s);
-            stmtins.executeUpdate();
-            stmtins.close();
-        } catch (Exception e) {
-            Log.Logger("Error Insert", e.getStackTrace());
+                }
+                sleep *= 2;
+            }
         }
     }
 

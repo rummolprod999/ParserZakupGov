@@ -18,6 +18,8 @@ public class GetSettings {
     public String Server;
     public String Years;
     public int Port;
+    public int Days;
+    public String Token;
 
     public GetSettings() {
         try {
@@ -58,8 +60,14 @@ public class GetSettings {
                         case "port":
                             Port = Integer.valueOf(set.getChildNodes().item(0).getTextContent());
                             break;
+                        case "days":
+                            Days = Integer.valueOf(set.getChildNodes().item(0).getTextContent());
+                            break;
                         case "years":
                             Years = String.valueOf(set.getChildNodes().item(0).getTextContent());
+                            break;
+                        case "token":
+                            Token = String.valueOf(set.getChildNodes().item(0).getTextContent());
                             break;
 
 
